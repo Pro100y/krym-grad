@@ -1,0 +1,163 @@
+.typography {
+    color: var(--colorText);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+    & h1 {
+        margin-top: .5em;
+        margin-bottom: 1.5em;
+        font-size: 2.4em;
+        line-height: 1.1em;
+    }
+    & h2 {
+        margin-top: 1.44em;
+        margin-bottom: .72em;
+        font-size: 1.8em;
+        line-height: 1.44em;
+    }
+    & h3 {
+        margin-top: .94em;
+        margin-bottom: .94em;
+        font-size: 1.35em;
+        line-height: 1.89em;
+    }
+    & h4,
+    & h5,
+    & h6 {
+        margin-top: 1.28em;
+        margin-bottom: 1.28em;
+        font-size: 1em;
+        line-height: 1.28em;
+    }
+    & p,
+    & ul,
+    & ol,
+    & pre,
+    & table,
+    & blockquote {
+        margin-top: 1.28em;
+        margin-bottom: 1.28em;
+    }
+    & ul,
+    & ol {
+        margin-left: 2.56em;
+    }
+    & hr {
+        margin: -1px 0;
+        border: 1px solid;
+    }
+    & ul ul,
+    & ol ol,
+    & ul ol,
+    & ol ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    & b,
+    & strong,
+    & em,
+    & small,
+    & code {
+        line-height: 1;
+    }
+    & b,
+    & strong,
+    & em {
+        font-weight: 700;
+    }
+    & sup,
+    & sub {
+        position: relative;
+        top: -.4em;
+        vertical-align: baseline;
+    }
+    & sub {
+        top: .4em;
+    }
+    & table {
+        overflow-y: scroll;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    & td,
+    & th {
+        padding: 6px;
+        border: 1px solid #b8b8b8;
+    }
+    & th {
+        font-weight: 700;
+    }
+    & blockquote,
+    & cite {
+        padding-left: 1.28em;
+        border-left: 6px solid #b8b8b8;
+    }
+}
+
+
+/* customization */
+
+.typography {
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    & * {
+        font-family: Arial;
+    }
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        font-family: PFDinTextCondProRegular;
+        width: 100%;
+        font-weight: normal;
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+    & h1 {
+        font-size: 48px;
+    }
+    & h2 {
+        font-size: 36px;
+    }
+    & p {}
+    & ul,
+    & ol {
+        /* margin-left: 1em;*/
+    }
+    & li {
+        /*margin-bottom: 35px;*/
+    }
+    & span {
+        font-size: inherit;
+    }
+    & a {
+        /*color: var(--colorPrimary);*/
+        color: #0a659c;
+        text-decoration: underline;
+        &:hover {
+            color: #f3a929;
+        }
+    }
+    & iframe {
+        margin-top: 1.28em;
+        margin-bottom: 1.28em;
+        width: 100%;
+        height: 400px;
+        border: none;
+    }
+    & img {
+        margin-bottom: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+    & b,
+    & strong,
+    & em {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,136 @@
+:root {
+    --dataFormBorderColor: #d6dcdf;
+    --dataFormFieldBackgroundColor: #fff;
+    --dataFormFieldBorderRadius: 3px;
+    --dataFormFieldColor: #2f3236;
+    --dataFormFieldHeight: 35px;
+    --dataFormFieldPadding: 0 12px;
+}
+
+[data-form] {
+    & input {
+        padding: var(--dataFormFieldPadding);
+        width: 100%;
+        height: var(--dataFormFieldHeight);
+        border: 1px solid var(--dataFormBorderColor);
+        border-radius: var(--dataFormFieldBorderRadius);
+        background-color: var(--dataFormFieldBackgroundColor);
+        color: var(--dataFormFieldColor);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5em;
+
+        &:hover {
+            /*box-shadow: var( --shadowOutset);*/
+        }
+        &:focus {
+            /*border-color: var(--colorPrimary);
+            box-shadow: var( --shadowOutset);*/
+        }
+    }
+    & textarea {
+        padding: 20px;
+        width: 100%;
+        height: 110px;
+        border: 1px solid var(--dataFormBorderColor);
+        border-radius: var(--dataFormFieldBorderRadius);
+        background-color: var(--dataFormFieldBackgroundColor);
+        color: var(--dataFormFieldColor);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5em;
+        resize: vertical;
+
+        &:hover {
+           /* box-shadow: var( --shadowOutset);*/
+        }
+        &:focus {
+            /*border-color: var(--colorPrimary);
+            box-shadow: var( --shadowOutset);*/
+        }
+    }
+    & .selectric-wrapper {
+        width: 100%;
+        transition-duration: var(--transitionDuration);
+
+        &.selectric-open {
+            /*box-shadow: var( --shadowOutset);*/
+        }
+        &:hover {
+            /*box-shadow: var( --shadowOutset);*/
+        }
+        & .selectric {
+            width: 100%;
+            border: 1px solid var(--dataFormBorderColor);
+            border-radius: var(--dataFormFieldBorderRadius);
+            background-color: var(--dataFormFieldBackgroundColor);
+
+            & .label {
+                font-family: Arial;
+                display: block;
+                margin: 0;
+                padding: 0 70px 0 12px;
+                height: auto;
+                color: var(--dataFormFieldColor);
+                font-weight: 700;
+                font-size: 14px;
+                line-height: var(--dataFormFieldHeight);
+            }
+            & .button {
+                width: var(--dataFormFieldHeight);
+                height: var(--dataFormFieldHeight);
+                border-left: 1px solid var(--dataFormBorderColor);
+                background-image: url(../images/forms-arr.png);
+                background-position: center;
+                background-repeat: no-repeat;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        & .selectric-items {
+            border: none;
+            border-radius: var(--dataFormFieldBorderRadius);
+            background-color: var(--dataFormFieldBackgroundColor);
+
+            /*box-shadow: inset 0 0 0 1px var(--dataFormBorderColor), var( --shadowOutset);*/
+            & li {
+                padding: 10px 12px;
+                font-weight: 400;
+                font-size: 14px;
+                transition-duration: var(--transitionDuration);
+                font-family: Arial;
+
+                &:first-child {
+                    border-radius: var(--dataFormFieldBorderRadius) var(--dataFormFieldBorderRadius) 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0 var(--dataFormFieldBorderRadius) var(--dataFormFieldBorderRadius);
+                }
+                &:hover {
+                    background-color: var(--colorPrimary);
+                    color: var(--dataFormFieldBackgroundColor);
+                }
+                &.selected {
+                    background-color: var(--colorPrimary);
+                    color: var(--dataFormFieldBackgroundColor);
+                }
+                &.disabled {
+                    color: var(--dataFormFieldColor);
+                }
+            }
+        }
+    }
+}
+
+[data-form-hidden-placeholder]::-webkit-input-placeholder,
+[data-form-hidden-placeholder]::-moz-placeholder,
+[data-form-hidden-placeholder]:-moz-placeholder,
+[data-form-hidden-placeholder]:-ms-input-placeholder {
+    color: transparent;
+}
+
+[data-form-field-invalid] {
+    border-color: #f44336 !important;
+}

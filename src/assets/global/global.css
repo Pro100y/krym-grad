@@ -1,0 +1,276 @@
+/*
+|--------------------------------------------------------------------------
+| VARIABLES (var())
+|--------------------------------------------------------------------------
+|
+| Объявление переменных
+|
+*/
+
+:root {
+    --colorPlaceholder:   #5a5147;
+    --colorPrimary:       #f08b23;
+    --colorTextSelection: #f9f9f9;
+    --colorText:          #262626;
+    --colorOverlay:       rgba(255, 255, 255, 0.8);
+    --fontFamily:         PFDinTextCondProRegular, Arial, sans-serif;
+    --shadowOutset:       0 2px 5px 0 rgba(0, 0, 0, .26), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    --transformScale:     scale(1.1);
+    --transitionDuration: .3s;
+}
+
+/*
+|--------------------------------------------------------------------------
+| MIXINS (@apply)
+|--------------------------------------------------------------------------
+|
+| Объявление миксинов
+|
+*/
+
+:root {
+    --container: {
+        width: 100%;
+        padding: 0 10px;
+    }
+    --contentWrap: {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| NATIVE ELEMENTS
+|--------------------------------------------------------------------------
+|
+| Кастомизация нативных элементов браузера
+|
+*/
+
+::-moz-selection {
+    background-color: var(--colorPrimary);
+    color: var(--colorTextSelection);
+}
+
+::selection {
+    background-color: var(--colorPrimary);
+    color: var(--colorTextSelection);
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+    color: var(--colorPlaceholder);
+}
+
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-moz-placeholder,
+:focus:-ms-input-placeholder {
+    /*color: transparent;*/
+}
+
+::-moz-selection,
+::selection {
+    background-color: var(--colorPrimary);
+    color: var(--colorTextSelection);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+input[type=number] & {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| RESET
+|--------------------------------------------------------------------------
+|
+| Сброс стилей браузера (для нормализации используется вендор)
+|
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-color: transparent;
+    font-family: var(--fontFamily);
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+    transition: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+address,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+html {
+    min-width: 320px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: var(--colorText);
+}
+
+body {
+    padding: 0;
+    min-width: inherit;
+    min-height: inherit;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer !important;
+}
+
+a,
+button,
+input,
+textarea {
+    font-family: inherit;
+    transition: var(--transitionDuration);
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| VENDORS
+|--------------------------------------------------------------------------
+|
+| Стилизация вендорных элементов
+|
+*/
+
+
+/* tipso */
+
+.tipso_bubble,
+.tipso_title {
+    padding: 0;
+    border-radius: 0 !important;
+    text-align: left;
+    font-size: .8rem;
+    line-height: 1.2em;
+}
+
+.tipso_title,
+.tipso_content {
+    padding: .5em;
+}
+
+
+/* remodal */
+
+.remodal {
+    padding: 0;
+    max-width: 820px;
+    width: 100% !important;
+    color: initial;
+}
+
+.remodal-bg {
+    transition-duration: var(--transitionDuration);
+}
+
+.remodal-overlay {
+    background-color: var(--colorOverlay);
+    opacity: 1;
+}
+
+.remodal-wrapper:after {
+    display: inline-block;
+}
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+    animation-duration: .5s;
+}
+
+
+/* lightcase */
+
+#lightcase-overlay {
+    background-color: var(--colorOverlay);
+    opacity: 1;
+}
+
+.lightcase-icon-close:before {
+    color: #333333;
+}
+
+.lightcase-icon-prev:before {
+    color: #333333;
+}
+
+.lightcase-icon-next:before {
+    color: #333333;
+}
+
+#lightcase-case[data-lc-type=image] #lightcase-content,
+#lightcase-case[data-lc-type=video] #lightcase-content {
+    box-shadow: var(--shadowOutset);
+}
+
+
+/* legitripple */
+
+[data-ripple] & {}
+
+[data-ripple]:hover {}
+
+[data-ripple] .legitRipple-ripple {
+    background: rgba(221, 221, 221, .4) !important;
+}
