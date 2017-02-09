@@ -1,0 +1,74 @@
+.promo {
+    position: relative;
+    padding: 100px 25px 62px;
+    width: 100%;
+    background-image: url(../images/promo-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: GothamProBlack;
+}
+
+.promo__city {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 52px;
+}
+
+.promo__name {
+    display: block;
+    font-size: 72px;
+}
+
+.promo__desc {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 52px;
+}
+
+.promo__cost-title {
+    display: block;
+    font-size: 16px;
+}
+
+.promo__cost {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+
+.promo__readmore {
+    font-size: 14px;
+    font-family: GothamProBold;
+    text-align: center;
+    color: #252525;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.9);
+    line-height: 55px;
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+.promo__select-product {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: #fb9b2a;
+    background-image: url(../images/promo-2.svg);
+    background-position: center 30px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: GothamProBold;
+    line-height: 1.45;
+    right: 101px;
+    top: 179px;
+    border-radius: 50%;
+    padding: 25px;
+    display: flex;
+    align-items: flex-end;
+}

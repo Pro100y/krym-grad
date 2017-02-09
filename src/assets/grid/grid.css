@@ -1,19 +1,30 @@
 :root {
     --gridGutter: 1rem;
+    --gridSize1: calc((100%/12)*1);
+    --gridSize2: calc((100%/12)*2);
+    --gridSize3: calc((100%/12)*3);
+    --gridSize4: calc((100%/12)*4);
+    --gridSize5: calc((100%/12)*5);
+    --gridSize6: calc((100%/12)*6);
+    --gridSize7: calc((100%/12)*7);
+    --gridSize8: calc((100%/12)*8);
+    --gridSize9: calc((100%/12)*9);
+    --gridSize10: calc((100%/12)*10);
+    --gridSize11: calc((100%/12)*11);
+    --gridSize12: calc((100%/12)*12);
 }
 
 .grid {
     position: relative;
     width: 100%;
-    height: 100vh;
     &--type {
-        &--main{
+        &--main {
             background-image: url(../images/grid-1.jpg), url(../images/grid-2.jpg);
             background-position: center bottom, center top;
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
-        &--footer{}
+        &--footer {}
     }
 }
 
@@ -21,8 +32,12 @@
     margin: 0 auto;
     max-width: 1640px;
     width: 100%;
+    padding: 20px;
     &--type {
-        &--main{}
+        &--main {
+            padding-top: 0;
+            background-color: #fff;
+        }
     }
 }
 
@@ -30,68 +45,160 @@
     display: flex;
     clear: both;
     width: 100%;
+    &--fix {
+        &--1 {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .grid__col {
-    &--size {
+    &--position {
         &--1 {
-            width: calc((100%/12)*1);
+            @nest [data-layout=main] & {
+                width: var(--gridSize12);
+            }
         }
         &--2 {
-            width: calc((100%/12)*2);
+            @nest [data-layout=main] & {
+                width: var(--gridSize12);
+            }
         }
         &--3 {
-            width: calc((100%/12)*3);
+            @nest [data-layout=main] & {
+                width: var(--gridSize9);
+                padding-right: var(--gridGutter);
+            }
         }
         &--4 {
-            width: calc((100%/12)*4);
+            @nest [data-layout=main] & {
+                width: var(--gridSize3);
+                display: flex;
+            }
         }
         &--5 {
-            width: calc((100%/12)*5);
+            @nest [data-layout=main] & {
+                width: var(--gridSize9);
+                padding-right: var(--gridGutter);
+            }
         }
         &--6 {
-            width: calc((100%/12)*6);
+            @nest [data-layout=main] & {
+                width: var(--gridSize3);
+            }
         }
         &--7 {
-            width: calc((100%/12)*7);
+            @nest [data-layout=main] & {
+
+            }
         }
         &--8 {
-            width: calc((100%/12)*8);
+            @nest [data-layout=main] & {
+
+            }
         }
         &--9 {
-            width: calc((100%/12)*9);
+            @nest [data-layout=main] & {
+
+            }
         }
         &--10 {
-            width: calc((100%/12)*10);
+            @nest [data-layout=main] & {
+
+            }
         }
         &--11 {
-            width: calc((100%/12)*11);
+            @nest [data-layout=main] & {
+
+            }
         }
         &--12 {
-            width: calc((100%/12)*12);
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--13 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--14 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--15 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--16 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--17 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--18 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--19-20 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--19 {
+            @nest [data-layout=main] & {
+
+            }
+        }
+        &--20 {
+            @nest [data-layout=main] & {
+
+            }
         }
     }
-    &--position {
-        &--1 {}
-        &--2 {}
-        &--3 {}
-        &--4 {}
-        &--5 {}
-        &--6 {}
-        &--7 {}
-        &--8 {}
-        &--9 {}
-        &--10 {}
-        &--11 {}
-        &--12 {}
-        &--13 {}
-        &--14 {}
-        &--15 {}
-        &--16 {}
-        &--17 {}
-        &--18 {}
-        &--19-20 {}
-        &--19 {}
-        &--20 {}
+    &--size {
+        &--1 {
+            width: var(--gridSize1);
+        }
+        &--2 {
+            width: var(--gridSize2);
+        }
+        &--3 {
+            width: var(--gridSize3);
+        }
+        &--4 {
+            width: var(--gridSize4);
+        }
+        &--5 {
+            width: var(--gridSize5);
+        }
+        &--6 {
+            width: var(--gridSize6);
+        }
+        &--7 {
+            width: var(--gridSize7);
+        }
+        &--8 {
+            width: var(--gridSize8);
+        }
+        &--9 {
+            width: var(--gridSize9);
+        }
+        &--10 {
+            width: var(--gridSize10);
+        }
+        &--11 {
+            width: var(--gridSize11);
+        }
+        &--12 {
+            width: var(--gridSize12);
+        }
     }
 }

@@ -5,8 +5,18 @@
 
 {# == #}
 
-{% block content %}
-
-    test
-
+{% block position_1 %}
+    {% include "partials/header/header.htm" %}
+{% endblock %}
+{% block position_2 %}
+    {% include "partials/main-menu/main-menu.htm" %}
+{% endblock %}
+{% block position_3 %}
+    {% include "partials/promo/promo.htm" %}
+{% endblock %}
+{% block position_4 %}
+    {% include "partials/sales/sales.htm" %}
+{% endblock %}
+{% block position_5 %}
+    {% include "partials/news-carousel/news-carousel.htm" %}
 {% endblock %}

@@ -1,0 +1,52 @@
+.sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sales__item {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    height: calc((100% - 20px)/3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sales__item-name {
+    color: #9c765a;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: GothamProBold;
+    line-height: 1.64;
+    align-self: flex-start;
+    display: block;
+    width: 100%;
+}
+
+.sales__item-title {
+    color: #0062cd;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: GothamProBold;
+    align-self: flex-end;
+    display: block;
+    width: 100%;
+    margin-bottom: -2em;
+}
+
+.sales__item-cost {
+    color: #0062cd;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-family: GothamProBold;
+    align-self: flex-end;
+    display: block;
+    width: 100%;
+}

@@ -45,20 +45,191 @@
         <div class="grid__container">
             <div class="grid__row">
                 <div class="grid__col grid__col--position--1">
+                    <!-- header -->
+                    <header class="header">
+                        <figure class="header__logo">
+                            <a href="/" class="header__logo-image"></a>
+                            <figcaption class="header__description">строительная компания</figcaption>
+                        </figure>
+                        <address class="header__contacts">
+        <div class="header__contacts-col">
+            <a href="tel:" class="header__contacts-phone">+7 (000) 000-00-00</a>
+            <span class="header__contacts-address">Севастополь, ул. Ковпака, 3 строение В</span>
+            <button class="header__contacts-callback" type="button">перезвоните мне</button>
+        </div>
+        <div class="header__contacts-col">
+            <span class="header__contacts-worktime">09:00-19:00, ПН-СБ</span>
+            <a href="mailto:" class="header__contacts-email">office@crimeagrad.ru</a>
+        </div>
+    </address>
+                        <a href="#" class="header__filter-button">подобрать квартиру</a>
+                    </header>
+                    <!-- /header  -->
                 </div>
             </div>
         </div>
         <div class="grid__container grid__container--type--main">
             <div class="grid__row">
                 <div class="grid__col grid__col--position--2">
+                    <!-- main-menu -->
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item main-menu__list-item--active">
+                                <a href="#" class="main-menu__link">НАШИ ОБЪЕКТЫ</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">коммерческая недвижимость</a>
+                            </li>
+                        </ul>
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">о компании</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">Новости</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">акции</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">Покупка жилья</a>
+                            </li>
+                        </ul>
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item">
+                                <a href="#" class="main-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /main-menu  -->
                 </div>
+            </div>
+            <div class="grid__row grid__row--fix--1">
                 <div class="grid__col grid__col--position--3">
+                    <!-- promo -->
+                    <section class="promo">
+                        <span class="promo__city">Ялта</span>
+                        <strong class="promo__name">Зенит</strong>
+                        <span class="promo__desc">Жилищный комплекс</span>
+                        <span class="promo__cost-title">Квартиры в продаже от</span>
+                        <span class="promo__cost">1 800 000 &#8393;</span>
+                        <a href="#" class="promo__readmore">подробнее об объекте</a>
+                        <a href="#" class="promo__select-product">выбрать квартиру</a>
+                    </section>
+                    <!-- /promo  -->
                 </div>
                 <div class="grid__col grid__col--position--4">
+                    <!-- sales -->
+                    <section class="sales">
+                        <a href="#" class="sales__item" style="background-image: url(/assets/images/sales-1.jpg)">
+                            <strong class="sales__item-name">покупка жилья</strong>
+                            <strong class="sales__item-title">ипотека</strong>
+                            <span class="sales__item-cost">11%</span>
+                            <h1 class="e2-published e2-smart-title">
+                            </h1>
+                        </a>
+                        <a href="#" class="sales__item" style="background-image: url(/assets/images/sales-2.jpg)">
+                            <strong class="sales__item-name">акция</strong>
+                            <strong class="sales__item-title">рассрочка</strong>
+                            <span class="sales__item-cost">36<small>мес.</small></span>
+                        </a>
+                        <a href="#" class="sales__item" style="background-image: url(/assets/images/sales-3.jpg)">
+                            <strong class="sales__item-name">акция</strong>
+                            <strong class="sales__item-title">скидка</strong>
+                            <span class="sales__item-cost">10%</span>
+                        </a>
+                    </section>
+                    <!-- /sales  -->
                 </div>
             </div>
             <div class="grid__row">
                 <div class="grid__col grid__col--position--5">
+                    <!-- news-carousel -->
+                    <section class="news-carousel swiper-container">
+                        <header class="news-carousel__header">
+                            <strong class="news-carousel__title">Новости</strong>
+                            <nav class="news-carousel__nav">
+                                <button type="button" class="news-carousel__nav-btn news-carousel__nav-btn--next"></button>
+                                <button type="button" class="news-carousel__nav-btn news-carousel__nav-btn--prev"></button>
+                            </nav>
+                            <a href="#" class="news-carousel__archive">архив новостей</a>
+                        </header>
+                        <div class="news-carousel__items-wrap swiper-wrapper">
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">Внимание клиентов, желающих сделать теплые полы в квартирах</strong>
+                                    <p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                            <a class="news-carousel__item swiper-slide">
+                                <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                                <div class="news-carousel__item-text-wrap">
+                                    <time class="news-carousel__item-date">12/01/16</time>
+                                    <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <!-- /news-carousel  -->
                 </div>
                 <div class="grid__col grid__col--position--6">
                 </div>
@@ -68,19 +239,13 @@
                 </div>
                 <div class="grid__col grid__col--position--8">
                 </div>
-            </div>
-            <div class="grid__row">
                 <div class="grid__col grid__col--position--9">
                 </div>
+            </div>
+            <div class="grid__row">
                 <div class="grid__col grid__col--position--10">
                 </div>
                 <div class="grid__col grid__col--position--11">
-                </div>
-            </div>
-            <div class="grid__row">
-                <div class="grid__col grid__col--position--12">
-                </div>
-                <div class="grid__col grid__col--position--13">
                 </div>
             </div>
         </div>
@@ -88,11 +253,11 @@
     <div class="grid grid--type--footer">
         <div class="grid__container">
             <div class="grid__row">
-                <div class="grid__col grid__col--position--14">
+                <div class="grid__col grid__col--position--12">
                 </div>
             </div>
             <div class="grid__row">
-                <div class="grid__col grid__col--position--15">
+                <div class="grid__col grid__col--position--13">
                 </div>
                 <div class="grid__col grid__col--position--16">
                 </div>
