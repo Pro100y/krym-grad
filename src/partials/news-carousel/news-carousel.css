@@ -8,7 +8,7 @@
 .news-carousel__header {
     display: flex;
     align-items: center;
-    padding: 24px 0 20px;
+    padding: 24px 0 24px;
 }
 
 .news-carousel__title {
@@ -52,7 +52,6 @@
 
 .news-carousel__items-wrap {
     display: flex;
-    padding-top: 4px;
     padding-bottom: 1rem;
     width: 100%;
 }

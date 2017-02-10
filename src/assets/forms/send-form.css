@@ -1,3 +1,4 @@
+/*
 :root {
     --dataFormBorderColor: #d6dcdf;
     --dataFormFieldBackgroundColor: #fff;
@@ -21,11 +22,8 @@
         line-height: 1.5em;
 
         &:hover {
-            /*box-shadow: var( --shadowOutset);*/
         }
         &:focus {
-            /*border-color: var(--colorPrimary);
-            box-shadow: var( --shadowOutset);*/
         }
     }
     & textarea {
@@ -42,11 +40,8 @@
         resize: vertical;
 
         &:hover {
-           /* box-shadow: var( --shadowOutset);*/
         }
         &:focus {
-            /*border-color: var(--colorPrimary);
-            box-shadow: var( --shadowOutset);*/
         }
     }
     & .selectric-wrapper {
@@ -54,10 +49,8 @@
         transition-duration: var(--transitionDuration);
 
         &.selectric-open {
-            /*box-shadow: var( --shadowOutset);*/
         }
         &:hover {
-            /*box-shadow: var( --shadowOutset);*/
         }
         & .selectric {
             width: 100%;
@@ -94,7 +87,6 @@
             border-radius: var(--dataFormFieldBorderRadius);
             background-color: var(--dataFormFieldBackgroundColor);
 
-            /*box-shadow: inset 0 0 0 1px var(--dataFormBorderColor), var( --shadowOutset);*/
             & li {
                 padding: 10px 12px;
                 font-weight: 400;
@@ -134,3 +126,4 @@
 [data-form-field-invalid] {
     border-color: #f44336 !important;
 }
+*/

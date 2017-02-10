@@ -10,7 +10,8 @@ jQuery(document).ready(function ($) {
         spaceBetween: 14,
         freeMode: true,
         speed: 1000,
-        loop: false
+        loop: false,
+        autoplay: 3000
 
    });
 

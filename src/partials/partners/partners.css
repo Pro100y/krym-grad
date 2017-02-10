@@ -1,0 +1,11 @@
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.partners__item{
+    margin: 2rem 1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

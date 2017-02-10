@@ -1,0 +1,34 @@
+.about-company {
+    width: 100%;
+    background-image: url(../images/about-company-1.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 60px;
+    padding-top: 34px;
+}
+
+.about-company__title {
+    font-family: GothamProBold;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #252525;
+    margin-bottom: 17px;
+}
+
+.about-company__text {
+    font-family: GothamPro;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.about-company__readmore {
+    font-family: GothamProBold;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0062cd;
+    text-transform: uppercase;
+}

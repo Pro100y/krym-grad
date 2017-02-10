@@ -24,30 +24,50 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
-        &--footer {}
+        &--footer {
+            background-color: #333333;
+        }
     }
 }
 
 .grid__container {
     margin: 0 auto;
+    padding: 0 20px;
     max-width: 1640px;
     width: 100%;
-    padding: 20px;
     &--type {
         &--main {
             padding-top: 0;
-            background-color: #fff;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
         }
     }
 }
 
 .grid__row {
     display: flex;
+    justify-content: space-between;
     clear: both;
     width: 100%;
-    &--fix {
-        &--1 {
-            margin-bottom: 1rem;
+    &--positions {
+        &--3-4 {
+            @nest [data-layout=main] & {
+                padding-bottom: 1rem;
+            }
+        }
+        &--5-6 {
+            @nest [data-layout=main] & {
+                padding-bottom: 84px;
+            }
+        }
+        &--7-8-9 {
+            @nest [data-layout=main] & {
+                padding-bottom: 100px;
+            }
+        }
+        &--10-11 {
+            @nest [data-layout=main] & {
+                padding-bottom: 100px;
+            }
         }
     }
 }
@@ -66,139 +86,87 @@
         }
         &--3 {
             @nest [data-layout=main] & {
-                width: var(--gridSize9);
                 padding-right: var(--gridGutter);
+                width: var(--gridSize9);
             }
         }
         &--4 {
             @nest [data-layout=main] & {
-                width: var(--gridSize3);
                 display: flex;
+                width: var(--gridSize3);
             }
         }
         &--5 {
             @nest [data-layout=main] & {
-                width: var(--gridSize9);
                 padding-right: var(--gridGutter);
+                width: var(--gridSize9);
             }
         }
         &--6 {
             @nest [data-layout=main] & {
+                display: flex;
+                padding-bottom: 1rem;
                 width: var(--gridSize3);
             }
         }
         &--7 {
             @nest [data-layout=main] & {
-
+                padding-right: var(--gridGutter);
+                width: var(--gridSize3);
             }
         }
         &--8 {
             @nest [data-layout=main] & {
-
+                padding-right: var(--gridGutter);
+                width: var(--gridSize5);
             }
         }
         &--9 {
             @nest [data-layout=main] & {
-
+                width: var(--gridSize4);
             }
         }
         &--10 {
             @nest [data-layout=main] & {
-
+                width: var(--gridSize7);
             }
         }
         &--11 {
             @nest [data-layout=main] & {
-
+                display: flex;
+                align-items: center;
+                width: var(--gridSize4);
             }
         }
         &--12 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--13 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--14 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--15 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--16 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--17 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--18 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--19-20 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--19 {
-            @nest [data-layout=main] & {
-
-            }
+            @nest [data-layout=main] & {}
         }
         &--20 {
-            @nest [data-layout=main] & {
-
-            }
-        }
-    }
-    &--size {
-        &--1 {
-            width: var(--gridSize1);
-        }
-        &--2 {
-            width: var(--gridSize2);
-        }
-        &--3 {
-            width: var(--gridSize3);
-        }
-        &--4 {
-            width: var(--gridSize4);
-        }
-        &--5 {
-            width: var(--gridSize5);
-        }
-        &--6 {
-            width: var(--gridSize6);
-        }
-        &--7 {
-            width: var(--gridSize7);
-        }
-        &--8 {
-            width: var(--gridSize8);
-        }
-        &--9 {
-            width: var(--gridSize9);
-        }
-        &--10 {
-            width: var(--gridSize10);
-        }
-        &--11 {
-            width: var(--gridSize11);
-        }
-        &--12 {
-            width: var(--gridSize12);
+            @nest [data-layout=main] & {}
         }
     }
 }

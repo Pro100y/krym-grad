@@ -146,7 +146,7 @@ html {
     min-width: 320px;
     min-height: 100vh;
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #fff;
     color: var(--colorText);
 }
 
