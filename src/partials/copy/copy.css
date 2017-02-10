@@ -1,0 +1,33 @@
+.copy {
+    width: 100%;
+}
+.copy__logo {
+    display: block;
+    margin-bottom: 30px;
+    width: 173px;
+    height: 33px;
+    background-image: url(../images/copy-1.png);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.copy__phone {
+    display: block;
+    width: max-content;
+	color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.copy__address {
+    display: block;
+    margin-bottom: 27px;
+	color: #ffffff;
+	text-transform: uppercase;
+    font-size: 10px;
+}
+.copy__rights {
+    display: block;
+	color: #7b7b7b;
+    font-size: 12px;
+	line-height: 2.0;
+}

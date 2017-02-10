@@ -1,0 +1,31 @@
+.footer-menu {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+.footer-menu__list {
+    width: 20%;
+    list-style: none;
+    flex-grow: 0;
+    &:nth-child(3) {
+        margin-left: auto;
+    }
+}
+.footer-menu__item {
+    display: block;
+}
+.footer-menu__link {
+    display: block;
+    padding: 5px ;
+	color: #eeeeee;
+    font-size: 13px;
+    &--title {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: GothamProMedium;
+        letter-spacing: 1px;
+    }
+}
