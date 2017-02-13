@@ -1,0 +1,41 @@
+.object-map {
+    width: 100%;
+    & .ymaps-image-with-content {
+        width: 59px !important;
+        height: 60px !important;
+        background-position: center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        left: -28px !important;
+        top: -51px !important;
+    }
+    & .ymaps-point-overlay:nth-child(1) .ymaps-image-with-content {
+        background-image: url(../images/object-map-1.png) !important;
+    }
+    & .ymaps-point-overlay:nth-child(2) .ymaps-image-with-content {
+        background-image: url(../images/object-map-2.png) !important;
+    }
+    & .ymaps-point-overlay:nth-child(3) .ymaps-image-with-content {
+        background-image: url(../images/object-map-3.png) !important;
+    }
+    & .ymaps-point-overlay:nth-child(4) .ymaps-image-with-content {
+        background-image: url(../images/object-map-4.png) !important;
+    }
+    & .ymaps-point-overlay:nth-child(5) .ymaps-image-with-content {
+        background-image: url(../images/object-map-5.png) !important;
+    }
+    & .ymaps-point-overlay:nth-child(6) .ymaps-image-with-content {
+        background-image: url(../images/object-map-6.png) !important;
+    }
+}
+
+.object-map__title {
+    width: 100%;
+    font-size: 48px;
+    color: #242525;
+}
+
+.object-map__widget {
+    width: 100%;
+    height: 400px;
+}
