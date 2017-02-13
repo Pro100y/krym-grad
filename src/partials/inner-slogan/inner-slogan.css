@@ -1,0 +1,11 @@
+.inner-slogan {
+    width: calc(var(--gridSize8));
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+    background-image: url(../images/inner-slogan.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 21px 0 40px;
+    margin-bottom: 94px;
+}

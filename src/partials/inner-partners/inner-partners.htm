@@ -1,0 +1,27 @@
+{% macro innerPartnersItem(image, caption) %}
+<figure class="inner-partners__item">
+    <div class="inner-partners__item-image-wrap">
+        <img
+            alt   = "{{ caption }}"
+            class = "inner-partners__item-image"
+            src   = "/assets/images/inner-partners-{{ image }}.png"
+        >
+    </div>
+    <figcaption class="inner-partners__item-caption">{{ caption }}</figcaption>
+</figure>
+{% endmacro %}
+
+<!-- inner-partners -->
+<section class="inner-partners">
+
+    {{ innerPartnersItem('1', 'РНКБ') }}
+    {{ innerPartnersItem('2', 'ГЕНБАНК') }}
+    {{ innerPartnersItem('3', 'Банк Морской') }}
+    {{ innerPartnersItem('4', 'REHAU') }}
+    {{ innerPartnersItem('5', 'Buderus') }}
+    {{ innerPartnersItem('6', 'GRUNDFOS') }}
+    {{ innerPartnersItem('7', 'Schneider Electric') }}
+    {{ innerPartnersItem('8', 'BILUX') }}
+
+</section>
+<!-- /inner-partners  -->

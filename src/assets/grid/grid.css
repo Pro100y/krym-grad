@@ -24,6 +24,12 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
+        &--inner {
+            background-image: url(../images/grid-2.jpg);
+            background-position:  center top;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
         &--footer {
             background-color: #333333;
         }
@@ -40,6 +46,10 @@
             padding-top: 0;
             background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
         }
+        &--inner {
+            background-color: #fff;
+            padding-bottom: 80px;
+        }
     }
 }
 
@@ -49,42 +59,26 @@
     clear: both;
     width: 100%;
     &--positions {
-        &--3 {
-            @nest [data-layout=partners] & {
-                margin-left: -20px;
-                padding: 0 20px;
-                width: calc(100% + 40px);
-                background-image: linear-gradient(to bottom, #f8f8f8, #ffffff);
-            }
+        &--p-s {
+            padding-bottom: 1rem;
         }
-        &--3-4 {
-            @nest [data-layout=main] & {
-                padding-bottom: 1rem;
-            }
+        &--nc-a {
+            padding-bottom: 84px;
         }
-        &--5-6 {
-            @nest [data-layout=main] & {
-                padding-bottom: 84px;
-            }
+        &--fs-ac-s {
+            padding-bottom: 100px;
         }
-        &--7-8-9 {
-            @nest [data-layout=main] & {
-                padding-bottom: 100px;
-            }
+        &--r-p {
+            padding-bottom: 100px;
         }
-        &--10-11 {
-            @nest [data-layout=main] & {
-                padding-bottom: 100px;
-            }
-        }
-        &--13-14-15 {
-            @nest [data-layout=main] & {
-                padding: 96px 0 51px;
-            }
+        &--c-fm-fs {
+            padding: 96px 0 51px;
         }
     }
 }
 
+
+/*
 .grid__col {
     &--position {
         &--1 {
@@ -136,8 +130,6 @@
         }
         &--7 {
             @nest [data-layout=main] & {
-                padding-right: var(--gridGutter);
-                width: var(--gridSize3);
             }
         }
         &--8 {
@@ -186,4 +178,4 @@
             }
         }
     }
-}
+}*/

@@ -3758,6 +3758,8 @@ jQuery(document).ready(function ($) {
 
 
 
+
+
 jQuery(document).ready(function ($) {
 
    var newsCarousel = new Swiper('.news-carousel', {
@@ -3844,6 +3846,8 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+
 
 
 

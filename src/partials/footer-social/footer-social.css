@@ -1,5 +1,6 @@
 .footer-social {
-    width: 50%;
+    width: var(--gridSize1);
+    margin-right: var(--gridSize1);
 }
 
 .footer-social__buttons-wrap {

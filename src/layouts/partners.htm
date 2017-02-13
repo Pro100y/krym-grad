@@ -14,109 +14,38 @@
 
     <body>
 
-        <div class="grid grid--type--main">
+        <div class="grid grid--type--inner">
             <div class="grid__container">
-                <div class="grid__row">
-                    <div class="grid__col grid__col--position--1">
 
-                        {% block position_1 %}{% endblock %}
+                {% block header %}{% endblock %}
 
-                    </div>
-                </div>
             </div>
-            <div class="grid__container grid__container--type--main">
-                <div class="grid__row">
-                    <div class="grid__col grid__col--position--2">
+            <div class="grid__container grid__container--type--inner">
 
-                        {% block position_2 %}{% endblock %}
+                {% block main_menu %}{% endblock %}
+                {% block breadcrumbs %}{% endblock %}
+                {% block page_title %}{% endblock %}
 
-                    </div>
+                <div class="grid__row grid__row--postitions--sm-is">
+
+                    {% block sidebar_menu %}{% endblock %}
+                    {% block inner_slogan %}{% endblock %}
+
                 </div>
-                <div class="grid__row grid__row--positions--3">
-                    <div class="grid__col grid__col--position--3">
 
-                        {% block position_3 %}{% endblock %}
+                {% block inner_partners %}{% endblock %}
 
-                    </div>
-                </div>
-                <div class="grid__row">
-                    <div class="grid__col grid__col--position--4">
-
-                        {% block position_4 %}{% endblock %}
-
-                    </div>
-                </div>
-                <div class="grid__row grid__row--positions--5-6">
-                    <div class="grid__col grid__col--position--5">
-
-                        {% block position_5 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--6">
-
-                        {% block position_6 %}{% endblock %}
-
-                    </div>
-                </div>
-            </div>
-            <div class="grid__container">
-                <div class="grid__row grid__row--positions--7-8-9">
-                    <div class="grid__col grid__col--position--7">
-
-                        {% block position_7 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--8">
-
-                        {% block position_8 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--9">
-
-                        {% block position_9 %}{% endblock %}
-
-                    </div>
-                </div>
-                <div class="grid__row grid__row--positions--10-11">
-                    <div class="grid__col grid__col--position--10">
-
-                        {% block position_10 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--11">
-
-                        {% block position_11 %}{% endblock %}
-
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="grid grid--type--footer">
             <div class="grid__container">
-                <div class="grid__row">
-                    <div class="grid__col grid__col--position--12">
+                <div class="grid__row grid__row--positions--c-fm-fs">
 
-                        {% block position_12 %}{% endblock %}
+                    {% block copy %}{% endblock %}
+                    {% block footer_menu %}{% endblock %}
+                    {% block footer_social %}{% endblock %}
 
-                    </div>
-                </div>
-                <div class="grid__row grid__row--positions--13-14-15">
-                    <div class="grid__col grid__col--position--13">
-
-                        {% block position_13 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--14">
-
-                        {% block position_14 %}{% endblock %}
-
-                    </div>
-                    <div class="grid__col grid__col--position--15">
-
-                        {% block position_15 %}{% endblock %}
-
-                    </div>
                 </div>
             </div>
         </div>

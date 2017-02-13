@@ -1,11 +1,14 @@
-.partners{
+.partners {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    width: var(--gridSize4);
 }
-.partners__item{
-    margin: 2rem 1rem;
+
+.partners__item {
     flex-grow: 0;
     flex-shrink: 0;
+    margin: 2rem 1rem;
 }

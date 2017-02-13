@@ -1,7 +1,7 @@
 .footer-menu {
     display: block;
     justify-content: space-between;
-    width: 100%;
+    width: calc(var(--gridSize6) - var(--gridGutter));
     display: flex;
 }
 .footer-menu__list {

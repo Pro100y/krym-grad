@@ -1,8 +1,8 @@
 .sales {
     display: flex;
+    width: var(--gridSize3);
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
 }
 
 .sales__item {

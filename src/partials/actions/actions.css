@@ -2,7 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding-bottom: 1rem;
+    width: var(--gridSize3);
 }
 
 .acions__header {

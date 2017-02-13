@@ -1,0 +1,39 @@
+{% macro sertifacatesItem(images, caption) %}
+<figure class="sertificates__item">
+    <div class="sertificates__item-image-wrap">
+        <img src="/assets/images/sertificates-{{ images }}.png" alt="" class="sertificates__item-image">
+    </div>
+    <figcaption class="sertificates__item-caption">{{ caption }}</figcaption>
+</figure>
+{% endmacro %}
+
+<!-- sertificates -->
+<section class="sertificates">
+
+    {{ sertifacatesItem(
+        '1',
+        'Победитель в нескольких номинациях премии рынка недвижимости и финансов TREFI TopRealEstateAndFinance)')
+    }}
+    {{ sertifacatesItem(
+        '2',
+        'Лауреат ежегодной национальной премии в области бизнеса «Компания года 2012», по версии РБК, в н')
+    }}
+    {{ sertifacatesItem(
+        '3',
+        '12-е место в рейтинге 30 крупнейших девелоперов России по версии журнала РБК')
+    }}
+    {{ sertifacatesItem(
+        '4',
+        'Победитель в нескольких номинациях премии рынка недвижимости и финансов TREFI (TopRealEstateAndFinance)')
+    }}
+    {{ sertifacatesItem(
+        '5',
+        'Лауреат ежегодной национальной премии в области бизнеса «Компания года 2012», по версии РБК, в номинации «Строительство»')
+    }}
+    {{ sertifacatesItem(
+        '6',
+        '12-е место в рейтинге 30 крупнейших девелоперов России по версии журнала РБК')
+    }}
+
+</section>
+<!-- /sertificates -->

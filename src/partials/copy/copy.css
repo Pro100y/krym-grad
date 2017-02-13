@@ -1,5 +1,5 @@
 .copy {
-    width: 100%;
+     width: calc(var(--gridSize2) - var(--gridGutter));
 }
 .copy__logo {
     display: block;
