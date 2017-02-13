@@ -11,7 +11,7 @@
     --gridSize9: calc((100%/12)*9);
     --gridSize10: calc((100%/12)*10);
     --gridSize11: calc((100%/12)*11);
-    --gridSize12: calc((100%/12)*12);
+    --gridSize12: 100%;
 }
 
 .grid {
@@ -49,6 +49,14 @@
     clear: both;
     width: 100%;
     &--positions {
+        &--3 {
+            @nest [data-layout=partners] & {
+                margin-left: -20px;
+                padding: 0 20px;
+                width: calc(100% + 40px);
+                background-image: linear-gradient(to bottom, #f8f8f8, #ffffff);
+            }
+        }
         &--3-4 {
             @nest [data-layout=main] & {
                 padding-bottom: 1rem;
@@ -83,9 +91,15 @@
             @nest [data-layout=main] & {
                 width: var(--gridSize12);
             }
+            @nest [data-layout=partners] & {
+                width: var(--gridSize12);
+            }
         }
         &--2 {
             @nest [data-layout=main] & {
+                width: var(--gridSize12);
+            }
+            @nest [data-layout=partners] & {
                 width: var(--gridSize12);
             }
         }
@@ -94,11 +108,17 @@
                 padding-right: var(--gridGutter);
                 width: var(--gridSize9);
             }
+            @nest [data-layout=partners] & {
+                width: var(--gridSize12);
+            }
         }
         &--4 {
             @nest [data-layout=main] & {
                 display: flex;
                 width: var(--gridSize3);
+            }
+            @nest [data-layout=partners] & {
+                width: var(--gridSize12);
             }
         }
         &--5 {
@@ -150,19 +170,19 @@
         }
         &--13 {
             @nest [data-layout=main] & {}
-            width: var(--gridSize3);
             padding-right: var(--gridGutter);
+            width: var(--gridSize3);
         }
         &--14 {
             @nest [data-layout=main] & {
-                width: var(--gridSize6);
                 padding-right: var(--gridGutter);
+                width: var(--gridSize6);
             }
         }
         &--15 {
             @nest [data-layout=main] & {
-                width: var(--gridSize2);
                 margin-left: auto;
+                width: var(--gridSize2);
             }
         }
     }

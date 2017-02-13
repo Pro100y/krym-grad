@@ -1,0 +1,35 @@
+<!-- breadcrumbs -->
+<nav
+    class    = "breadcrumbs"
+    itemscope
+    itemtype = "http://schema.org/BreadcrumbList"
+>
+    <span
+        class     = "breadcrumbs__item"
+        itemscope
+        itemprop  = "itemListElement"
+        itemtype  = "http://schema.org/ListItem"
+    >
+        <a
+            href     = "#"
+            itemprop = "item"
+        >
+            <span itemprop="name">Главная</span>
+            <meta itemprop="position" content="1">
+        </a>
+    </span>
+    <span
+        class     = "breadcrumbs__item"
+        itemscope
+        itemprop  = "itemListElement"
+        itemtype  = "http://schema.org/ListItem"
+    >
+        <a
+            itemprop = "item"
+        >
+            <span itemprop="name">{{ title }}</span>
+            <meta itemprop="position" content="2">
+        </a>
+    </span>
+</nav>
+<!-- /breadcrumbs  -->
