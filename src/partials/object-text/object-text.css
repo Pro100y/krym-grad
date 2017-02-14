@@ -1,0 +1,24 @@
+.object-text {
+    margin-bottom: 57px;
+    padding-right: var(--gridGutter);
+    width: var(--gridSize8);
+}
+
+.object-text__title {
+    padding: 54px 0 54px 60px;
+    background-image: url(../images/object-text-1.svg);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.38;
+}
+
+.object-text__content {
+    position: relative;
+    width: 100%;
+    & p {
+        text-indent: 2em;
+    }
+}

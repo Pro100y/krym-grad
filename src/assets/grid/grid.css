@@ -26,7 +26,7 @@
         }
         &--inner {
             background-image: url(../images/grid-2.jpg);
-            background-position:  center top;
+            background-position: center top;
             background-size: 100% auto;
             background-repeat: no-repeat;
         }
@@ -47,8 +47,8 @@
             background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
         }
         &--inner {
-            background-color: #fff;
             padding-bottom: 80px;
+            background-color: #fff;
         }
     }
 }
@@ -59,123 +59,28 @@
     clear: both;
     width: 100%;
     &--positions {
-        &--p-s {
-            padding-bottom: 1rem;
-        }
-        &--nc-a {
-            padding-bottom: 84px;
+        &--c-fm-fs {
+            padding: 96px 0 51px;
         }
         &--fs-ac-s {
             padding-bottom: 100px;
         }
+        &--nc-a {
+            padding-bottom: 84px;
+        }
+        &--og-od {
+            padding: 130px 0 140px
+        }
+        &--om-op {
+            margin-bottom: 43px;
+            margin-left: -20px;
+            width: calc(100% + 40px);
+        }
+        &--p-s {
+            padding-bottom: 1rem;
+        }
         &--r-p {
             padding-bottom: 100px;
         }
-        &--c-fm-fs {
-            padding: 96px 0 51px;
-        }
     }
 }
-
-
-/*
-.grid__col {
-    &--position {
-        &--1 {
-            @nest [data-layout=main] & {
-                width: var(--gridSize12);
-            }
-            @nest [data-layout=partners] & {
-                width: var(--gridSize12);
-            }
-        }
-        &--2 {
-            @nest [data-layout=main] & {
-                width: var(--gridSize12);
-            }
-            @nest [data-layout=partners] & {
-                width: var(--gridSize12);
-            }
-        }
-        &--3 {
-            @nest [data-layout=main] & {
-                padding-right: var(--gridGutter);
-                width: var(--gridSize9);
-            }
-            @nest [data-layout=partners] & {
-                width: var(--gridSize12);
-            }
-        }
-        &--4 {
-            @nest [data-layout=main] & {
-                display: flex;
-                width: var(--gridSize3);
-            }
-            @nest [data-layout=partners] & {
-                width: var(--gridSize12);
-            }
-        }
-        &--5 {
-            @nest [data-layout=main] & {
-                padding-right: var(--gridGutter);
-                width: var(--gridSize9);
-            }
-        }
-        &--6 {
-            @nest [data-layout=main] & {
-                display: flex;
-                padding-bottom: 1rem;
-                width: var(--gridSize3);
-            }
-        }
-        &--7 {
-            @nest [data-layout=main] & {
-            }
-        }
-        &--8 {
-            @nest [data-layout=main] & {
-                padding-right: var(--gridGutter);
-                width: var(--gridSize5);
-            }
-        }
-        &--9 {
-            @nest [data-layout=main] & {
-                width: var(--gridSize4);
-            }
-        }
-        &--10 {
-            @nest [data-layout=main] & {
-                width: var(--gridSize7);
-            }
-        }
-        &--11 {
-            @nest [data-layout=main] & {
-                display: flex;
-                align-items: center;
-                width: var(--gridSize4);
-            }
-        }
-        &--12 {
-            @nest [data-layout=main] & {
-                width: var(--gridSize12);
-            }
-        }
-        &--13 {
-            @nest [data-layout=main] & {}
-            padding-right: var(--gridGutter);
-            width: var(--gridSize3);
-        }
-        &--14 {
-            @nest [data-layout=main] & {
-                padding-right: var(--gridGutter);
-                width: var(--gridSize6);
-            }
-        }
-        &--15 {
-            @nest [data-layout=main] & {
-                margin-left: auto;
-                width: var(--gridSize2);
-            }
-        }
-    }
-}*/

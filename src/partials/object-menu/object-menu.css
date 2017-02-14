@@ -1,0 +1,118 @@
+.object-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px;
+    padding-right: var(--gridGutter);
+    width: var(--gridSize2);
+    min-height: 900px;
+    background-image: url(../images/object-menu-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.object-menu__logo {
+    margin: 0 auto 15px;
+    max-width: 102px;
+    max-height: 68px;
+    mix-blend-mode: darken;
+}
+
+.object-menu__name {
+    margin-bottom: 44px;
+    width: 100%;
+    color: #252525;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: GothamProMedium;
+}
+
+.object-menu__name-description {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 1.78;
+}
+
+.object-menu__nav {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.object-menu__nav-item {
+    display: block;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 36px;
+    width: max-content;
+}
+
+.object-menu__nav-item-text {
+    border-bottom: 1px dotted;
+    font-family: GothamProBold;
+    font-weight: bold;
+    line-height: inherit;
+}
+
+.object-menu__link-to-filter {
+    display: flex;
+    align-items: flex-end;
+    padding: 57px 10px 13px;
+    border: solid 1px;
+    border-radius: 4px;
+    background-image: url(../images/object-menu-3.svg);
+    background-position: 10px 14px;
+    background-repeat: no-repeat;
+    color: #9c765a;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: GothamProBold;
+    line-height: 1.14;
+    width: 160px;
+    margin-bottom: 40px;
+}
+
+.object-menu__footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+.object-menu__phone {
+    font-family: GothamProBold;
+	font-size: 18px;
+	font-weight: bold;
+	color: #242525;
+    margin-bottom: 9px;
+    display: block;
+}
+
+.object-menu__worktime {
+    display: block;
+    text-transform: uppercase;
+	font-size: 13px;
+	color: #000000;
+    margin-bottom: 10px;
+}
+
+.object-menu__email {
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 13px;
+	color: #9c765a;
+}
+
+.object-menu__callback {
+    font-family: GothamProBold;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 14px;
+    border-radius: 4px;
+	background-color: #0062cd;
+}

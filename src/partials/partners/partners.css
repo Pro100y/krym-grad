@@ -11,4 +11,5 @@
     flex-grow: 0;
     flex-shrink: 0;
     margin: 2rem 1rem;
+    mix-blend-mode: darken;
 }

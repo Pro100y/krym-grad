@@ -1,0 +1,19 @@
+.object-table {
+    margin-bottom: 57px;
+    width: var(--gridSize3);
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.23;
+    & tbody {}
+    & tr {
+        border-bottom: 1px solid #fff;
+        background-color: #fafafa;
+    }
+    & th {
+        padding: 10px;
+        text-align: left;
+    }
+    & td {
+        padding: 10px;
+    }
+}
