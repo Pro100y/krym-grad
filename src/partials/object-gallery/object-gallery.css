@@ -1,6 +1,9 @@
 .object-gallery {
     padding-right: var(--gridGutter);
     width: var(--gridSize7);
+    & .fotorama__thumb-border {
+        border-color: #fb9b2a !important;
+    }
 }
 
 .object-gallery__title {
@@ -75,4 +78,6 @@
 
 .object-gallery__inner-tab {
     width: 100%;
+    height: 650px;
+    /*overflow: hidden;*/
 }

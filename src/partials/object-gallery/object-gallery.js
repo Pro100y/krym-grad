@@ -2,6 +2,33 @@ jQuery(document).ready(function ($) {
 
     /*
     |--------------------------------------------------------------------------
+    | Fotorama
+    |--------------------------------------------------------------------------
+    |
+    | Конфиг плагина фотогалареи
+    |
+    */
+
+    var $fotoramaDiv = $('.object-gallery__slideshow').fotorama({
+        nav: 'thumbs',
+        thumbwidth: 136,
+        thumbheight: 80,
+        width: '100%',
+        height: '530px',
+        margin: 20,
+        thumbmargin: 20,
+        navposition: 'top',
+        fit: 'cover',
+        transitionduration: 1000,
+        loop: false,
+        thumbborderwidth: 5,
+        allowfullscreen: false,
+        shadows: false,
+        arrows: "always"
+    });
+
+    /*
+    |--------------------------------------------------------------------------
     | TABTAB
     |--------------------------------------------------------------------------
     |
@@ -9,15 +36,15 @@ jQuery(document).ready(function ($) {
     |
     */
 
-    $('.object-gallery').tabtab({
-        tabMenu: '.object-gallery__nav', // direct container of the tab menu items
-        tabContent: '.object-gallery__tabs-wrap', // direct container of the tab content items
+    $('.object-gallery__inner').tabtab({
+        tabMenu: '.object-gallery__inner-nav', // direct container of the tab menu items
+        tabContent: '.object-gallery__inner-tabs-wrap', // direct container of the tab content items
         // next: '.tabs-controls__next',       // next slide trigger
         // prev: '.tabs-controls__prev',       // previous slide trigger
 
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
-        dynamicHeight: true, // if true the height will dynamic and animated.
+        dynamicHeight: false, // if true the height will dynamic and animated.
         useAnimations: true, // disables animations.
 
         easing: 'ease', // http://julian.com/research/velocity/#easing
@@ -36,15 +63,15 @@ jQuery(document).ready(function ($) {
         skewX: 0, // animate X skew (val: 0deg-360deg)
     });
 
-    $('.object-gallery__inner').tabtab({
-        tabMenu: '.object-gallery__inner-nav', // direct container of the tab menu items
-        tabContent: '.object-gallery__inner-tabs-wrap', // direct container of the tab content items
+    $('.object-gallery').tabtab({
+        tabMenu: '.object-gallery__nav', // direct container of the tab menu items
+        tabContent: '.object-gallery__tabs-wrap', // direct container of the tab content items
         // next: '.tabs-controls__next',       // next slide trigger
         // prev: '.tabs-controls__prev',       // previous slide trigger
 
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
-        dynamicHeight: true, // if true the height will dynamic and animated.
+        dynamicHeight: false, // if true the height will dynamic and animated.
         useAnimations: true, // disables animations.
 
         easing: 'ease', // http://julian.com/research/velocity/#easing
