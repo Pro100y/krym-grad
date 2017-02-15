@@ -5,6 +5,11 @@
     padding: 0 20px;
     width: calc(100% + 40px);
     background-image: linear-gradient(to bottom, #f8f8f8, #ffffff);
+    @media screen and (max-width: 980px) {
+        margin-left: -10px;
+        padding: 0 10px;
+        width: calc(100% + 20px);
+    }
 }
 
 .breadcrumbs__item {

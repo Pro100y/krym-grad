@@ -3758,6 +3758,7 @@ jQuery(document).ready(function ($) {
 
 
 
+
 jQuery(document).ready(function ($) {
 
    var newsCarousel = new Swiper('.news-carousel', {
@@ -3803,6 +3804,7 @@ jQuery(document).ready(function ($) {
 
 });
 
+
 jQuery(document).ready(function ($) {
 
     /*
@@ -3830,12 +3832,6 @@ jQuery(document).ready(function ($) {
         allowfullscreen: false,
         shadows: false,
         arrows: "always"
-    });
-    var fotorama = $fotoramaDiv.data('fotorama');
-    console.log(fotorama);
-
-    $('.object-gallery__title').on('click', function () {
-        fotorama.show('>');
     });
 
     /*
@@ -3972,6 +3968,7 @@ jQuery(document).ready(function ($) {
 
 
 
+
 jQuery(document).ready(function ($) {
 
     /*
@@ -4011,8 +4008,6 @@ jQuery(document).ready(function ($) {
     });
 
 });
-
-
 
 
 

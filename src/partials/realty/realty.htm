@@ -1,0 +1,76 @@
+{% macro realtyItem(title, city, image, text, area, cost) %}
+<figure class="realty__item">
+    <figcaption class="realty__item-caption">
+        <strong class="realty__item-title">{{ title | safe }}</strong>
+        <span class="realty__item-city">{{ city }}</span>
+    </figcaption>
+    <div
+        class = "realty__item-image"
+        style = "background-image: url(/assets/images/{{ image }});"
+    ></div>
+    <table class="realty__item-table">
+        <thead>
+            <tr>
+                <th>ОПИсание</th>
+                <th>площадь</th>
+                <th>стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ text | safe }}</td>
+                <td>
+                    <span class="realty__item-table-num">{{ area }}</span>
+                    <span class="realty__item-table-subnum">кв. метров</span>
+                </td>
+                <td>
+                    <span class="realty__item-table-num">{{ cost }}</span>
+                    <span class="realty__item-table-subnum">рублей</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+{% endmacro %}
+
+<!-- realty -->
+<section class="realty">
+
+    {{ realtyItem(
+        'ТЦ<br>красноармейский',
+        'ЯЛТА',
+        'promo-1.jpg',
+        'Геосинклиналь, с зачастую загипсованными породами, составляет межпластовый бентос. Денудация повсеместно покрывает недонасыщенный голоцен, что, однако, не уничтожило доледниковую переуглубленную гидросеть древних долин.',
+        '240',
+        '8 500 000'
+    ) }}
+
+    {{ realtyItem(
+        'Торгово-офисное помещение',
+        'симферополь',
+        'promo-1.jpg',
+        'Плита обогащает фитолитный корунд, где на поверхность выведены кристаллические структуры фундамента. Агрессивность подземных вод аккумулирует корунд. Минерализация локально слагает тектонический пролювий.',
+        '18 000',
+        '44 670 000'
+    ) }}
+
+    {{ realtyItem(
+        'ТЦ<br>красноармейский',
+        'ЯЛТА',
+        'promo-1.jpg',
+        'Геосинклиналь, с зачастую загипсованными породами, составляет межпластовый бентос.',
+        '240',
+        '8 500 000'
+    ) }}
+
+    {{ realtyItem(
+        'Торгово-офисное помещение',
+        'симферополь',
+        'promo-1.jpg',
+        'Плита обогащает фитолитный корунд, где на поверхность выведены кристаллические структуры фундамента. Агрессивность подземных вод аккумулирует корунд. Минерализация локально слагает тектонический пролювий. Плита обогащает фитолитный корунд, где на поверхность выведены кристаллические структуры фундамента.',
+        '18 000',
+        '44 670 000'
+    ) }}
+
+</section>
+<!-- /realty  -->
