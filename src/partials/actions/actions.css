@@ -4,6 +4,9 @@
     flex-direction: column;
     padding-bottom: 1rem;
     width: var(--gridSize3);
+    @media screen and (max-width: 1640px) {
+        width: calc((100% - var(--gridGutter)*2)/3);
+    }
 }
 
 .acions__header {
@@ -55,18 +58,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 1640px) {
+        padding-right: 64px;
+    }
 }
 
 .acions__item-date {
     flex-grow: 0;
     align-self: stretch;
-    margin-bottom: 19px;
+    margin-bottom: auto;
     color: #000000;
     font-size: 11px;
     line-height: 2.18;
 }
 
 .acions__item-title {
+    position: relative;
+    z-index: 1;
+    margin-top: 19px;
+    margin-bottom: auto;
     color: #000000;
     font-weight: 500;
     font-size: 22px;
@@ -78,6 +88,7 @@
     position: absolute;
     top: 50%;
     right: 2rem;
+    z-index: 0;
     max-width: 110px;
     max-height: 110px;
     transform: translateY(-50%);

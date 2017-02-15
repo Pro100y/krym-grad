@@ -4,4 +4,7 @@
     font-size: 26px;
     line-height: 1.38;
     width: var(--gridSize4);
+    @media screen and (max-width: 1640px) {
+       display: none;
+    }
 }

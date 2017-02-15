@@ -1,38 +1,43 @@
 .object-promo {
-    width: var(--gridSize10);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     display: flex;
     align-items: flex-end;
     padding: 88px 20px;
+    width: var(--gridSize10);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1640px) {
+        width: calc(100%/12*9);
+        padding-right: 176px;
+    }
 }
 
 .object-promo__title {
-    font-size: 36px;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: #ffffff;
     position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 36px;
     &::before {
-        content: '';
-        width: 140px;
-        height: 5px;
-        background-color: #ffffff;
-        display: block;
         position: absolute;
         top: -1rem;
         left: 0;
+        display: block;
+        width: 140px;
+        height: 5px;
+        background-color: #ffffff;
+        content: '';
     }
 }
 
 .object-promo__date {
     position: absolute;
-    bottom: 61px;
     right: 339px;
+    bottom: 61px;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     padding: 25px;
     width: 140px;
     height: 140px;
@@ -42,21 +47,26 @@
     background-position: center 30px;
     background-repeat: no-repeat;
     color: #ffffff;
-    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.45;
-    text-transform: uppercase;
-    text-align: center;
+    @media screen and (max-width: 1640px) {
+        top: 65px;
+        right: 18px;
+        bottom: auto;
+    }
 }
 
 .object-promo__product-link {
     position: absolute;
-    bottom: 61px;
     right: 134px;
+    bottom: 61px;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     padding: 25px;
     width: 140px;
     height: 140px;
@@ -66,11 +76,14 @@
     background-position: center 30px;
     background-repeat: no-repeat;
     color: #ffffff;
-    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.45;
-    text-transform: uppercase;
-    text-align: center;
+    @media screen and (max-width: 1640px) {
+        right: 18px;
+        bottom: 65px;
+    }
 }

@@ -7,11 +7,17 @@ jQuery(document).ready(function ($) {
         prevButton: '.news-carousel__nav-btn--prev',
         slidesPerView: 3,
         paginationClickable: true,
-        spaceBetween: 14,
+        spaceBetween: 20,
         freeMode: true,
         speed: 1000,
         loop: false,
-        autoplay: 3000
+        autoplay: 3000,
+        autoHeight: false,
+        breakpoints: {
+            1640: {
+                slidesPerView: 2
+            }
+        }
 
    });
 
@@ -34,11 +40,10 @@ jQuery(document).ready(function ($) {
 
         $(node).height(maxColHeight);
     }
+
     normalizeHeight('.news-carousel__item-title');
-    normalizeHeight('.news-carousel__item');
     $(window).resize(function () {
         normalizeHeight('.news-carousel__item-title');
-        normalizeHeight('.news-carousel__item');
     });
 
 });

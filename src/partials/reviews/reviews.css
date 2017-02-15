@@ -2,6 +2,9 @@
     position: relative;
     padding: 30px 60px;
     width: calc(var(--gridSize7) - var(--gridGutter));
+    @media screen and (max-width: 1640px) {
+       width: 100%;
+    }
     &::after {
         position: absolute;
         top: -10px;

@@ -9,6 +9,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 1640px) {
+        width: calc(100%/12*3);
+    }
 }
 
 .object-menu__logo {
@@ -45,7 +48,7 @@
     color: #252525;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 36px;
+    padding: 10px 0;
     width: max-content;
 }
 
@@ -82,9 +85,9 @@
 
 .object-menu__phone {
     font-family: GothamProBold;
-	font-size: 18px;
-	font-weight: bold;
-	color: #242525;
+    font-size: 18px;
+    font-weight: bold;
+    color: #242525;
     margin-bottom: 9px;
     display: block;
 }
@@ -92,8 +95,8 @@
 .object-menu__worktime {
     display: block;
     text-transform: uppercase;
-	font-size: 13px;
-	color: #000000;
+    font-size: 13px;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -101,18 +104,18 @@
     margin-bottom: 2rem;
     display: block;
     font-size: 13px;
-	color: #9c765a;
+    color: #9c765a;
 }
 
 .object-menu__callback {
     font-family: GothamProBold;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
     text-transform: uppercase;
     white-space: nowrap;
     padding: 14px;
     border-radius: 4px;
-	background-color: #0062cd;
+    background-color: #0062cd;
 }

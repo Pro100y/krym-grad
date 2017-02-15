@@ -8,7 +8,7 @@
     padding: 54px 0 54px 60px;
     background-image: url(../images/object-text-1.svg);
     background-position: left center;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     color: #000000;
     font-size: 26px;

@@ -3,6 +3,11 @@
     width: var(--gridSize3);
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1640px) {
+       width: 100%;
+       flex-direction: row;
+    }
 }
 
 .sales__item {
@@ -16,6 +21,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 1640px) {
+       height: 164px;
+       width: calc((100% - var(--gridGutter)*2)/3);
+    }
 }
 
 .sales__item-name {

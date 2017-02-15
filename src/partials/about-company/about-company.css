@@ -6,6 +6,9 @@
     padding-left: 130px;
     padding-right: 60px;
     padding-top: 34px;
+    @media screen and (max-width: 1640px) {
+       width: calc(100% - 390px);
+    }
 }
 
 .about-company__title {

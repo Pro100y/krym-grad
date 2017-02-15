@@ -10,9 +10,15 @@
     &:nth-child(1) {
         padding-right: var(--gridGutter);
         width: var(--gridSize4);
+        @media screen and (max-width: 1640px) {
+           width: auto;
+        }
     }
     &:nth-child(2) {
         flex-grow: 1;
+        @media screen and (max-width: 1640px) {
+           flex-grow: 0;
+        }
     }
 }
 
@@ -23,6 +29,9 @@
 .main-menu__link {
     @nest .main-menu__list-item:not(:last-child) & {
         padding-right: 30px;
+        @media screen and (max-width: 1640px) {
+           padding-right: 20px;
+        }
     }
     @nest .main-menu__list-item--active &,
     &:hover {

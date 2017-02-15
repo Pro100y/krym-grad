@@ -8,6 +8,9 @@
     margin-bottom: 57px;
     width: 25%;
     padding: 0 1rem;
+    @media screen and (max-width: 1640px) {
+       width: calc(100% / 3);
+    }
 }
 
 .sertificates__item-image-wrap {
@@ -28,4 +31,7 @@
     font-size: 14px;
 	line-height: 1.5;
     text-align: center;
+    @media screen and (max-width: 1640px) {
+       text-align: left;
+    }
 }

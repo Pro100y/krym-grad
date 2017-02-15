@@ -9,10 +9,17 @@
     color: #ffffff;
     text-transform: uppercase;
     font-family: GothamProBlack;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1640px) {
+       width: 100%;
+    }
     &--inner {
         padding: 46px 390px 32px 20px;
         min-height: 480px;
         width: 100%;
+        @media screen and (max-width: 1640px) {
+           padding-right: 300px;
+        }
     }
 }
 
@@ -83,6 +90,9 @@
     top: 78px;
     right: 145px;
     widows: 245px;
+    @media screen and (max-width: 1640px) {
+       right: 55px;
+    }
 }
 
 .promo__info-date {

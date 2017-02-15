@@ -4,6 +4,9 @@
     color: #000000;
     font-size: 13px;
     line-height: 1.23;
+    @media screen and (max-width: 1640px) {
+       width: calc((100% - var(--gridGutter))/12*4)
+    }
     & tbody {}
     & tr {
         border-bottom: 1px solid #fff;

@@ -1,5 +1,8 @@
 .object-documents {
-    width: var(--gridSize4);
+    width: calc((100% - var(--gridGutter))/12*4);
+    @media screen and (max-width: 1640px) {
+       width: 100%;
+    }
 }
 
 .object-documents__title {
@@ -7,6 +10,9 @@
     color: #242525;
     font-weight: 300;
     font-size: 48px;
+    @media screen and (max-width: 1640px) {
+       margin-bottom: 80px;
+    }
 }
 
 .object-documents__items-wrap {
@@ -32,6 +38,10 @@
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 1.29;
+    min-height: 32px;
+    @media screen and (max-width: 1640px) {
+       width: calc(100% / 3);
+    }
     &--icon {
         &--1 {
             background-image: url(../images/object-documents-1.png);
