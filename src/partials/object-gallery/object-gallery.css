@@ -1,6 +1,6 @@
 .object-gallery {
     width: calc((100% - var(--gridGutter))/12*7);
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: 100%;
         margin-bottom: 80px;
     }

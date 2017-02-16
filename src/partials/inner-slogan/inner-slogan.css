@@ -8,7 +8,12 @@
     background-repeat: no-repeat;
     padding: 21px 0 40px;
     margin-bottom: 94px;
-    @media screen and (max-width: 1640px) {
-       width: calc((100% - var(--gridGutter))/12*9);
+    @media screen and (--tablet) {
+        width: calc((100% - var(--gridGutter))/12*9);
+    }
+    @media screen and (--mobile) {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }

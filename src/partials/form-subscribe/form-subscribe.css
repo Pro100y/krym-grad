@@ -2,8 +2,12 @@
     width: calc(var(--gridSize3) - var(--gridGutter));
     padding: 25px 64px 25px 25px;
     background-color: rgba(0, 98, 205, 0.9);
-    @media screen and (max-width: 1640px) {
+    margin-bottom: 100px;
+    @media screen and (--tablet) {
        width: 360px;
+    }
+    @media screen and (--mobile) {
+        display: none;
     }
 }
 

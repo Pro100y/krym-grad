@@ -1,7 +1,14 @@
 jQuery(document).ready(function ($) {
 
-   var newsCarousel = new Swiper('.news-carousel', {
-
+    /*
+    |--------------------------------------------------------------------------
+    | SWIPER
+    |--------------------------------------------------------------------------
+    |
+    | Конфигурация слайдера
+    |
+    */
+    var newsCarouselConfig = {
         paginationClickable: true,
         nextButton: '.news-carousel__nav-btn--next',
         prevButton: '.news-carousel__nav-btn--prev',
@@ -9,17 +16,24 @@ jQuery(document).ready(function ($) {
         paginationClickable: true,
         spaceBetween: 20,
         freeMode: true,
+        freeModeSticky: true,
         speed: 1000,
         loop: false,
         autoplay: 3000,
         autoHeight: false,
+        observer: true,
         breakpoints: {
             1640: {
                 slidesPerView: 2
+            },
+            980: {
+                slidesPerView: 1,
+                autoplay: false
             }
         }
+    }
 
-   });
+    var newsCarousel = new Swiper('.news-carousel', newsCarouselConfig);
 
     /**
      * Выравнивание высот

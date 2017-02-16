@@ -7,7 +7,7 @@
     flex-shrink: 0;
     min-height: 180px;
     width: 100%;
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
         flex-wrap: wrap;
     }
     &:not(:last-child) {
@@ -21,10 +21,10 @@
     padding: 20px 10px;
     width: 260px;
     background-color: #0062cd;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: var(--gridSize4);
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
         width: 100%;
     }
 }
@@ -61,10 +61,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: var(--gridSize3);
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
         width: 100%;
         height: 180px;
     }
@@ -76,10 +76,10 @@
     border-collapse: collapse;
     border-right: solid 1px #979797;
     border-bottom: solid 1px #979797;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: var(--gridSize5);
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
         width: 100%;
         border-top: solid 1px #979797;
         border-left: solid 1px #979797;
@@ -96,11 +96,11 @@
             font-weight: 500;
             font-size: 12px;
             font-family: GothamProMedium;
-            @media screen and (max-width: 1640px) {
+            @media screen and (--tablet) {
                 padding: 22px 1rem;
             }
             &:first-child {
-                @media screen and (max-width: 1640px) {
+                @media screen and (--tablet) {
                     display: none;
                 }
             }
@@ -112,12 +112,12 @@
             color: #252525;
             font-size: 13px;
             line-height: 1.38;
-            @media screen and (max-width: 1640px) {
+            @media screen and (--tablet) {
                 padding: 2rem 1rem 22px 1rem;
             }
             &:first-child {
                 width: 520px;
-                @media screen and (max-width: 1640px) {
+                @media screen and (--tablet) {
                     display: none;
                 }
             }
@@ -133,7 +133,7 @@
     font-weight: 500;
     font-size: 34px;
     font-family: GothamProMedium;
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
        margin-bottom: 8px;
        font-size: 22px;
     }

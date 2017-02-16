@@ -4,12 +4,20 @@
     justify-content: flex-start;
     width: 100%;
     background: repeating-linear-gradient( 0deg, #fff, #fff 20px, #fcfcfc 20px, #fcfcfc 249px, #fff 249px, #fff 269px);
+    @media screen and (--mobile) {
+        background: repeating-linear-gradient( 0deg, #fff, #fff 20px, #fcfcfc 20px, #fcfcfc 219px, #fff 219px, #fff 239px);
+    }
 }
 
 .inner-partners__item {
     margin: 0 50px 30px;
-    @media screen and (max-width: 1640px) {
+    width: 220px;
+    @media screen and (--tablet) {
         margin: 0 46px 30px;
+    }
+    @media screen and (--mobile) {
+        width: 140px;
+        margin: 0 5px 2rem;
     }
 }
 
@@ -18,10 +26,14 @@
     align-items: center;
     justify-content: center;
     padding: 40px;
-    width: 220px;
+    width: 100%;
     height: 190px;
     background-color: #ffffff;
     box-shadow: inset 0 3px 0 0 #e3e3e3;
+    @media screen and (--mobile) {
+        padding: 10px;
+        height: 160px;
+    }
 }
 
 .inner-partners__item-image {

@@ -4,9 +4,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        width: 100%;
        flex-direction: row;
+       flex-wrap: wrap;
     }
 }
 
@@ -21,9 +22,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        height: 164px;
        width: calc((100% - var(--gridGutter)*2)/3);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        height: 100px;
+        background-position: center top;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -36,6 +45,9 @@
     align-self: flex-start;
     display: block;
     width: 100%;
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .sales__item-title {
@@ -47,6 +59,9 @@
     display: block;
     width: 100%;
     margin-bottom: -2em;
+    @media screen and (--mobile) {
+        margin-bottom: 0;
+    }
 }
 
 .sales__item-cost {
@@ -58,4 +73,7 @@
     align-self: flex-end;
     display: block;
     width: 100%;
+    @media screen and (--mobile) {
+        font-size: 36px;
+    }
 }

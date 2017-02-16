@@ -1,7 +1,7 @@
 {
     "background_color": "#f08b23",
-    "name": "Центр Котлов",
-    "short_name": "Центр Котлов",
+    "name": "Крым-град",
+    "short_name": "Крым-град",
     "display": "standalone",
     "icons": [{
         "src": "/assets/icons/apple-touch-icon-144x144--site-1.png",

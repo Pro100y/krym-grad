@@ -6,8 +6,16 @@
     padding-left: 130px;
     padding-right: 60px;
     padding-top: 34px;
-    @media screen and (max-width: 1640px) {
+    margin-bottom: 100px;
+    @media screen and (--tablet) {
        width: calc(100% - 390px);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 24px;
+        margin-bottom: 40px;
     }
 }
 

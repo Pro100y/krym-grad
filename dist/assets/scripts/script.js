@@ -3756,14 +3756,28 @@ jQuery(document).ready(function ($) {
 });
 
 
+jQuery(document).ready(function ($) {
 
+    $('.header__menu-button').click(function () {
+        $('.header__menu-button').toggleClass('header__menu-button--active');
+        $('.main-menu__lists-wrap').toggleClass('main-menu__lists-wrap--active');
+    });
+
+});
 
 
 
 jQuery(document).ready(function ($) {
 
-   var newsCarousel = new Swiper('.news-carousel', {
-
+    /*
+    |--------------------------------------------------------------------------
+    | SWIPER
+    |--------------------------------------------------------------------------
+    |
+    | Конфигурация слайдера
+    |
+    */
+    var newsCarouselConfig = {
         paginationClickable: true,
         nextButton: '.news-carousel__nav-btn--next',
         prevButton: '.news-carousel__nav-btn--prev',
@@ -3771,17 +3785,24 @@ jQuery(document).ready(function ($) {
         paginationClickable: true,
         spaceBetween: 20,
         freeMode: true,
+        freeModeSticky: true,
         speed: 1000,
         loop: false,
         autoplay: 3000,
         autoHeight: false,
+        observer: true,
         breakpoints: {
             1640: {
                 slidesPerView: 2
+            },
+            980: {
+                slidesPerView: 1,
+                autoplay: false
             }
         }
+    }
 
-   });
+    var newsCarousel = new Swiper('.news-carousel', newsCarouselConfig);
 
     /**
      * Выравнивание высот
@@ -4015,7 +4036,24 @@ jQuery(document).ready(function ($) {
 });
 
 
+jQuery(document).ready(function ($) {
 
+   var sertificatesSlideshow = new Swiper('.sertificates__slideshow', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        initialSlide: 3,
+        speed: 500,
+        freeMode: true,
+        freeModeSticky: true,
+        breakpoints: {
+            980: {
+                spaceBetween: 10,
+            }
+        }
+    });
+
+});
 
 
 //# sourceMappingURL=script.js.map

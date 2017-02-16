@@ -2,8 +2,13 @@
     position: relative;
     padding: 30px 60px;
     width: calc(var(--gridSize7) - var(--gridGutter));
-    @media screen and (max-width: 1640px) {
-       width: 100%;
+    margin-bottom: 100px;
+    @media screen and (--tablet) {
+        width: 100%;
+    }
+    @media screen and (--mobile) {
+        padding: 20px 10px;
+        margin-bottom: 40px;
     }
     &::after {
         position: absolute;
@@ -45,18 +50,28 @@
     letter-spacing: 1px;
     font-size: 22px;
     font-family: GothamProBold;
+    @media screen and (--mobile) {
+        font-size: 16px;
+    }
 }
 
 .reviews__nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 34px;
+    overflow-y: auto;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
     width: 100%;
     list-style: none;
+    @media screen and (--mobile) {
+        margin-left: -10px;
+        width: calc(100% + 20px);
+    }
 }
 
 .reviews__nav-item {
     position: relative;
+    flex-shrink: 0;
     width: 110px;
     height: 110px;
     border: 5px solid transparent;
@@ -67,6 +82,9 @@
     background-repeat: no-repeat;
     cursor: pointer;
     transition-duration: .5s;
+    @media screen and (--mobile) {
+        margin: 0 10px;
+    }
     &.active {
         border-color: #ffd101;
         &::before {
@@ -102,11 +120,15 @@
     font-size: 16px;
     font-family: GothamPro;
     line-height: 1.5;
+    @media screen and (--mobile) {
+        font-size: 14px;
+    }
     & p {
         margin-bottom: 1em;
     }
 }
 
 .reviews__tab-name {
+    text-transform: uppercase;
     font-family: GothamProBold;
 }

@@ -17,6 +17,9 @@
 .grid {
     position: relative;
     width: 100%;
+    @media screen and (--mobile) {
+       background-image: none !important;
+    }
     &--type {
         &--main {
             background-image: url(../images/grid-1.jpg), url(../images/grid-2.jpg);
@@ -40,10 +43,10 @@
     margin: 0 auto;
     padding: 0 20px;
     width: 1640px;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: 980px;
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
         padding: 0 10px;
         width: 320px;
     }
@@ -69,7 +72,7 @@
         &--c-fm-fs {
             @nest [data-layout=main] & {
                 padding: 96px 0 51px;
-                @media screen and (max-width: 980px) {
+                @media screen and (--mobile) {
                     padding: 2rem 0;
                 }
             }
@@ -77,10 +80,10 @@
             padding: 2rem 0;
         }
         &--fs-ac-s {
-            padding-bottom: 100px;
+
         }
         &--nc-a {
-            padding-bottom: 84px;
+           /* padding-bottom: 84px;*/
         }
         &--og-od {
             padding: 130px 0 140px;
@@ -92,7 +95,7 @@
         }
         &--p-s {        }
         &--r-p {
-            padding-bottom: 100px;
+
         }
     }
 }

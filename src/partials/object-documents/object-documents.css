@@ -1,6 +1,6 @@
 .object-documents {
     width: calc((100% - var(--gridGutter))/12*4);
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        width: 100%;
     }
 }
@@ -10,7 +10,7 @@
     color: #242525;
     font-weight: 300;
     font-size: 48px;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        margin-bottom: 80px;
     }
 }
@@ -39,7 +39,7 @@
     font-family: GothamProBold;
     line-height: 1.29;
     min-height: 32px;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        width: calc(100% / 3);
     }
     &--icon {

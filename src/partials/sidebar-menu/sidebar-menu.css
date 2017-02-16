@@ -4,8 +4,12 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), inset 0 5px 0 0 #9c765a;
     padding: 20px;
     margin-bottom: 94px;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        width: calc((100% - var(--gridGutter))/12*3);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
 

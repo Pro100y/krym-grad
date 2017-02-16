@@ -221,6 +221,11 @@ let config = {
         "wrap_attributes":             "auto",
         "wrap_attributes_indent_size": 4,
         "end_with_newline":            false
+    },
+    uglify: {
+        compress: {
+            drop_console: true
+        }
     }
 
 }
@@ -438,7 +443,7 @@ gulp.task('js--build', function () {
     return gulp.src(srcPath)
         .pipe(concat('script.js'))
         //.pipe(babel(config.babel))
-        .pipe(uglify())
+        .pipe(uglify(config.uglify))
         .pipe(gulp.dest(distPath));
 
 });

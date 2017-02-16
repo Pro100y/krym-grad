@@ -2,7 +2,7 @@
     font-size: 48px;
 	color: #242525;
     padding: 20px 0 40px;
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
        font-size: 30px;
     }
 }

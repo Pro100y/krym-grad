@@ -12,13 +12,13 @@
     <meta property="og:description" content="Здесь будет описание содержимого">
     <meta property="og:image" content="/images/theme-preview.png">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="Центр Котлов">
+    <meta property="og:site_name" content="Крым-град">
     <meta property="og:title" content="Главная страница">
     <meta property="og:type" content="website">
     <meta property="og:url" content="/pages/home.html">
     <link href="/assets/styles/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
-    <meta name="application-name" content="Центр Котлов">
+    <meta name="application-name" content="Крым-град">
     <meta name="msapplication-TileColor" content="#f08b23">
     <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
     <meta name="msapplication-square70x70logo" content="/assets/icons/mstile-70x70.png">
@@ -61,39 +61,42 @@
         </div>
     </address>
                 <a href="#" class="header__filter-button">подобрать квартиру</a>
+                <button class="header__menu-button"></button>
             </header>
             <!-- /header  -->
         </div>
         <div class="grid__container grid__container--type--main">
             <!-- main-menu -->
             <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__list-item main-menu__list-item--active">
-                        <a href="#" class="main-menu__link">НАШИ ОБЪЕКТЫ</a>
-                    </li>
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">коммерческая недвижимость</a>
-                    </li>
-                </ul>
-                <ul class="main-menu__list">
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">о компании</a>
-                    </li>
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">Новости</a>
-                    </li>
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">акции</a>
-                    </li>
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">Покупка жилья</a>
-                    </li>
-                </ul>
-                <ul class="main-menu__list">
-                    <li class="main-menu__list-item">
-                        <a href="#" class="main-menu__link">Контакты</a>
-                    </li>
-                </ul>
+                <div class="main-menu__lists-wrap">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__list-item main-menu__list-item--active">
+                            <a href="#" class="main-menu__link">НАШИ ОБЪЕКТЫ</a>
+                        </li>
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">коммерческая недвижимость</a>
+                        </li>
+                    </ul>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">о компании</a>
+                        </li>
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">Новости</a>
+                        </li>
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">акции</a>
+                        </li>
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">Покупка жилья</a>
+                        </li>
+                    </ul>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__list-item">
+                            <a href="#" class="main-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <!-- /main-menu  -->
             <div class="grid__row grid__row--positions--p-s">
@@ -141,77 +144,95 @@
                         </nav>
                         <a href="#" class="news-carousel__archive">архив новостей</a>
                     </header>
+                    <div class="news-carousel__items-wrap news-carousel__items-wrap--mobile">
+                        <a class="news-carousel__item swiper-slide" href="#">
+                            <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                            <div class="news-carousel__item-caption">
+                                <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">ЖК “ЗЕНИТ”</p>
+                                <strong class="news-carousel__item-title">ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику</strong>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="news-carousel__item swiper-slide" href="#">
+                            <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
+                            <div class="news-carousel__item-caption">
+                                <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">Новости компании</p>
+                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <div class="news-carousel__items-wrap swiper-wrapper">
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">ЖК “ЗЕНИТ”</p>
                                 <strong class="news-carousel__item-title">ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
                             </div>
                         </a>
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">Новости компании</p>
                                 <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
                             </div>
                         </a>
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">ЖК “ЗЕНИТ”</p>
                                 <strong class="news-carousel__item-title">Внимание клиентов, желающих сделать теплые полы в квартирах</strong>
-                                <p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>
+                                <div class="news-carousel__item-text">
+                                    <p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>
+                                </div>
                             </div>
                         </a>
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
-                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                <p class="news-carousel__item-category">Новости компании</p>
+                                <strong class="news-carousel__item-title">ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику</strong>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
                             </div>
                         </a>
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
+                                <p class="news-carousel__item-category">ЖК “ЗЕНИТ”</p>
                                 <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                <div class="news-carousel__item-text">
+                                    <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                </div>
                             </div>
                         </a>
                         <a class="news-carousel__item swiper-slide" href="#">
                             <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
+                            <div class="news-carousel__item-caption">
                                 <time class="news-carousel__item-date">12/01/16</time>
-                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-                            </div>
-                        </a>
-                        <a class="news-carousel__item swiper-slide" href="#">
-                            <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
-                                <time class="news-carousel__item-date">12/01/16</time>
-                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-                            </div>
-                        </a>
-                        <a class="news-carousel__item swiper-slide" href="#">
-                            <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
-                                <time class="news-carousel__item-date">12/01/16</time>
-                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-                            </div>
-                        </a>
-                        <a class="news-carousel__item swiper-slide" href="#">
-                            <img alt="" class="news-carousel__item-image" src="/assets/images/promo-1.jpg" data-fix--ie--object-fit>
-                            <div class="news-carousel__item-text-wrap">
-                                <time class="news-carousel__item-date">12/01/16</time>
-                                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
+                                <p class="news-carousel__item-category">ЖК “ЗЕНИТ”</p>
+                                <strong class="news-carousel__item-title">Внимание клиентов, желающих сделать теплые полы в квартирах</strong>
+                                <div class="news-carousel__item-text">
+                                    <p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>
+                                </div>
                             </div>
                         </a>
                     </div>

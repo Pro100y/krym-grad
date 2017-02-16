@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: calc(100%/12*3);
     }
 }

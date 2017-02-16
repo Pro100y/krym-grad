@@ -1,3 +1,20 @@
+{% macro newsCarouselItem(category, title, text) %}
+<a class="news-carousel__item swiper-slide" href="#">
+    <img
+        alt   = ""
+        class = "news-carousel__item-image"
+        src   = "/assets/images/promo-1.jpg"
+        data-fix--ie--object-fit
+    >
+    <div class="news-carousel__item-caption">
+        <time class="news-carousel__item-date">12/01/16</time>
+        <p class="news-carousel__item-category">{{ category }}</p>
+        <strong class="news-carousel__item-title">{{ title }}</strong>
+        <div class="news-carousel__item-text">{{ text | safe }}</div>
+    </div>
+</a>
+{% endmacro %}
+
 <!-- news-carousel -->
 <section class="news-carousel swiper-container">
 
@@ -10,122 +27,59 @@
         <a href="#" class="news-carousel__archive">архив новостей</a>
     </header>
 
+    <div class="news-carousel__items-wrap news-carousel__items-wrap--mobile">
+
+        {{ newsCarouselItem(
+            'ЖК “ЗЕНИТ”',
+            'ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
+
+        {{ newsCarouselItem(
+            'Новости компании',
+            'В основание теннисного корта залили 300 кубометров бетона',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
+
+    </div>
+
     <div class="news-carousel__items-wrap swiper-wrapper">
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">Внимание клиентов, желающих сделать теплые полы в квартирах</strong>
-                <p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'ЖК “ЗЕНИТ”',
+            'ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'Новости компании',
+            'В основание теннисного корта залили 300 кубометров бетона',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'ЖК “ЗЕНИТ”',
+            'Внимание клиентов, желающих сделать теплые полы в квартирах',
+            '<p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>'
+        ) }}
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'Новости компании',
+            'ПроектПроект Проект Проект “Прибрежный” сдан в эксплуатацию согласно графику',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'ЖК “ЗЕНИТ”',
+            'В основание теннисного корта залили 300 кубометров бетона',
+            '<p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>'
+        ) }}
 
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
-
-        <a class="news-carousel__item swiper-slide" href="#">
-            <img
-                alt = "" class = "news-carousel__item-image"
-                src = "/assets/images/promo-1.jpg"
-                data-fix--ie--object-fit
-            >
-            <div class="news-carousel__item-text-wrap">
-                <time class="news-carousel__item-date">12/01/16</time>
-                <strong class="news-carousel__item-title">В основание теннисного корта залили 300 кубометров бетона</strong>
-                <p>В рамках реализации проекта строительства современного теннисного корта для резиденции «Крымский бриз», в котором наша компания выступает генеральным подрядчиком, завершена заливка фундамента.</p>
-            </div>
-        </a>
+        {{ newsCarouselItem(
+            'ЖК “ЗЕНИТ”',
+            'Внимание клиентов, желающих сделать теплые полы в квартирах',
+            '<p>Питание прогиба исходным материалом прекращает плейстоцен. Варва длительно сдвигает девонский сброс. Трансгрессия, основываясь большей частью на сейсмических данных, систематически поднимает грабен. </p>'
+        ) }}
 
     </div>
 

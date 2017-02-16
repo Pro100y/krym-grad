@@ -1,12 +1,17 @@
 .news-carousel {
     position: relative;
-    margin-left: -4px;
     display: flex;
     flex-direction: column;
+    margin-left: -4px;
     padding: 0 4px 1rem;
+    margin-bottom: 84px;
     width: calc(calc(100%/12*9) + 8px - var(--gridGutter));
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter)*2)/3*2 + var(--gridGutter) + 8px);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
@@ -32,6 +37,9 @@
     height: 30px;
     border: solid 1px #d9d9d9;
     border-radius: 15px;
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .news-carousel__nav-btn {
@@ -60,6 +68,16 @@
     display: flex;
     width: 100%;
     height: 100%;
+    transition-timing-function: ease !important;
+    @media screen and (--mobile) {
+        display: none;
+    }
+    &--mobile {
+        display: none;
+        @media screen and (--mobile) {
+            display: block;
+        }
+    }
 }
 
 .news-carousel__item {
@@ -68,6 +86,12 @@
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0s;
+    @media screen and (--mobile) {
+        height: auto;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .news-carousel__item-image {
@@ -75,15 +99,14 @@
     height: 180px;
     object-position: center;
     object-fit: cover;
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
-.news-carousel__item-text-wrap {
+.news-carousel__item-caption {
     padding: 10px;
-    & p {
-        color: #000000;
-        font-size: 14px;
-        line-height: 1.5;
-    }
+    width: 100%;
 }
 
 .news-carousel__item-date {
@@ -92,6 +115,22 @@
     color: #000000;
     font-size: 11px;
     line-height: 2.18;
+    @media screen and (--mobile) {
+        margin-bottom: 0;
+    }
+}
+
+.news-carousel__item-category {
+    display: none;
+    color: #0062cd;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: GothamProBold;
+    line-height: 2.4;
+    @media screen and (--mobile) {
+        display: block;
+    }
 }
 
 .news-carousel__item-title {
@@ -102,4 +141,19 @@
     font-size: 20px;
     font-family: GothamProMedium;
     line-height: 1.2;
+    @media screen and (--mobile) {
+        margin-bottom: 0;
+    }
+}
+
+.news-carousel__item-text {
+    width: 100%;
+    @media screen and (--mobile) {
+        display: none;
+    }
+    & p {
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }

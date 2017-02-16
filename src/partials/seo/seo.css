@@ -3,10 +3,10 @@
     padding: 125px var(--gridSize1) 75px;
     width: 100%;
     border-bottom: 10px solid #3f3f3f;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         padding: 125px 0 75px var(--gridSize1);
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (--mobile) {
        display: none;
     }
 }
@@ -20,7 +20,7 @@
     background-clip: content-box;
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        width: 40%;
     }
     &::before {
@@ -50,7 +50,7 @@
     font-family: GothamProBold;
     line-height: 1.17;
     transform: translateY(-40%);
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
         left: -78px;
     }
 }
@@ -60,7 +60,7 @@
     color: #ffffff;
     font-size: 13px;
     line-height: 1.46;
-    @media screen and (max-width: 1640px) {
+    @media screen and (--tablet) {
        padding-bottom: 0;
     }
     & p:not(:last-child) {
