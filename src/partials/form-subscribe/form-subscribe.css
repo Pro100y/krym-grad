@@ -1,10 +1,15 @@
 .form-subscribe {
-    width: calc(var(--gridSize3) - var(--gridGutter));
+    @nest [data-layout=news] & {
+        width: calc((100% - var(--gridGutter))/12*3);
+        align-self: flex-start;
+        margin-top: 43px;
+    }
+    width: calc((100% - var(--gridGutter)*2)/12*3);
     padding: 25px 64px 25px 25px;
     background-color: rgba(0, 98, 205, 0.9);
     margin-bottom: 100px;
     @media screen and (--tablet) {
-       width: 360px;
+        width: 360px;
     }
     @media screen and (--mobile) {
         display: none;

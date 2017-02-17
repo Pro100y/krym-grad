@@ -1,5 +1,5 @@
 .about-company {
-    width: calc(var(--gridSize5) - var(--gridGutter));
+    width: calc((100% - var(--gridGutter)*2)/12*5);
     background-image: url(../images/about-company-1.svg);
     background-position: 30px 0;
     background-repeat: no-repeat;
