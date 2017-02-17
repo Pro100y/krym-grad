@@ -3726,6 +3726,38 @@ jQuery(document).ready(function ($) {
 
 
 
+
+jQuery(document).ready(function ($) {
+
+   /*
+    |--------------------------------------------------------------------------
+    | Fotorama
+    |--------------------------------------------------------------------------
+    |
+    | Конфиг плагина фотогалареи
+    |
+    */
+
+    var $fotoramaDiv = $('.commercial-object-gallery').fotorama({
+        nav: 'thumbs',
+        thumbwidth: 136,
+        thumbheight: 80,
+        width: '100%',
+        height: '530px',
+        margin: 10,
+        thumbmargin: 10,
+        navposition: 'bottom',
+        fit: 'cover',
+        transitionduration: 1000,
+        loop: false,
+        thumbborderwidth: 5,
+        allowfullscreen: false,
+        shadows: false,
+        arrows: "always"
+    });
+
+});
+
 jQuery(document).ready(function ($) {
 
     /**
@@ -3764,6 +3796,8 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+
 
 
 
@@ -3993,6 +4027,21 @@ jQuery(document).ready(function ($) {
 
 
 
+jQuery(document).ready(function ($) {
+
+   var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        nextButton: '.partners-carousel__button--next',
+        prevButton: '.partners-carousel__button--prev',
+        freeMode: true,
+        freeModeSticky: true,
+        speed: 1000,
+        loop: true,
+        autoplay: 3000,
+    });
+
+});
 
 
 jQuery(document).ready(function ($) {

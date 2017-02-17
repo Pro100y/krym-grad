@@ -1,0 +1,61 @@
+{% set layout = 'about-company' %}
+
+{# == #}
+
+<!DOCTYPE html>
+
+<html lang="ru" data-layout="{{ layout }}" data-page="{{ page }}">
+
+    <head>
+
+        {% include "partials/head.htm" %}
+
+    </head>
+
+    <body>
+
+        <div class="grid grid--type--inner">
+            <div class="grid__container">
+
+                {% block header %}{% endblock %}
+
+            </div>
+            <div class="grid__container grid__container--type--inner">
+
+                {% block main_menu %}{% endblock %}
+                {% block breadcrumbs %}{% endblock %}
+                {% block page_title %}{% endblock %}
+
+                <div class="grid__row grid__row--postitions--sm-is">
+
+                    {% block sidebar_menu %}{% endblock %}
+                    {% block inner_slogan %}{% endblock %}
+
+                </div>
+
+                {% block letter %}{% endblock %}
+                {% block misssion %}{% endblock %}
+                {% block advantages %}{% endblock %}
+                {% block partners_carousel %}{% endblock %}
+                {% block reviews %}{% endblock %}
+
+            </div>
+        </div>
+
+        <div class="grid grid--type--footer">
+            <div class="grid__container">
+                <div class="grid__row grid__row--positions--c-fm-fs">
+
+                    {% block copy %}{% endblock %}
+                    {% block footer_menu %}{% endblock %}
+                    {% block footer_social %}{% endblock %}
+
+                </div>
+            </div>
+        </div>
+
+        {% include "partials/scripts.htm" %}
+
+    </body>
+
+</html>

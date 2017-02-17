@@ -62,7 +62,7 @@
             padding: 10px 5px;
         }
     }
-    &--handheld {
+    &--mobile {
         display: none;
         @media screen and (--tablet) {
             display: block;

@@ -1,0 +1,30 @@
+.commercial-object-gallery {
+    width: calc((100% - var(--gridGutter))/12*7);
+    margin-bottom: 40px;
+    @media screen and (--tablet) {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    & .fotorama__thumb-border {
+        border-color: #9c765a !important;
+    }
+    & .fotorama__nav {
+        margin-top: -100px;
+        padding: 0 10px;
+        text-align: left;
+    }
+    & .fotorama__thumb {
+        border: 1px solid #252525;
+    }
+    & .fotorama__arr {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &--prev {
+            background-image: url(../images/commercial-object-gallery-1.svg);
+        }
+        &--next {
+            background-image: url(../images/commercial-object-gallery-2.svg);
+        }
+    }
+}

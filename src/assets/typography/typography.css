@@ -102,11 +102,8 @@
     color: var(--colorText);
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
-    & * {
-        font-family: Arial;
-    }
-    & h1,
+    line-height: 1.71;
+    /*& h1,
     & h2,
     & h3,
     & h4,
@@ -117,7 +114,7 @@
         font-weight: normal;
         font-size: 24px;
         margin-bottom: 1em;
-    }
+    }*/
     & h1 {
         font-size: 48px;
     }

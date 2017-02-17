@@ -1,0 +1,43 @@
+.letter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.letter__image {
+    width: calc((100% - var(--gridGutter))/12*4);
+    height: 360px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.letter__caption {
+    width: calc((100% - var(--gridGutter))/12*8);
+    padding-left: 50px;
+    @media screen and (--tablet) {
+        padding-left: 0;
+    }
+}
+
+.letter__caption-footer {
+    display: inline-block;
+    margin-top: 1em;
+    padding-right: 270px;
+    min-height: 110px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: contain;
+}
+
+.letter__name {
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: GothamProBold;
+}
+
+.letter__subname {
+    display: block;
+}

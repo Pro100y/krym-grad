@@ -1,0 +1,32 @@
+{% macro partnercCarouselItem(image) %}
+<div class="partners-carousel__item swiper-slide">
+    <img
+        alt   = ""
+        class = "partners-carousel__item-image"
+        src   = "/assets/images/partners-{{ image }}.png"
+    >
+</div>
+{% endmacro %}
+
+<!-- partners-carousel -->
+<section class="partners-carousel">
+
+    <header class="partners-carousel__title">Наши партнеры</header>
+
+    <div class="partners-carousel__background">
+        <div class="partners-carousel__wrapper">
+            <div class="partners-carousel__items-wrap swiper-wrapper">
+                {{ partnercCarouselItem(1) }}
+                {{ partnercCarouselItem(2) }}
+                {{ partnercCarouselItem(3) }}
+                {{ partnercCarouselItem(4) }}
+                {{ partnercCarouselItem(5) }}
+                {{ partnercCarouselItem(6) }}
+            </div>
+        </div>
+        <button type="button" class="partners-carousel__button partners-carousel__button--next"></button>
+        <button type="button" class="partners-carousel__button partners-carousel__button--prev"></button>
+    </div>
+
+</section>
+<!-- /partners-carousel  -->
