@@ -1,0 +1,37 @@
+{% macro newsAction(image, title, cost) %}
+<a
+    href  = "#"
+    class = "news__action"
+    style = "background-image: url(/assets/images/sales-{{ image }}.jpg)"
+>
+    <strong class="news__action-name">акция</strong>
+    <strong class="news__action-title">{{ title | safe}}</strong>
+    <span class="news__action-cost">{{ cost | safe}}</span>
+</a>
+{% endmacro %}
+
+<!-- news -->
+<section class="news">
+
+    <div class="news__items-wrap">
+
+        {{ newsAction(
+            '1',
+            'рассрочка',
+            '36<small>мес.</small>'
+        ) }}
+        {{ newsAction(
+            '2',
+            'для<br>молодоженов<br>скидка',
+            '10%'
+        ) }}
+        {{ newsAction(
+            '3',
+            'рассрочка',
+            '36<small>мес.</small>'
+        ) }}
+
+    </div>
+
+</section>
+<!-- /news  -->

@@ -14,12 +14,26 @@
 </a>
 {% endmacro %}
 
+{% macro newsAction(image, title, cost) %}
+<a
+    href  = "#"
+    class = "news__action"
+    style = "background-image: url(/assets/images/sales-{{ image }}.jpg)"
+>
+    <strong class="news__action-name">акция</strong>
+    <strong class="news__action-title">{{ title | safe}}</strong>
+    <span class="news__action-cost">{{ cost | safe}}</span>
+</a>
+{% endmacro %}
+
 <!-- news -->
 <section class="news">
 
     <ul class="news__nav">
-        <li class="news__nav-item">2017</li>
-        <li class="news__nav-item">2016</li>
+        <li class="news__nav-item">Все новости</li>
+        <li class="news__nav-item">акции</li>
+        <li class="news__nav-item">компания</li>
+        <li class="news__nav-item">пресса</li>
     </ul>
 
     <div class="news__tabs-wrap">
@@ -39,9 +53,10 @@
                     'ЖК “Парк Победы”',
                     'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
                 ) }}
-                {{ newsItem(
-                    'ЖК “Парк Победы”',
-                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                {{ newsAction(
+                    '2',
+                    'для<br>молодоженов<br>скидка',
+                    '10%'
                 ) }}
                 {{ newsItem(
                     'ЖК “Парк Победы”',
@@ -56,7 +71,96 @@
         </figure>
 
         <figure class="news__tab">
-            2222222
+            <div class="news__items-wrap">
+
+                {{ newsAction(
+                    '1',
+                    'рассрочка',
+                    '36<small>мес.</small>'
+                ) }}
+                {{ newsAction(
+                    '2',
+                    'для<br>молодоженов<br>скидка',
+                    '10%'
+                ) }}
+                {{ newsAction(
+                    '3',
+                    'рассрочка',
+                    '36<small>мес.</small>'
+                ) }}
+
+            </div>
+        </figure>
+
+        <figure class="news__tab">
+            <div class="news__items-wrap">
+
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsAction(
+                    '3',
+                    'рассрочка',
+                    '36<small>мес.</small>'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsAction(
+                    '2',
+                    'для<br>молодоженов<br>скидка',
+                    '10%'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+
+            </div>
+        </figure>
+
+        <figure class="news__tab">
+            <div class="news__items-wrap">
+
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsAction(
+                    '2',
+                    'для<br>молодоженов<br>скидка',
+                    '10%'
+                ) }}
+                {{ newsItem(
+                    'ЖК “Парк Победы”',
+                    'Разрешение на ввод в эксплуатацию 2 очередь ЖК Парк Победы'
+                ) }}
+                {{ newsAction(
+                    '3',
+                    'рассрочка',
+                    '36<small>мес.</small>'
+                ) }}
+                {{ newsAction(
+                    '1',
+                    'рассрочка',
+                    '36<small>мес.</small>'
+                ) }}
+
+            </div>
         </figure>
 
     </div>

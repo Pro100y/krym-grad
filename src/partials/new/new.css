@@ -1,0 +1,69 @@
+.new {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.new__date {
+    font-family: GothamProMedium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: #242525;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+}
+
+.new__category {
+    font-family: GothamProBold;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    color: #0062cd;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.new__title {
+    font-size: 48px;
+    line-height: 1.17;
+    color: #242525;
+    margin-bottom: 46px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.new__subtitle {
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #777;
+}
+
+.new__content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.new__image {
+    width: calc((100% - var(--gridGutter))/12*5);
+    @media screen and (--tablet) {
+        width: calc((100% - var(--gridGutter))/12*6);
+    }
+}
+
+.new__content {
+    width: calc((100% - var(--gridGutter))/12*7);
+    @media screen and (--tablet) {
+        width: calc((100% - var(--gridGutter))/12*6);
+    }
+}
+.new__text {
+    width: 100%;
+}

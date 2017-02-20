@@ -1,0 +1,48 @@
+{% set layout = 'new' %}
+
+{# == #}
+
+<!DOCTYPE html>
+
+<html lang="ru" data-layout="{{ layout }}" data-page="{{ page }}">
+
+    <head>
+
+        {% include "partials/head.htm" %}
+
+    </head>
+
+    <body>
+
+        <div class="grid grid--type--inner">
+            <div class="grid__container">
+
+                {% block header %}{% endblock %}
+
+            </div>
+            <div class="grid__container grid__container--type--inner">
+
+                {% block main_menu %}{% endblock %}
+                {% block breadcrumbs %}{% endblock %}
+                {% block new %}{% endblock %}
+
+            </div>
+        </div>
+
+        <div class="grid grid--type--footer">
+            <div class="grid__container">
+                <div class="grid__row grid__row--positions--c-fm-fs">
+
+                    {% block copy %}{% endblock %}
+                    {% block footer_menu %}{% endblock %}
+                    {% block footer_social %}{% endblock %}
+
+                </div>
+            </div>
+        </div>
+
+        {% include "partials/scripts.htm" %}
+
+    </body>
+
+</html>
