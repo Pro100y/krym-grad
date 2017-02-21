@@ -3268,15 +3268,17 @@ fieldset {
 }
 .filter-table tbody {
 }
+.filter-table tbody tr {
+  cursor: pointer;
+}
+.filter-table tbody tr:hover {
+  background-color: #ffeea1;
+}
 .filter-table tr {
   border-bottom: 1px solid #fff;
   background-color: #fafafa;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
-  cursor: pointer;
-}
-.filter-table tr:hover {
-  background-color: #ffeea1;
 }
 .filter-table td {
   padding: 15px 20px;

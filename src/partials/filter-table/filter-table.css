@@ -5,15 +5,18 @@
     & thead {
         border-bottom: 20px solid #fff;
     }
-    & tbody {}
+    & tbody {
+        & tr {
+            cursor: pointer;
+            &:hover {
+                background-color: #ffeea1;
+            }
+        }
+    }
     & tr {
         border-bottom: 1px solid #fff;
         background-color: #fafafa;
         transition-duration: var(--transitionDuration);
-        cursor: pointer;
-        &:hover {
-            background-color: #ffeea1;
-        }
     }
     & td {
         padding: 15px 20px;
