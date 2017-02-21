@@ -1,9 +1,9 @@
 {% macro realtyItem(title, city, image, text, area, cost) %}
-<figure class="realty__item">
-    <figcaption class="realty__item-caption">
+<a href="/pages/5.1.commercial-object.html" class="realty__item">
+    <div class="realty__item-caption">
         <strong class="realty__item-title">{{ title | safe }}</strong>
         <span class="realty__item-city">{{ city }}</span>
-    </figcaption>
+    </div>
     <div
         class = "realty__item-image"
         style = "background-image: url(/assets/images/{{ image }});"
@@ -30,7 +30,7 @@
             </tr>
         </tbody>
     </table>
-</figure>
+</a>
 {% endmacro %}
 
 <!-- realty -->
