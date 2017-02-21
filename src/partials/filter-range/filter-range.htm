@@ -1,0 +1,53 @@
+{% macro filterRangeItem(title, rangeMun, rangeMax, curMin, curMax) %}
+<figure class="filter-range__item">
+    <strong class="filter-range__item-title">{{ title }}</strong>
+    <div
+        class          = "filter-range__item-slider"
+        data-range_min = "{{ rangeMun }}"
+        data-range_max = "{{ rangeMax }}"
+        data-cur_min   = "{{ curMin }}"
+        data-cur_max   = "{{ curMax}}"
+    >
+        <div class="filter-range__item-slider-bar"></div>
+        <div class="filter-range__item-slider-grip filter-range__item-slider-grip--left"></div>
+        <div class="filter-range__item-slider-grip filter-range__item-slider-grip--right"></div>
+    </div>
+    <div class="filter-range__item-label filter-range__item-label--left"></div>
+    <div class="filter-range__item-label filter-range__item-label--right"></div>
+</figure>
+{% endmacro %}
+
+<!-- filter-range -->
+<section class="filter-range">
+
+    {{ filterRangeItem(
+        'Стоимость:',
+        '500000',
+        '10000000',
+        '1560000',
+        '8560000'
+    ) }}
+    {{ filterRangeItem(
+        'площадь:',
+        '10',
+        '200',
+        '42',
+        '140'
+    ) }}
+    {{ filterRangeItem(
+        'Комнат:',
+        '1',
+        '7',
+        '2',
+        '6'
+    ) }}
+    {{ filterRangeItem(
+        'Этаж:',
+        '1',
+        '20',
+        '1',
+        '13'
+    ) }}
+
+</section>
+<!-- /filter-range  -->

@@ -1,0 +1,32 @@
+.filter-table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    & thead {
+        border-bottom: 20px solid #fff;
+    }
+    & tbody {}
+    & tr {
+        border-bottom: 1px solid #fff;
+        background-color: #fafafa;
+        transition-duration: var(--transitionDuration);
+        cursor: pointer;
+        &:hover {
+            background-color: #ffeea1;
+        }
+    }
+    & td {
+        padding: 15px 20px;
+        color: #000000;
+        font-size: 14px;
+    }
+    & th {
+        padding: 15px 20px;
+        color: #000000;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: GothamProBold;
+        line-height: 1.5;
+    }
+}

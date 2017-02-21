@@ -1,4 +1,4 @@
-:root {
+    :root {
     --gridGutter: 20px;
     --gridSize1: calc((100%/12)*1);
     --gridSize2: calc((100%/12)*2);
@@ -18,7 +18,7 @@
     position: relative;
     width: 100%;
     @media screen and (--mobile) {
-       background-image: none !important;
+        background-image: none !important;
     }
     &--type {
         &--main {
@@ -79,11 +79,12 @@
             flex-wrap: wrap;
             padding: 2rem 0;
         }
-        &--fs-ac-s {
-
+        &--fs-ac-s {}
+        &--fr-fb {
+            width: calc((100% - var(--gridGutter))/12*9);
         }
         &--nc-a {
-           /* padding-bottom: 84px;*/
+            /* padding-bottom: 84px;*/
         }
         &--og-od {
             padding: 130px 0 140px;
@@ -93,9 +94,15 @@
             margin-left: -20px;
             width: calc(100% + 40px);
         }
-        &--p-s {        }
-        &--r-p {
+        &--p-s {}
+        &--r-p {}
+    }
+}
 
+.grid__col {
+    &--positions {
+        &--fr-fb {
+            width: calc((100% - var(--gridGutter))/12*9);
         }
     }
 }

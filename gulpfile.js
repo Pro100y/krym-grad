@@ -81,7 +81,7 @@ let project = {
             //'bower_components/fluidbox/dist/css/fluidbox.min.css',
             //'bower_components/colorifyjs/styles/colorify.css',
             //'bower_components/legitripple/dist/ripple.min.css',
-            //'bower_components/nstSlider/dist/jquery.nstSlider.min.css',
+            'bower_components/nstSlider/dist/jquery.nstSlider.min.css',
             'bower_components/jquery-selectric/public/selectric.css',
             'bower_components/fotorama/fotorama.css',
 
@@ -128,7 +128,7 @@ let project = {
             //'bower_components/isotope/dist/isotope.pkgd.min.js',
             'bower_components/jquery.accordion/index.js',
             'bower_components/theia-sticky-sidebar/js/theia-sticky-sidebar.js',
-            //'bower_components/nstSlider/dist/jquery.nstSlider.min.js',
+            'bower_components/nstSlider/dist/jquery.nstSlider.min.js',
             'bower_components/jquery-selectric/public/jquery.selectric.min.js',
             'bower_components/jquery-nicefileinput/jquery.nicefileinput.min.js',
             'bower_components/fotorama/fotorama.js',
