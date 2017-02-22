@@ -4,7 +4,7 @@
     padding: 20px 20px 30px;
     padding-right: var(--gridGutter);
     min-height: 900px;
-    width: var(--gridSize2);
+    width: calc((100%)/12*2);
     background-image: url(../images/object-menu-1.jpg);
     background-position: center;
     background-size: cover;

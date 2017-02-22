@@ -133,6 +133,7 @@ let project = {
             'bower_components/jquery-nicefileinput/jquery.nicefileinput.min.js',
             'bower_components/fotorama/fotorama.js',
             'bower_components/parallax.js/parallax.min.js',
+            'bower_components/maphilight/jquery.maphilight.js',
 
             // Скрипты шаблона
             'src/assets/global/**/*.js',

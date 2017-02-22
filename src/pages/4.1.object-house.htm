@@ -1,7 +1,7 @@
-{% extends "layouts/object.htm" %}
+{% extends "layouts/object-house.htm" %}
 
-{% set page  = "object" %}
-{% set title = "Объект" %}
+{% set page  = "object-house" %}
+{% set title = "Выберите корпус" %}
 
 {# == #}
 
@@ -11,17 +11,7 @@
 
 {% block object_menu %}{% include "partials/object-menu/object-menu.htm" %}{% endblock %}
 
-{% block object_promo %}{% include "partials/object-promo/object-promo.htm" %}{% endblock %}
-
-{% block object_text %}{% include "partials/object-text/object-text.htm" %}{% endblock %}
-
-{% block object_table %}{% include "partials/object-table/object-table.htm" %}{% endblock %}
-
-{% block object_map %}{% include "partials/object-map/object-map.htm" %}{% endblock %}
-
-{% block object_gallery %}{% include "partials/object-gallery/object-gallery.htm" %}{% endblock %}
-
-{% block object_documents %}{% include "partials/object-documents/object-documents.htm" %}{% endblock %}
+{% block choose_house %}{% include "partials/choose-house/choose-house.htm" %}{% endblock %}
 
 {% block copy %}{% include "partials/copy/copy.htm" %}{% endblock %}
 

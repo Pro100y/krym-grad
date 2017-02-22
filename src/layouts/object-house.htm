@@ -1,4 +1,4 @@
-{% set layout = 'object' %}
+{% set layout = 'object-house' %}
 
 {# == #}
 
@@ -14,7 +14,7 @@
 
     <body>
 
-        <div class="grid grid--type--main">
+        <div class="grid grid--type--inner">
             <div class="grid__container">
 
                 {% block header %}{% endblock %}
@@ -27,26 +27,10 @@
                 <div class="grid__row grid__row--positions--om-op">
 
                     {% block object_menu %}{% endblock %}
-                    {% block object_promo %}{% endblock %}
-
-                </div>
-                <div class="grid__row">
-
-                    {% block object_text %}{% endblock %}
-                    {% block object_table %}{% endblock %}
+                    {% block choose_house %}{% endblock %}
 
                 </div>
 
-                {% block object_map %}{% endblock %}
-
-            </div>
-            <div class="grid__container">
-                <div class="grid__row grid__row--positions--og-od">
-
-                    {% block object_gallery %}{% endblock %}
-                    {% block object_documents %}{% endblock %}
-
-                </div>
             </div>
         </div>
 
