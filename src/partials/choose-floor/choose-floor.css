@@ -7,31 +7,6 @@
     }
 }
 
-.choose-floor__description {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #0062cd;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-.choose-floor__description-title {
-    display: block;
-    font-family: GothamProMedium;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 11px;
-}
-
-.choose-floor__description-caption {
-    font-family: GothamProMedium;
-    font-size: 24px;
-    font-weight: 500;
-}
-
 .choose-floor__image-wrap {
     position: absolute;
     top: 0;

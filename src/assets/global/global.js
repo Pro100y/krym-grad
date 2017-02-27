@@ -142,36 +142,36 @@ jQuery(document).ready(function ($) {
     |
     */
 
-    // $('[data-tooltip-text]').each(function () {
-    //     $(this).tipso({
-    //         speed: 400,
-    //         background: '#ededed',
-    //         titleBackground: '#0f69a8',
-    //         color: '#33373d',
-    //         titleColor: '#F0F0F0',
-    //         titleContent: $(this).attr('data-tooltip-title'),
-    //         showArrow: true,
-    //         position: 'top',
-    //         width: 'auto',
-    //         maxWidth: '',
-    //         delay: 500,
-    //         hideDelay: 0,
-    //         animationIn: 'fadeIn',
-    //         animationOut: 'fadeOut',
-    //         offsetX: 0,
-    //         offsetY: 0,
-    //         tooltipHover: false,
-    //         content: $(this).attr('data-tooltip-text'),
-    //         ajaxContentUrl: null,
-    //         contentElementId: null,
-    //         useTitle: true,
-    //         templateEngineFunc: null,
-    //         onBeforeShow: null,
-    //         onShow: null,
-    //         onHide: null,
-    //         size: 'medium'
-    //     });
-    // });
+    $('[data-tooltip-text]').each(function () {
+        $(this).tipso({
+            speed: 400,
+            background: '#ededed',
+            titleBackground: '#0f69a8',
+            color: '#33373d',
+            titleColor: '#F0F0F0',
+            titleContent: $(this).attr('data-tooltip-title'),
+            showArrow: true,
+            position: 'top',
+            width: 'auto',
+            maxWidth: '',
+            delay: 500,
+            hideDelay: 0,
+            animationIn: 'fadeIn',
+            animationOut: 'fadeOut',
+            offsetX: 0,
+            offsetY: 0,
+            tooltipHover: false,
+            content: $(this).attr('data-tooltip-text'),
+            ajaxContentUrl: null,
+            contentElementId: null,
+            useTitle: true,
+            templateEngineFunc: null,
+            onBeforeShow: null,
+            onShow: null,
+            onHide: null,
+            size: 'medium'
+        });
+    });
 
     /*
     |--------------------------------------------------------------------------

@@ -4,7 +4,7 @@
 //         el: '#00000',
 //         name: '11111',
 //         data: {
-//             message: ''
+//             key: ''
 //         },
 //         mounted: function () {}
 //     });

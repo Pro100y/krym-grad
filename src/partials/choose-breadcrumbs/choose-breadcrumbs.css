@@ -1,0 +1,39 @@
+.choose-breadcrumbs {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #0062cd;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 20px;
+    display: flex;
+}
+
+.choose-breadcrumbs__back {
+    width: 94px;
+    background-color: #0778f4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/choose-breadcrumbs-1.svg);
+}
+
+.choose-breadcrumbs__caption {
+   padding: 20px;
+}
+
+.choose-breadcrumbs__navigation {
+    display: block;
+    display: block;
+    font-family: GothamProMedium;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+
+.choose-breadcrumbs__motivation {
+    font-family: GothamProMedium;
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+}
