@@ -1,5 +1,6 @@
-//Конфигурация плагина подсветки area
-if (document.getElementsByClassName('choose-room__image') !== null) {
+if (document.getElementsByClassName('choose-room').length != 0) {
+
+    //Конфигурация плагина подсветки area
     var chooseRoomImage = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-room__image',
@@ -31,10 +32,8 @@ if (document.getElementsByClassName('choose-room__image') !== null) {
             });
         }
     });
-}
 
-//пробрасывание параметров квартиры в таблицу
-if (document.getElementsByClassName('choose-room__map') !== null) {
+    //пробрасывание параметров квартиры в таблицу
     var chooseRoomMap = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-room__map',

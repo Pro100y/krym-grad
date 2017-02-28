@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-layout="object-floor" data-page="object-floor">
+<html lang="ru" data-layout="object-apartment" data-page="object-apartment">
 
 <head>
     <meta charset="utf-8">
@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#f08b23">
-    <title>Выберите корпус</title>
+    <title>Квартира</title>
     <meta name="description" content=>
     <meta property="og:description" content="Здесь будет описание содержимого">
     <meta property="og:image" content="/images/theme-preview.png">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:site_name" content="Крым-град">
-    <meta property="og:title" content="Выберите корпус">
+    <meta property="og:title" content="Квартира">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/pages/object-floor.html">
+    <meta property="og:url" content="/pages/object-apartment.html">
     <link href="/assets/styles/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
     <meta name="application-name" content="Крым-град">
@@ -133,60 +133,48 @@
                     </footer>
                 </section>
                 <!-- /object-menu  -->
-                <!-- choose-floor -->
-                <section class="choose-floor" id="choose-floor">
+                <!-- apartment -->
+                <section class="apartment">
                     <!-- choose-breadcrumbs -->
                     <figure class="choose-breadcrumbs">
                         <button type="button" class="choose-breadcrumbs__back"></button>
                         <figcaption class="choose-breadcrumbs__caption">
-                            <span class="choose-breadcrumbs__navigation">жк зенит / корпус B / Этаж 11</span>
+                            <span class="choose-breadcrumbs__navigation">жк зенит / корпус B / Этаж 11[[test]]</span>
                             <span class="choose-breadcrumbs__motivation">Выберите квартиру</span>
                         </figcaption>
                     </figure>
                     <!-- /choose-breadcrumbs  -->
-                    <div class="choose-floor__image-wrap">
-                        <figure class="choose-floor__label choose-floor__label--1">
-                            <span class="choose-floor__label-title">корпус</span>
-                            <figcaption class="choose-floor__label-accent">a</figcaption>
+                    <!-- choose-table -->
+                    <section class="choose-table">
+                        <table class="choose-table__content">
+                            <thead>
+                                <tr>
+                                    <th>№ квартиры</th>
+                                    <th>площадь, м2</th>
+                                    <th>Балкон, м2</th>
+                                    <th>цена, руб</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>[[ num ]]</td>
+                                    <td>[[ area ]]</td>
+                                    <td>[[ balcony ]]</td>
+                                    <td>[[ cost ]]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- /choose-table  -->
+                    <div class="apartment__image-wrap">
+                        <img alt="" class="apartment__image" src="/assets/images/apartment-1.jpg" />
+                        <figure class="apartment__buttons-wrap">
+                            <a href="#" class="apartment__button apartment__button--booking">забронировать</a>
+                            <a href="#" class="apartment__button apartment__button--download">скачать PDF</a>
                         </figure>
-                        <figure class="choose-floor__label choose-floor__label--2">
-                            <span class="choose-floor__label-title">корпус</span>
-                            <figcaption class="choose-floor__label-accent">b</figcaption>
-                        </figure>
-                        <figure class="choose-floor__label choose-floor__label--3">
-                            <span class="choose-floor__label-title">корпус</span>
-                            <figcaption class="choose-floor__label-accent">c</figcaption>
-                        </figure>
-                        <img alt="" class="choose-floor__image" src="/assets/images/choose-floor-1.jpg" usemap="#choose-floor-map" />
-                        <map name="choose-floor-map" id="choose-floor-map" class="choose-floor__map">
-        <area
-            shape  = "poly"
-            coords = "785,203,794,187,1009,92,1048,92,1062,101,1077,110,1090,121,1096,136,1077,123,1054,112,1024,107,996,113"
-            class  = ""
-            style="position: relative;"
-            id     = "test"
-            title="asfasfasfasdf"
-        />
-        <area shape="poly" coords="793,228,807,219,843,206,877,186,942,171,990,152,1026,144,1069,149,1080,157,1097,167,1084,169,1069,163,1055,161,1038,157,1031,159,1015,161,994,165,935,181" class="" />
-        <area shape="poly" coords="792,268,791,256,802,248,831,241,986,193,1021,185,1041,185,1058,186,1070,192,1080,199,1082,205,1076,211,1056,202,1043,200,1033,202,1011,200,991,204" class="" />
-        <area shape="poly" coords="789,286,796,278,826,272,863,266,922,246,995,230,1026,226,1059,229,1066,232,1076,235,1084,240,1067,246,1042,241,1017,246,977,252,948,251,910,263,861,275" class="" />
-        <area shape="poly" coords="792,321,793,309,813,302,846,300,872,294,957,275,1005,266,1026,264,1050,265,1066,270,1073,273,1082,279,1080,289,1065,287,1041,284,1021,282,995,284" class="" />
-        <area shape="poly" coords="792,348,795,339,827,335,988,310,1038,304,1065,310,1079,314,1082,323,1079,334,1019,332,971,332,853,345,807,349" class="" />
-        <area shape="poly" coords="792,386,795,371,818,367,878,358,924,355,992,348,1029,347,1060,351,1081,354,1085,364,1074,372,1035,369,997,366" class="" />
-        <area shape="poly" coords="795,413,798,398,846,397,886,393,931,394,995,391,1044,390,1084,392,1085,410,1023,411" class="" />
-        <area shape="poly" coords="794,430,796,446,865,448,932,447,1005,450,1062,449,1084,446,1086,430" class="" />
-        <area shape="poly" coords="793,462,799,474,1029,494,1090,490,1085,472" class="" />
-        <area shape="poly" coords="793,514,796,494,1035,509,1085,511,1081,528,1040,539" class="" />
-        <area shape="poly" coords="795,524,799,538,850,547,952,564,1019,578,1066,574,1081,567,1085,553,1023,558" class="" />
-        <area shape="poly" coords="797,565,797,555,827,560,890,567,929,579,998,593,1059,593,1084,594,1082,610,1052,623,1017,628" class="" />
-        <area shape="poly" coords="799,604,797,586,848,598,888,606,925,619,970,635,1023,645,1068,642,1088,633,1087,642,1077,654,1041,659,988,660" class="" />
-        <area shape="poly" coords="803,641,807,615,1027,677,1065,683,1083,683,1077,693,1050,702,1029,705,1006,700,978,697" class="" />
-        <area shape="poly" coords="943,729,945,694,1022,711,1070,716,1089,703,1084,725,1071,740,1027,749" class="" />
-        <area shape="poly" coords="944,764,946,738,980,744,1018,754,1052,756,1069,753,1064,782,1057,798,1018,790" class=""/>
-        </map>
                     </div>
                 </section>
-                <!-- /choose-floor  -->
+                <!-- /apartment  -->
             </div>
         </div>
     </div>
@@ -296,8 +284,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
     <script src="/assets/scripts/script.js"></script>
 </body>
 

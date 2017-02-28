@@ -4092,7 +4092,26 @@ jQuery(document).ready(function ($) {
 
 
 
+//пробрасывание параметров квартиры в таблицу
+if (document.getElementsByClassName('apartment__image').length != 0) {
+    var apartmentImage = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.apartment__image',
+        name: 'apartment-image',
+        methods: {
+            changeInfo: function () {
+                chooseTableContent.num = 131;
+                chooseTableContent.area = 41.1;
+                chooseTableContent.balcony = 15.9;
+                chooseTableContent.cost = 1500000;
+            }
+        }
+    });
+}
 
+document.addEventListener('DOMContentLoaded', function () {
+    apartmentImage.changeInfo();
+});
 
 jQuery(document).ready(function ($) {
 
@@ -4155,13 +4174,13 @@ jQuery(document).ready(function ($) {
     });
 
 });
-//Конфигурация плагина подсветки area
-if (document.getElementsByClassName('choose-room__image') !== null) {
+if (document.getElementsByClassName('choose-room').length != 0) {
+
+    //Конфигурация плагина подсветки area
     var chooseRoomImage = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-room__image',
         name: 'choose-room-image',
-        data: {},
         created: function () {
             jQuery(document).ready(function ($) {
                 $(".choose-room__image").maphilight({
@@ -4189,15 +4208,12 @@ if (document.getElementsByClassName('choose-room__image') !== null) {
             });
         }
     });
-}
 
-//пробрасывание параметров квартиры в таблицу
-if (document.getElementsByClassName('choose-room__map') !== null) {
+    //пробрасывание параметров квартиры в таблицу
     var chooseRoomMap = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-room__map',
         name: 'choose-room-map',
-        data: {},
         methods: {
             changeInfo: function (num, area, balcony, cost) {
                 chooseTableContent.num = num;
@@ -4208,7 +4224,7 @@ if (document.getElementsByClassName('choose-room__map') !== null) {
         }
     });
 }
-if (document.getElementsByClassName('choose-table__content') !== null) {
+if (document.getElementsByClassName('choose-table__content').length != 0) {
     var chooseTableContent = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-table__content',
@@ -4222,7 +4238,6 @@ if (document.getElementsByClassName('choose-table__content') !== null) {
         mounted: function () {}
     });
 }
-
 jQuery(document).ready(function ($) {
 
    /*
@@ -4656,6 +4671,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
 
 
 jQuery(document).ready(function ($) {

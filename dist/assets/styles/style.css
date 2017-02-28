@@ -1944,6 +1944,7 @@ fieldset {
 [data-ripple] .legitRipple-ripple {
     background: rgba(221, 221, 221, .4) !important;
 }
+/*TODO: провести рефакторинг сетки */
 
 .grid {
     position: relative;
@@ -2797,7 +2798,90 @@ fieldset {
     font-size: 14px;
     line-height: 1.5;
 }
+.apartment {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 94px;
+    width: 83.33333%
+}
+@media screen and (max-width: 1640px) {
 
+  .apartment {
+    width: 75%;
+  }
+    }
+
+.apartment__image-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background-image: url(../images/apartment-view.svg), url(../images/apartment-compas.svg);
+    background-position: 50px calc(100% - 50px), calc(100% - 50px) calc(100% - 50px);
+    background-size: 140px 133px, 128px 128px;
+    background-repeat: no-repeat, no-repeat
+}
+
+@media screen and (max-width: 1640px) {
+
+  .apartment__image-wrap {
+    padding-left: 187px;
+    background-position: 30px calc(100% - 40px), calc(100% - 30px) calc(100% - 40px);
+  }
+    }
+
+.apartment__image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.apartment__buttons-wrap {
+    position: absolute;
+    top: 116px;
+    left: 0;
+}
+
+.apartment__button {
+    display: block;
+    padding: 58px 10px 20px;
+    width: 100%;
+    height: 95px;
+    background-position: center 19px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: GothamProBold;
+    line-height: 1.33
+}
+
+.apartment__button--booking {
+  background-image: url(../images/apartment-b-1.svg);
+  background-color: #fc3c2d;
+}
+
+.apartment__button--download {
+  background-image: url(../images/apartment-b-2.svg);
+  background-color: #0062cd;
+}
 .breadcrumbs {
     display: -webkit-box;
     display: flex;
@@ -2808,7 +2892,6 @@ fieldset {
     background-image: -webkit-linear-gradient(top, #f8f8f8, #ffffff);
     background-image: linear-gradient(to bottom, #f8f8f8, #ffffff)
 }
-
 @media screen and (max-width: 980px) {
 
   .breadcrumbs {
@@ -2904,82 +2987,12 @@ fieldset {
             transform: translateX(-50%);
 }
 
-.choose-floor__label {
-    position: absolute;
-    z-index: 1;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #9c765a;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    font-family: GothamProBold;
-    text-transform: uppercase
-}
-
-.choose-floor__label::before {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  width: 16px;
-  height: 10px;
-  background-image: url(../images/choose-floor-2.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  content: '';
-  -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
-}
-
-.choose-floor__label--1 {
-  top: 23%;
-  left: 18%;
-}
-
-.choose-floor__label--2 {
-  top: 26%;
-  left: 31%;
-}
-
-.choose-floor__label--3 {
-  top: 29%;
-  left: 45%;
-}
-
-.choose-floor__label-title {
-    font-size: 11px;
-    margin-top: 1em;
-    margin-bottom: .5em;
-}
-
-.choose-floor__label-accent {
-    font-size: 56px;
-    line-height: 1;
-}
-
 .choose-floor__image {
     width: auto;
     height: 100%;
 }
 
-.choose-floor__map {
-}
-
-.choose-floor__map area {
-}
-
-.choose-floor__map area::bafore {
-  content: 'sdfasdfsdfsdafasf';
-}
+.choose-floor__map {}
 .choose-house {
     position: relative;
     overflow: hidden;
@@ -3303,61 +3316,6 @@ fieldset {
 .commercial-object-gallery .fotorama__arr--next {
   background-image: url(../images/commercial-object-gallery-2.svg);
 }
-.contacts {
-    width: 100%;
-}
-
-.contacts__item {
-    position: relative;
-    width: 100%;
-    height: 450px
-}
-
-.contacts__item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.contacts__item-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.contacts__item-caption {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 12px 20px;
-    min-width: 320px;
-    background-color: #0062cd;
-}
-
-.contacts__item-title {
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-size: 24px;
-    display: block;
-}
-
-.contacts__item-part {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.5
-}
-
-.contacts__item-part:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.contacts__item-part-title {
-    display: block;
-}
-
-.contacts__item-part-text {
-    display: block;
-}
 .copy {
     width: calc(16.66666% - 20px)
 }
@@ -3621,6 +3579,61 @@ fieldset {
   font-size: 14px;
   font-family: GothamProBold;
   line-height: 1.5;
+}
+.contacts {
+    width: 100%;
+}
+
+.contacts__item {
+    position: relative;
+    width: 100%;
+    height: 450px
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contacts__item-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts__item-caption {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 20px;
+    min-width: 320px;
+    background-color: #0062cd;
+}
+
+.contacts__item-title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    display: block;
+}
+
+.contacts__item-part {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.contacts__item-part:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.contacts__item-part-title {
+    display: block;
+}
+
+.contacts__item-part-text {
+    display: block;
 }
 .footer-menu {
     display: block;
