@@ -1,5 +1,5 @@
-// if (document.getElementById('00000') !== null) {
-//     var chooseHouse = new Vue({
+// if (document.getElementsByClassName('00000') !== null) {
+//     var 00000 = new Vue({
 //         delimiters: ['[[', ']]'],
 //         el: '#00000',
 //         name: '11111',

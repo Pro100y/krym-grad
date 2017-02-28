@@ -1,0 +1,38 @@
+.choose-room {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 94px;
+    width: calc((100%)/12*10);
+    @media screen and (--tablet) {
+        width: calc((100%)/12*9);
+    }
+}
+
+.choose-room__image-wrap {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background-image: url(../images/choose-room-view.svg), url(../images/choose-room-compas.svg);
+    background-position: 50px calc(100% - 50px), calc(100% - 50px) calc(100% - 50px);
+    background-size: 140px 133px, 128px 128px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.choose-room__image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.choose-room__map {
+    & area {}
+}

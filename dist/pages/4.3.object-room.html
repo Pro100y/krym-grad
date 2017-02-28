@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-layout="object-house" data-page="object-house">
+<html lang="ru" data-layout="object-room" data-page="object-room">
 
 <head>
     <meta charset="utf-8">
@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#f08b23">
-    <title>Выберите корпус</title>
+    <title>Выберите квартиру</title>
     <meta name="description" content=>
     <meta property="og:description" content="Здесь будет описание содержимого">
     <meta property="og:image" content="/images/theme-preview.png">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:site_name" content="Крым-град">
-    <meta property="og:title" content="Выберите корпус">
+    <meta property="og:title" content="Выберите квартиру">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/pages/object-house.html">
+    <meta property="og:url" content="/pages/object-room.html">
     <link href="/assets/styles/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
     <meta name="application-name" content="Крым-град">
@@ -133,8 +133,8 @@
                     </footer>
                 </section>
                 <!-- /object-menu  -->
-                <!-- choose-house -->
-                <section class="choose-house" id="choose-house">
+                <!-- choose-room -->
+                <section class="choose-room">
                     <!-- choose-breadcrumbs -->
                     <figure class="choose-breadcrumbs">
                         <button type="button" class="choose-breadcrumbs__back"></button>
@@ -144,40 +144,110 @@
                         </figcaption>
                     </figure>
                     <!-- /choose-breadcrumbs  -->
-                    <div class="choose-house__image-wrap">
-                        <figure class="choose-house__label choose-house__label--1">
-                            <span class="choose-house__label-title">корпус</span>
-                            <figcaption class="choose-house__label-accent">a</figcaption>
-                        </figure>
-                        <figure class="choose-house__label choose-house__label--2">
-                            <span class="choose-house__label-title">корпус</span>
-                            <figcaption class="choose-house__label-accent">b</figcaption>
-                        </figure>
-                        <figure class="choose-house__label choose-house__label--3">
-                            <span class="choose-house__label-title">корпус</span>
-                            <figcaption class="choose-house__label-accent">c</figcaption>
-                        </figure>
-                        <img alt="" class="choose-house__image" src="/assets/images/choose-house-1.jpg" usemap="#choose-house-map" />
-                        <map name="choose-house-map" id="choose-house-map" class="choose-house__map">
+                    <!-- choose-table -->
+                    <section class="choose-table">
+                        <table class="choose-table__content">
+                            <thead>
+                                <tr>
+                                    <th>№ квартиры</th>
+                                    <th>площадь, м2</th>
+                                    <th>Балкон, м2</th>
+                                    <th>цена, руб</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>[[ num ]]</td>
+                                    <td>[[ area ]]</td>
+                                    <td>[[ balcony ]]</td>
+                                    <td>[[ cost ]]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- /choose-table  -->
+                    <div class="choose-room__image-wrap">
+                        <img alt="" class="choose-room__image" src="/assets/images/choose-room-1.jpg" usemap="#choose-room-map" />
+                        <map name="choose-room-map" id="choose-room-map" class="choose-room__map">
             <area
                 shape  = "poly"
-                coords = "244,540,247,343,277,341,276,335,332,332,340,334,355,337,373,352,370,565"
-                href   = "/pages/4.2.object-floor.html"
+                coords = "199,140,199,31,271,29,273,148,198,149"
+                v-on:mouseover = "changeInfo('131','22','15.9','45424223')"
             />
             <area
                 shape  = "poly"
-                coords = "427,562,428,369,454,362,455,358,510,355,519,359,537,364,539,376,536,562,534,572"
-                href   = "/pages/4.2.object-floor.html"
+                coords = "352,32,353,149,427,151,429,31"
+                v-on:mouseover = "changeInfo('132','33','15.9','5650800')"
             />
             <area
                 shape  = "poly"
-                coords = "625,400,650,398,651,391,712,390,717,395,733,398,723,618,625,591"
-                href   = "/pages/4.2.object-floor.html"
+                coords = "430,149,431,34,482,33,526,39,550,54,563,66,573,81,452,152"
+                v-on:mouseover = "changeInfo('133','45','15.9','4564886')"
+            />
+            <area
+                shape  = "poly"
+                coords = "441,172,450,154,575,82,584,105,586,136,573,176,562,199,544,227"
+                v-on:mouseover = "changeInfo('134','55','15.9','1213131')"
+            />
+            <area
+                shape  = "poly"
+                coords = "410,223,439,177,541,234,509,285"
+                v-on:mouseover = "changeInfo('135','66','15.9','234453654')"
+            />
+            <area
+                shape  = "poly"
+                coords = "383,214,510,287,501,303,511,323,510,341,507,346,356,259"
+                v-on:mouseover = "changeInfo('136','78','15.9','32452345')"
+            />
+            <area
+                shape  = "poly"
+                coords = "355,260,505,349,500,354,488,360,478,359,468,358,458,375,329,300"
+                v-on:mouseover = "changeInfo('137','41.1','15.9','2372856')"
+            />
+            <area
+                shape  = "poly"
+                coords = "354,318,325,369,428,429,460,378"
+                v-on:mouseover = "changeInfo('138','41.1','15.9','5650800')"
+            />
+            <area
+                shape  = "poly"
+                coords = "322,376,314,396,314,532,347,525,365,517,379,505,393,484,403,473,414,458,421,440,428,429"
+                v-on:mouseover = "changeInfo('139','41.1','15.9','5650800')"
+            />
+            <area
+                shape  = "poly"
+                coords = "313,393,310,534,290,532,262,520,239,501,225,481,206,449,196,435,298,373"
+                v-on:mouseover = "changeInfo('140','41.1','15.9','5650800')"
+            />
+            <area
+                shape  = "poly"
+                coords = "275,335,170,391,141,335,245,280"
+                v-on:mouseover = "changeInfo('131','89','15.9','45544545')"
+            />
+            <area
+                shape  = "poly"
+                coords = "242,277,138,330,111,284,215,229"
+                v-on:mouseover = "changeInfo('131','55','15.9','560800')"
+            />
+            <area
+                shape  = "poly"
+                coords = "215,227,110,284,80,231,184,172"
+                v-on:mouseover = "changeInfo('131','40','15.9','898989')"
+            />
+            <area
+                shape  = "poly"
+                coords = "181,171,78,226,46,175,41,153,35,126,37,111,43,91,49,80,175,151"
+                v-on:mouseover = "changeInfo('131','41.1','15.9','150000')"
+            />
+            <area
+                shape  = "poly"
+                coords = "178,148,195,148,193,30,164,30,124,24,105,32,80,40,63,54,48,74"
+                v-on:mouseover = "changeInfo('131','41.1','15.9','123456789')"
             />
         </map>
                     </div>
                 </section>
-                <!-- /choose-house  -->
+                <!-- /choose-room  -->
             </div>
         </div>
     </div>

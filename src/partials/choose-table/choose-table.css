@@ -1,0 +1,33 @@
+.choose-table {
+    position: relative;
+    width: 100%;
+    background-color: #fff4bf;
+    padding: 20px 0;
+    align-self: flex-start;
+    min-height: 122px;
+}
+
+.choose-table__content {
+    width: auto;
+    & thead {}
+    & tbody {}
+    & tr {}
+    & th {
+        font-family: GothamProBold;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: left;
+        color: #000000;
+        padding: 5px 20px;
+        text-transform: uppercase;
+    }
+    & td {
+        padding: 5px 20px;
+        font-family: GothamProBold;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: left;
+        color: #000000;
+    }
+}
