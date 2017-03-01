@@ -1,11 +1,38 @@
-if (document.getElementsByClassName('choose-room').length != 0) {
+if (document.getElementsByClassName('choose-room').length) {
 
-    //Конфигурация плагина подсветки area
-    var chooseRoomImage = new Vue({
+    //компонент таблицы
+    Vue.component('choose-table', {
         delimiters: ['[[', ']]'],
-        el: '.choose-room__image',
-        name: 'choose-room-image',
+        template: '#choose-table',
+        props: [
+            'num',
+            'area',
+            'balcony',
+            'cost'
+        ]
+    });
+
+    var chooseRoom = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.choose-room',
+        name: 'choose-room',
+        data: {
+            num: '',
+            area: '',
+            balcony: '',
+            cost: ''
+        },
+        methods: {
+            //пробрасывание параметров квартиры в таблицу
+            changeInfo: function (num, area, balcony, cost) {
+                this.num = num;
+                this.area = area;
+                this.balcony = balcony;
+                this.cost = cost.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            }
+        },
         created: function () {
+            //Конфигурация плагина подсветки area
             jQuery(document).ready(function ($) {
                 $(".choose-room__image").maphilight({
                     fill: true,
@@ -30,21 +57,6 @@ if (document.getElementsByClassName('choose-room').length != 0) {
                     shadowFrom: false
                 });
             });
-        }
-    });
-
-    //пробрасывание параметров квартиры в таблицу
-    var chooseRoomMap = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '.choose-room__map',
-        name: 'choose-room-map',
-        methods: {
-            changeInfo: function (num, area, balcony, cost) {
-                chooseTableContent.num = num;
-                chooseTableContent.area = area;
-                chooseTableContent.balcony = balcony;
-                chooseTableContent.cost = cost;
-            }
         }
     });
 }

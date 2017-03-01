@@ -1,20 +1,21 @@
 //пробрасывание параметров квартиры в таблицу
-if (document.getElementsByClassName('apartment__image').length != 0) {
-    var apartmentImage = new Vue({
+if (document.getElementsByClassName('apartment__image').length) {
+
+    //компонент таблицы
+    Vue.component('ChooseTable', {
         delimiters: ['[[', ']]'],
-        el: '.apartment__image',
-        name: 'apartment-image',
-        methods: {
-            changeInfo: function () {
-                chooseTableContent.num = 131;
-                chooseTableContent.area = 41.1;
-                chooseTableContent.balcony = 15.9;
-                chooseTableContent.cost = 1500000;
-            }
-        }
+        template: '#choose-table',
+        props: [
+            'num',
+            'area',
+            'balcony',
+            'cost'
+        ]
+    });
+
+    var Apartment = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.apartment',
+        name: 'Apartment'
     });
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    apartmentImage.changeInfo();
-});

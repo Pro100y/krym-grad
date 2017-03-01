@@ -3139,6 +3139,7 @@ fieldset {
 }
 
 .choose-room__map area {
+  cursor: pointer;
 }
 .choose-table {
     position: relative;
@@ -3181,6 +3182,8 @@ fieldset {
   text-align: left;
   color: #000000;
 }
+
+.choose-table__cost {}
 .commercial-object-content {
     width: calc((100% - 20px)/12*5);
     margin-bottom: 40px
@@ -3315,6 +3318,61 @@ fieldset {
 }
 .commercial-object-gallery .fotorama__arr--next {
   background-image: url(../images/commercial-object-gallery-2.svg);
+}
+.contacts {
+    width: 100%;
+}
+
+.contacts__item {
+    position: relative;
+    width: 100%;
+    height: 450px
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contacts__item-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts__item-caption {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 20px;
+    min-width: 320px;
+    background-color: #0062cd;
+}
+
+.contacts__item-title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    display: block;
+}
+
+.contacts__item-part {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.contacts__item-part:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.contacts__item-part-title {
+    display: block;
+}
+
+.contacts__item-part-text {
+    display: block;
 }
 .copy {
     width: calc(16.66666% - 20px)
@@ -3579,61 +3637,6 @@ fieldset {
   font-size: 14px;
   font-family: GothamProBold;
   line-height: 1.5;
-}
-.contacts {
-    width: 100%;
-}
-
-.contacts__item {
-    position: relative;
-    width: 100%;
-    height: 450px
-}
-
-.contacts__item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.contacts__item-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.contacts__item-caption {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 12px 20px;
-    min-width: 320px;
-    background-color: #0062cd;
-}
-
-.contacts__item-title {
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-size: 24px;
-    display: block;
-}
-
-.contacts__item-part {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.5
-}
-
-.contacts__item-part:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.contacts__item-part-title {
-    display: block;
-}
-
-.contacts__item-part-text {
-    display: block;
 }
 .footer-menu {
     display: block;

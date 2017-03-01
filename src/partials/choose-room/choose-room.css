@@ -34,5 +34,7 @@
 }
 
 .choose-room__map {
-    & area {}
+    & area {
+        cursor: pointer;
+    }
 }

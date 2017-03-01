@@ -4093,25 +4093,26 @@ jQuery(document).ready(function ($) {
 
 
 //пробрасывание параметров квартиры в таблицу
-if (document.getElementsByClassName('apartment__image').length != 0) {
-    var apartmentImage = new Vue({
+if (document.getElementsByClassName('apartment__image').length) {
+
+    //компонент таблицы
+    Vue.component('ChooseTable', {
         delimiters: ['[[', ']]'],
-        el: '.apartment__image',
-        name: 'apartment-image',
-        methods: {
-            changeInfo: function () {
-                chooseTableContent.num = 131;
-                chooseTableContent.area = 41.1;
-                chooseTableContent.balcony = 15.9;
-                chooseTableContent.cost = 1500000;
-            }
-        }
+        template: '#choose-table',
+        props: [
+            'num',
+            'area',
+            'balcony',
+            'cost'
+        ]
+    });
+
+    var Apartment = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.apartment',
+        name: 'Apartment'
     });
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    apartmentImage.changeInfo();
-});
 
 jQuery(document).ready(function ($) {
 
@@ -4174,14 +4175,41 @@ jQuery(document).ready(function ($) {
     });
 
 });
-if (document.getElementsByClassName('choose-room').length != 0) {
+if (document.getElementsByClassName('choose-room').length) {
 
-    //Конфигурация плагина подсветки area
-    var chooseRoomImage = new Vue({
+    //компонент таблицы
+    Vue.component('choose-table', {
         delimiters: ['[[', ']]'],
-        el: '.choose-room__image',
-        name: 'choose-room-image',
+        template: '#choose-table',
+        props: [
+            'num',
+            'area',
+            'balcony',
+            'cost'
+        ]
+    });
+
+    var chooseRoom = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.choose-room',
+        name: 'choose-room',
+        data: {
+            num: '',
+            area: '',
+            balcony: '',
+            cost: ''
+        },
+        methods: {
+            //пробрасывание параметров квартиры в таблицу
+            changeInfo: function (num, area, balcony, cost) {
+                this.num = num;
+                this.area = area;
+                this.balcony = balcony;
+                this.cost = cost.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            }
+        },
         created: function () {
+            //Конфигурация плагина подсветки area
             jQuery(document).ready(function ($) {
                 $(".choose-room__image").maphilight({
                     fill: true,
@@ -4208,36 +4236,9 @@ if (document.getElementsByClassName('choose-room').length != 0) {
             });
         }
     });
+}
 
-    //пробрасывание параметров квартиры в таблицу
-    var chooseRoomMap = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '.choose-room__map',
-        name: 'choose-room-map',
-        methods: {
-            changeInfo: function (num, area, balcony, cost) {
-                chooseTableContent.num = num;
-                chooseTableContent.area = area;
-                chooseTableContent.balcony = balcony;
-                chooseTableContent.cost = cost;
-            }
-        }
-    });
-}
-if (document.getElementsByClassName('choose-table__content').length != 0) {
-    var chooseTableContent = new Vue({
-        delimiters: ['[[', ']]'],
-        el: '.choose-table__content',
-        name: 'choose-table-content',
-        data: {
-            num: '',
-            area: '',
-            balcony: '',
-            cost: '',
-        },
-        mounted: function () {}
-    });
-}
+
 jQuery(document).ready(function ($) {
 
    /*
@@ -4632,46 +4633,47 @@ jQuery(document).ready(function ($) {
 });
 
 
-jQuery(document).ready(function ($) {
+if (document.getElementsByClassName('reviews').length) {
 
-    /*
-    |--------------------------------------------------------------------------
-    | TABTAB
-    |--------------------------------------------------------------------------
-    |
-    | Конфиг плагина табуляции
-    |
-    */
+    var Reviews = new Vue({
+        delimiters: ['[[', ']]'],
+        el: '.reviews',
+        name: 'Reviews',
+        created: function () {
+            // Конфиг плагина табуляции
+            jQuery(document).ready(function ($) {
 
-    $('.reviews').tabtab({
-        tabMenu: '.reviews__nav', // direct container of the tab menu items
-        tabContent: '.reviews__tabs-wrap', // direct container of the tab content items
-        // next: '.tabs-controls__next',       // next slide trigger
-        // prev: '.tabs-controls__prev',       // previous slide trigger
+                $('.reviews').tabtab({
+                    tabMenu: '.reviews__nav', // direct container of the tab menu items
+                    tabContent: '.reviews__tabs-wrap', // direct container of the tab content items
+                    // next: '.tabs-controls__next',       // next slide trigger
+                    // prev: '.tabs-controls__prev',       // previous slide trigger
 
-        startSlide: 1, // starting slide on pageload
-        arrows: true, // keyboard arrow navigation
-        dynamicHeight: true, // if true the height will dynamic and animated.
-        useAnimations: true, // disables animations.
+                    startSlide: 1, // starting slide on pageload
+                    arrows: true, // keyboard arrow navigation
+                    dynamicHeight: true, // if true the height will dynamic and animated.
+                    useAnimations: true, // disables animations.
 
-        easing: 'ease', // http://julian.com/research/velocity/#easing
-        speed: 1000, // animation speed
-        slideDelay: 0, // delay the animation
-        perspective: 1200, // set 3D perspective
-        transformOrigin: 'center top', // set the center point of the 3d animation
-        perspectiveOrigin: '50% 50%', // camera angle
+                    easing: 'ease', // http://julian.com/research/velocity/#easing
+                    speed: 1000, // animation speed
+                    slideDelay: 0, // delay the animation
+                    perspective: 1200, // set 3D perspective
+                    transformOrigin: 'center top', // set the center point of the 3d animation
+                    perspectiveOrigin: '50% 50%', // camera angle
 
-        translateY: 0, // animate along the Y axis (val: px or ‘slide’)
-        translateX: 16, // animate along the X axis (val: px or ‘slide’)
-        scale: 1, // animate scale (val: 0-2)
-        rotateX: 0, // animate rotation (val: 0deg-360deg)
-        rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
-        skewY: 0, // animate Y skew (val: 0deg-360deg)
-        skewX: 0, // animate X skew (val: 0deg-360deg)
+                    translateY: 0, // animate along the Y axis (val: px or ‘slide’)
+                    translateX: 16, // animate along the X axis (val: px or ‘slide’)
+                    scale: 1, // animate scale (val: 0-2)
+                    rotateX: 0, // animate rotation (val: 0deg-360deg)
+                    rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
+                    skewY: 0, // animate Y skew (val: 0deg-360deg)
+                    skewX: 0, // animate X skew (val: 0deg-360deg)
+                });
+
+            });
+        }
     });
-
-});
-
+}
 
 
 jQuery(document).ready(function ($) {
