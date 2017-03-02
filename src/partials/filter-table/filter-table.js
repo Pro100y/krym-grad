@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     var item = $('.filter-table [data-href]');
     var link = item.attr('data-href');

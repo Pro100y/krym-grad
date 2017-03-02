@@ -3662,9 +3662,9 @@ qe[Xc]=d(N(yb)),qe[Zc]=d(N(Mb+" "+Ob+rc,N(ic))),qe[Yc]=d(N(Mb+" "+Nb+rc,N(hc))),
 })(jQuery);
 
 //jQuery noconflict
-$.noConflict();
+// $.noConflict();
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
 
     /*
@@ -3938,7 +3938,7 @@ jQuery(document).ready(function ($) {
     // };
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     // плавающий сайдбар
     // stickySidebar = function () {
@@ -3955,7 +3955,7 @@ jQuery(document).ready(function ($) {
     // });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
 	//images padding
 	$('.typography img').each(function () {
@@ -3995,7 +3995,7 @@ jQuery(document).ready(function ($) {
 	});
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /*
     |--------------------------------------------------------------------------
@@ -4114,17 +4114,17 @@ if (document.getElementsByClassName('apartment__image').length) {
     });
 }
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $('.choose-breadcrumbs__back').on('click', function () {
         window.history.back()
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     //Конфигурация плагина подсветки area
-    jQuery(".choose-floor__image").maphilight({
+    $(".choose-floor__image").maphilight({
         fill: true,
         fillColor: 'ffffff',
         fillOpacity: 0.54,
@@ -4148,10 +4148,10 @@ jQuery(document).ready(function ($) {
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     //Конфигурация плагина подсветки area
-    jQuery(".choose-house__image").maphilight({
+    $(".choose-house__image").maphilight({
         fill: true,
         fillColor: 'ffffff',
         fillOpacity: 0.54,
@@ -4210,7 +4210,7 @@ if (document.getElementsByClassName('choose-room').length) {
         },
         created: function () {
             //Конфигурация плагина подсветки area
-            jQuery(document).ready(function ($) {
+            document.addEventListener('DOMContentLoaded', function () {
                 $(".choose-room__image").maphilight({
                     fill: true,
                     fillColor: '0062cd',
@@ -4239,7 +4239,7 @@ if (document.getElementsByClassName('choose-room').length) {
 }
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
    /*
     |--------------------------------------------------------------------------
@@ -4272,7 +4272,7 @@ jQuery(document).ready(function ($) {
 
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /*
     |--------------------------------------------------------------------------
@@ -4306,7 +4306,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     var item = $('.filter-table [data-href]');
     var link = item.attr('data-href');
@@ -4316,7 +4316,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /**
      * Выравнивание высот
@@ -4346,7 +4346,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $('.header__menu-button').click(function () {
         $('.header__menu-button').toggleClass('header__menu-button--active');
@@ -4360,7 +4360,7 @@ jQuery(document).ready(function ($) {
 
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $('.news').tabtab({
         tabMenu: '.news__nav', // direct container of the tab menu items
@@ -4390,7 +4390,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /*
     |--------------------------------------------------------------------------
@@ -4454,7 +4454,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /*
     |--------------------------------------------------------------------------
@@ -4547,7 +4547,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     /*
     |--------------------------------------------------------------------------
@@ -4616,7 +4616,7 @@ jQuery(document).ready(function ($) {
 
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
    var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
         slidesPerView: 4,
@@ -4641,7 +4641,7 @@ if (document.getElementsByClassName('reviews').length) {
         name: 'Reviews',
         created: function () {
             // Конфиг плагина табуляции
-            jQuery(document).ready(function ($) {
+            document.addEventListener('DOMContentLoaded', function () {
 
                 $('.reviews').tabtab({
                     tabMenu: '.reviews__nav', // direct container of the tab menu items
@@ -4676,7 +4676,7 @@ if (document.getElementsByClassName('reviews').length) {
 }
 
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
    var sertificatesSlideshow = new Swiper('.sertificates__slideshow', {
         slidesPerView: 'auto',

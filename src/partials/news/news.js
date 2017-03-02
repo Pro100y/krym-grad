@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $('.news').tabtab({
         tabMenu: '.news__nav', // direct container of the tab menu items

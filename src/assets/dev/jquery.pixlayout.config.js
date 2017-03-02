@@ -7,7 +7,7 @@
 |
 */
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $.pixlayout({
         src: "/assets/images/theme-about.png",

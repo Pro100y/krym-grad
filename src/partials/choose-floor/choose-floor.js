@@ -1,7 +1,7 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     //Конфигурация плагина подсветки area
-    jQuery(".choose-floor__image").maphilight({
+    $(".choose-floor__image").maphilight({
         fill: true,
         fillColor: 'ffffff',
         fillOpacity: 0.54,

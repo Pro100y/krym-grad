@@ -1,7 +1,7 @@
 //jQuery noconflict
-$.noConflict();
+// $.noConflict();
 
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
 
     /*

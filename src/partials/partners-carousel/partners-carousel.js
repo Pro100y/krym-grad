@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
    var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
         slidesPerView: 4,

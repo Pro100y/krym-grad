@@ -6,7 +6,7 @@ if (document.getElementsByClassName('reviews').length) {
         name: 'Reviews',
         created: function () {
             // Конфиг плагина табуляции
-            jQuery(document).ready(function ($) {
+            document.addEventListener('DOMContentLoaded', function () {
 
                 $('.reviews').tabtab({
                     tabMenu: '.reviews__nav', // direct container of the tab menu items

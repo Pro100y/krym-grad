@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
     $('.header__menu-button').click(function () {
         $('.header__menu-button').toggleClass('header__menu-button--active');

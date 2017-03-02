@@ -33,7 +33,7 @@ if (document.getElementsByClassName('choose-room').length) {
         },
         created: function () {
             //Конфигурация плагина подсветки area
-            jQuery(document).ready(function ($) {
+            document.addEventListener('DOMContentLoaded', function () {
                 $(".choose-room__image").maphilight({
                     fill: true,
                     fillColor: '0062cd',

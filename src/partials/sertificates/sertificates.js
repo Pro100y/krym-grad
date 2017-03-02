@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
    var sertificatesSlideshow = new Swiper('.sertificates__slideshow', {
         slidesPerView: 'auto',
