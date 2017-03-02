@@ -1,19 +1,12 @@
 <!-- apartment -->
 
-{% include "partials/choose-table/choose-table.htm" %}
-
 <section
     class = "apartment"
 >
 
     {% include "partials/choose-breadcrumbs/choose-breadcrumbs.htm" %}
 
-    <choose-table
-        v-bind:num     = "131"
-        v-bind:area    = "22"
-        v-bind:balcony = "15.9"
-        v-bind:cost    = "'45424223'.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')"
-    ></choose-table>
+    {% include "partials/choose-table/choose-table.htm" %}
 
     <div class="apartment__image-wrap">
 

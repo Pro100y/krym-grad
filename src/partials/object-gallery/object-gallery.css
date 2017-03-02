@@ -1,16 +1,17 @@
 .object-gallery {
+    margin-bottom: 140px;
     width: calc((100% - var(--gridGutter))/12*7);
     @media screen and (--tablet) {
-        width: 100%;
         margin-bottom: 80px;
+        width: 100%;
     }
     & .fotorama__thumb-border {
         border-color: #fb9b2a !important;
     }
     & .fotorama__arr {
         background-position: center;
-        background-repeat: no-repeat;
         background-size: contain;
+        background-repeat: no-repeat;
         &--prev {
             background-image: url(../images/object-gallery-1.svg);
         }
@@ -24,6 +25,10 @@
     margin-bottom: 53px;
     color: #242525;
     font-size: 48px;
+    @media screen and (--mobile) {
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
 }
 
 .object-gallery__nav {
@@ -41,8 +46,8 @@
     font-weight: bold;
     font-size: 18px;
     font-family: GothamProBold;
-    transition-duration: .5s;
     cursor: pointer;
+    transition-duration: .5s;
     &:hover,
     &.active {
         border-color: currentColor;
@@ -77,8 +82,8 @@
     font-weight: bold;
     font-size: 14px;
     font-family: GothamProBold;
-    transition-duration: .5s;
     cursor: pointer;
+    transition-duration: .5s;
     &:hover,
     &.active {
         border-color: currentColor;
@@ -88,9 +93,16 @@
 
 .object-gallery__inner-tabs-wrap {
     width: 100%;
+    @media screen and (--mobile) {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
 }
 
 .object-gallery__inner-tab {
     width: 100%;
-    height: 650px;
+    // height: 650px;
+    @media screen and (--mobile) {
+        // height: 260px;
+    }
 }

@@ -7,6 +7,9 @@
     @media screen and (--tablet) {
        width: calc((100% - var(--gridGutter))/12*4)
     }
+    @media screen and (--mobile) {
+        display: none;
+    }
     & tbody {}
     & tr {
         border-bottom: 1px solid #fff;

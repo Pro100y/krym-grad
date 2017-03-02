@@ -5,6 +5,10 @@
     @media screen and (--tablet) {
         width: calc((100%)/12*9);
     }
+    @media screen and (--mobile) {
+        width: 100%;
+        height: 570px;
+    }
 }
 
 .choose-floor__image-wrap {
@@ -13,6 +17,10 @@
     left: 50%;
     height: 100%;
     transform: translateX(-50%);
+    @media screen and (--mobile) {
+        width: min-content;
+        position: relative;
+    }
 }
 
 .choose-floor__image {

@@ -2,6 +2,10 @@
     margin-bottom: 57px;
     padding-right: var(--gridGutter);
     width: var(--gridSize8);
+    @media screen and (--mobile) {
+        width: 100%;
+        margin-bottom: 26px;
+    }
 }
 
 .object-text__title {
@@ -13,6 +17,10 @@
     color: #000000;
     font-size: 26px;
     line-height: 1.38;
+    @media screen and (--mobile) {
+        padding: 1rem 0;
+        font-size: 20px;
+    }
 }
 
 .object-text__content {

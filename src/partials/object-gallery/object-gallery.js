@@ -9,12 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    var $fotoramaDiv = $('.object-gallery__slideshow').fotorama({
+    var objectGallerySlideshow = $('.object-gallery__slideshow').fotorama({
         nav: 'thumbs',
         thumbwidth: 136,
         thumbheight: 80,
         width: '100%',
-        height: '530px',
+        // height: '530px',
+        ratio:'940/530',
         margin: 20,
         thumbmargin: 20,
         navposition: 'top',
@@ -26,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
         shadows: false,
         arrows: "always"
     });
+
+    console.log(objectGallerySlideshow.height);
 
     /*
     |--------------------------------------------------------------------------
@@ -45,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
         dynamicHeight: false, // if true the height will dynamic and animated.
+        fixedHeight: false,
         useAnimations: true, // disables animations.
 
         easing: 'ease', // http://julian.com/research/velocity/#easing

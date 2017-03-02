@@ -1,17 +1,10 @@
 <!-- choose-room -->
 
-{% include "partials/choose-table/choose-table.htm" %}
-
 <section class="choose-room">
 
     {% include "partials/choose-breadcrumbs/choose-breadcrumbs.htm" %}
 
-    <choose-table
-        v-bind:num     = "num"
-        v-bind:area    = "area"
-        v-bind:balcony = "balcony"
-        v-bind:cost    = "cost"
-    ></choose-table>
+    {% include "partials/choose-table/choose-table.htm" %}
 
     <div class="choose-room__image-wrap">
 

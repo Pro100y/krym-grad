@@ -5,13 +5,55 @@
     padding: 20px 0;
     align-self: flex-start;
     min-height: 122px;
+    @media screen and (--mobile) {
+        padding: 0;
+        background-color: #fff;
+        order: 3;
+        margin-bottom: 50px;
+    }
 }
 
 .choose-table__content {
     width: auto;
-    & thead {}
-    & tbody {}
-    & tr {}
+    @media screen and (--mobile) {
+        display: flex;
+    }
+    & thead {
+        @media screen and (--mobile) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            & tr {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                & th {
+                    display: block;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    & tbody {
+        @media screen and (--mobile) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            & tr {
+                display: block;
+                width: 100%;
+                & td {
+                    display: block;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    & tr {
+        @media screen and (--mobile) {
+            background-color: #FAFAFA;
+        }
+    }
     & th {
         font-family: GothamProBold;
         font-size: 12px;
@@ -21,6 +63,13 @@
         color: #000000;
         padding: 5px 20px;
         text-transform: uppercase;
+        @media screen and (--mobile) {
+            font-size: 13px;
+            font-weight: normal;
+            font-family: GothamProRegular;
+            text-transform: none;
+            line-height: 1.33;
+        }
     }
     & td {
         padding: 5px 20px;
@@ -29,7 +78,29 @@
         font-weight: bold;
         text-align: left;
         color: #000000;
+        @media screen and (--mobile) {
+            font-size: 13px;
+            font-weight: normal;
+            font-family: GothamProRegular;
+            text-transform: none;
+            line-height: 1.33;
+            min-height: 28px;
+        }
     }
 }
 
-.choose-table__cost {}
+.choose-table__readmore {
+    background-color: #0062CD;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+    display: none;
+    @media screen and (--mobile) {
+        display: block;
+    }
+}

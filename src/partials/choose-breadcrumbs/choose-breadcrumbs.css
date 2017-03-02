@@ -7,6 +7,10 @@
     color: #fff;
     text-transform: uppercase;
     display: flex;
+    @media screen and (--mobile) {
+        position: relative;
+    width: 100%;
+    }
 }
 
 .choose-breadcrumbs__back {
@@ -15,10 +19,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/choose-breadcrumbs-1.svg);
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .choose-breadcrumbs__caption {
-   padding: 20px;
+    padding: 20px;
 }
 
 .choose-breadcrumbs__navigation {

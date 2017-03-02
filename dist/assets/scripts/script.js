@@ -3661,6 +3661,18 @@ qe[Xc]=d(N(yb)),qe[Zc]=d(N(Mb+" "+Ob+rc,N(ic))),qe[Yc]=d(N(Mb+" "+Nb+rc,N(hc))),
 	};
 })(jQuery);
 
+/*
+* rwdImageMaps jQuery plugin v1.6
+*
+* Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize
+*
+* Copyright (c) 2016 Matt Stow
+* https://github.com/stowball/jQuery-rwdImageMaps
+* http://mattstow.com
+* Licensed under the MIT license
+*/
+;(function(a){a.fn.rwdImageMaps=function(){var c=this;var b=function(){c.each(function(){if(typeof(a(this).attr("usemap"))=="undefined"){return}var e=this,d=a(e);a("<img />").on('load',function(){var g="width",m="height",n=d.attr(g),j=d.attr(m);if(!n||!j){var o=new Image();o.src=d.attr("src");if(!n){n=o.width}if(!j){j=o.height}}var f=d.width()/100,k=d.height()/100,i=d.attr("usemap").replace("#",""),l="coords";a('map[name="'+i+'"]').find("area").each(function(){var r=a(this);if(!r.data(l)){r.data(l,r.attr(l))}var q=r.data(l).split(","),p=new Array(q.length);for(var h=0;h<p.length;++h){if(h%2===0){p[h]=parseInt(((q[h]/n)*100)*f)}else{p[h]=parseInt(((q[h]/j)*100)*k)}}r.attr(l,p.toString())})}).attr("src",d.attr("src"))})};a(window).resize(b).trigger("resize");return this}})(jQuery);
+
 //jQuery noconflict
 // $.noConflict();
 
@@ -4096,29 +4108,64 @@ document.addEventListener('DOMContentLoaded', function () {
 if (document.getElementsByClassName('apartment__image').length) {
 
     //компонент таблицы
-    Vue.component('ChooseTable', {
-        delimiters: ['[[', ']]'],
-        template: '#choose-table',
-        props: [
-            'num',
-            'area',
-            'balcony',
-            'cost'
-        ]
-    });
+    // Vue.component('ChooseTable', {
+    //     delimiters: ['[[', ']]'],
+    //     template: '#choose-table',
+    //     props: [
+    //         'num',
+    //         'area',
+    //         'balcony',
+    //         'cost'
+    //     ]
+    // });
 
     var Apartment = new Vue({
         delimiters: ['[[', ']]'],
         el: '.apartment',
-        name: 'Apartment'
+        name: 'Apartment',
+        data: {
+            num: '',
+            area: '',
+            balcony: '',
+            cost: ''
+        },
+        methods: {
+            //пробрасывание параметров квартиры в таблицу
+            changeInfo: function (num, area, balcony, cost) {
+                this.num = num;
+                this.area = area;
+                this.balcony = balcony;
+                this.cost = cost.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            }
+        },
+        mounted: function () {
+            this.changeInfo('140', '41.1', '15.9', '5650800');
+        }
     });
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    $('.choose-breadcrumbs__back').on('click', function () {
-        window.history.back()
-    });
+    /**
+     * Возврат на предыдущую страницу
+     * @param {string} elem
+     * @param {string} event
+     */
+    function goBack(elem, event) {
+
+        var domNode = document.getElementsByClassName(elem);
+
+        for (var i = 0; i < domNode.length; i++) {
+            domNode[i].addEventListener(event, function () {
+                window.history.back();
+                console.info('Возврат на предыдущую страницу');
+            });
+        }
+
+    }
+
+    goBack('choose-breadcrumbs__back', 'click');
 
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -4145,7 +4192,7 @@ document.addEventListener('DOMContentLoaded', function () {
         shadowOpacity: 0.8,
         shadowPosition: 'outside',
         shadowFrom: false
-    });
+    }).rwdImageMaps();
 
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -4172,22 +4219,10 @@ document.addEventListener('DOMContentLoaded', function () {
         shadowOpacity: 0.8,
         shadowPosition: 'outside',
         shadowFrom: false
-    });
+    }).rwdImageMaps();
 
 });
 if (document.getElementsByClassName('choose-room').length) {
-
-    //компонент таблицы
-    Vue.component('choose-table', {
-        delimiters: ['[[', ']]'],
-        template: '#choose-table',
-        props: [
-            'num',
-            'area',
-            'balcony',
-            'cost'
-        ]
-    });
 
     var chooseRoom = new Vue({
         delimiters: ['[[', ']]'],
@@ -4232,7 +4267,7 @@ if (document.getElementsByClassName('choose-room').length) {
                     shadowOpacity: 0.8,
                     shadowPosition: 'outside',
                     shadowFrom: false
-                });
+                }).rwdImageMaps();
             });
         }
     });
@@ -4465,12 +4500,13 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    var $fotoramaDiv = $('.object-gallery__slideshow').fotorama({
+    var objectGallerySlideshow = $('.object-gallery__slideshow').fotorama({
         nav: 'thumbs',
         thumbwidth: 136,
         thumbheight: 80,
         width: '100%',
-        height: '530px',
+        // height: '530px',
+        ratio:'940/530',
         margin: 20,
         thumbmargin: 20,
         navposition: 'top',
@@ -4482,6 +4518,8 @@ document.addEventListener('DOMContentLoaded', function () {
         shadows: false,
         arrows: "always"
     });
+
+    console.log(objectGallerySlideshow.height);
 
     /*
     |--------------------------------------------------------------------------
@@ -4501,6 +4539,7 @@ document.addEventListener('DOMContentLoaded', function () {
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
         dynamicHeight: false, // if true the height will dynamic and animated.
+        fixedHeight: false,
         useAnimations: true, // disables animations.
 
         easing: 'ease', // http://julian.com/research/velocity/#easing
@@ -4610,7 +4649,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+document.addEventListener('DOMContentLoaded', function () {
 
+    /**
+     * Мобильное меню
+     * @param {string} button Селектор кнопки
+     * @param {string} activeButtonClass Класс активной кнопки
+     * @param {string} wrapper Враппер меню
+     * @param {number} time Продолжительность анимации
+     * @param {number} breakpoint Мобильное разрешение в пикселях
+     */
+    function toggleMobileMenu(button, activeButtonClass, wrapper, time, breakpoint) {
+        $(button).on('click', function () {
+            $(this).toggleClass(activeButtonClass);
+            $(wrapper).slideToggle(time);
+        });
+        $(window).on('resize', function () {
+            $(button).removeClass(activeButtonClass);
+            if ($(window).width() >= breakpoint) {
+                $(wrapper).slideDown(0);
+                console.info('Меню ' + wrapper + ' раскрыто при ресайзе окна');
+            } else {
+                $(wrapper).slideUp(0);
+                console.info('Меню ' + wrapper + ' скрыто при ресайзе окна');
+            }
+        });
+    }
+
+    toggleMobileMenu(
+        '.object-menu__mobile-button',
+        'object-menu__mobile-button--active',
+        '.object-menu__mobile-content',
+        1000,
+        980
+    );
+
+
+
+});
 
 
 

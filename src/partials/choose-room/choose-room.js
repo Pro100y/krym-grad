@@ -1,17 +1,5 @@
 if (document.getElementsByClassName('choose-room').length) {
 
-    //компонент таблицы
-    Vue.component('choose-table', {
-        delimiters: ['[[', ']]'],
-        template: '#choose-table',
-        props: [
-            'num',
-            'area',
-            'balcony',
-            'cost'
-        ]
-    });
-
     var chooseRoom = new Vue({
         delimiters: ['[[', ']]'],
         el: '.choose-room',
@@ -55,7 +43,7 @@ if (document.getElementsByClassName('choose-room').length) {
                     shadowOpacity: 0.8,
                     shadowPosition: 'outside',
                     shadowFrom: false
-                });
+                }).rwdImageMaps();
             });
         }
     });

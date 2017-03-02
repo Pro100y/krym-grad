@@ -1,5 +1,6 @@
 .promo {
     position: relative;
+    margin-bottom: 20px;
     padding: 100px 25px 62px;
     width: calc(var(--gridSize9) - var(--gridGutter));
     background-image: url(../images/promo-1.jpg);
@@ -8,7 +9,6 @@
     background-repeat: no-repeat;
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 20px;
     @media screen and (--tablet) {
         width: 100%;
     }
@@ -22,6 +22,14 @@
         @media screen and (--tablet) {
             padding-right: 300px;
         }
+        @media screen and (--mobile) {
+            padding-right: 20px;
+            padding-bottom: 0;
+            min-height: auto;
+            margin-bottom: 0;
+            width: calc(100% + 20px);
+            margin-left: -10px;
+        }
     }
 }
 
@@ -31,8 +39,8 @@
     font-size: 18px;
     font-family: GothamProBold;
     @media screen and (--mobile) {
-        font-size: 16px;
         margin-bottom: 1rem;
+        font-size: 16px;
     }
 }
 
@@ -41,8 +49,8 @@
     font-size: 72px;
     font-family: GothamProBold;
     @media screen and (--mobile) {
-        font-size: 36px;
         margin-bottom: 10px;
+        font-size: 36px;
     }
 }
 
@@ -52,15 +60,15 @@
     font-size: 18px;
     font-family: GothamProBold;
     @media screen and (--mobile) {
-        font-size: 12px;
         margin-bottom: 2rem;
+        font-size: 12px;
     }
 }
 
 .promo__cost-title {
-    font-family: GothamProBold;
     display: block;
     font-size: 16px;
+    font-family: GothamProBold;
     @media screen and (--mobile) {
         font-size: 14px;
     }
@@ -87,6 +95,7 @@
     font-family: GothamProBold;
     line-height: 55px;
     @media screen and (--mobile) {
+        margin-bottom: 24px;
         background-color: rgba(251, 155, 42, 0.9);
         color: #fff;
     }
@@ -121,20 +130,36 @@
     position: absolute;
     top: 78px;
     right: 145px;
-    widows: 245px;
+    width: 245px;
     @media screen and (--tablet) {
         right: 55px;
+    }
+    @media screen and (--mobile) {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        margin-left: -20px;
+        width: calc(100% + 40px);
     }
 }
 
 .promo__info-date {
     padding: 57px 1rem 47px 50px;
     background-color: rgba(156, 118, 90, .6);
-    text-transform: uppercase;
-    background-repeat: no-repeat;
+    background-image: url(../images/promo-3.svg);
     background-position: 14px 55px;
     background-repeat: no-repeat;
-    background-image: url(../images/promo-3.svg);
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    @media screen and (--mobile) {
+        padding: 51px 10px 10px;
+        width: 50%;
+        background-color: rgba(156, 118, 90, 1);
+        background-position: 10px 13px;
+    }
 }
 
 .promo__info-date-title {
@@ -143,6 +168,9 @@
     font-weight: bold;
     font-size: 24px;
     font-family: GothamProBold;
+    @media screen and (--mobile) {
+        font-size: 18px;
+    }
 }
 
 .promo__info-date-description {
@@ -150,16 +178,25 @@
     font-weight: 500;
     font-size: 14px;
     font-family: GothamProMedium;
+    @media screen and (--mobile) {
+        font-size: 10px;
+    }
 }
 
 .promo__info-ready {
     padding: 57px 1rem 47px 50px;
     background-color: rgba(0, 98, 205, .6);
-    text-transform: uppercase;
-    background-repeat: no-repeat;
+    background-image: url(../images/promo-4.svg);
     background-position: 14px 55px;
     background-repeat: no-repeat;
-    background-image: url(../images/promo-4.svg);
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    @media screen and (--mobile) {
+        padding: 51px 10px 10px;
+        width: 50%;
+        background-color: rgba(0, 98, 205, 1);
+        background-position: 10px 13px;
+    }
 }
 
 .promo__info-ready-title {
@@ -168,6 +205,9 @@
     font-weight: bold;
     font-size: 36px;
     font-family: GothamProBold;
+    @media screen and (--mobile) {
+        font-size: 24px;
+    }
 }
 
 .promo__info-ready-description {
@@ -175,4 +215,7 @@
     font-weight: 500;
     font-size: 14px;
     font-family: GothamProMedium;
+    @media screen and (--mobile) {
+        font-size: 10px;
+    }
 }

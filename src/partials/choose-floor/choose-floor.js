@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         shadowOpacity: 0.8,
         shadowPosition: 'outside',
         shadowFrom: false
-    });
+    }).rwdImageMaps();
 
 });

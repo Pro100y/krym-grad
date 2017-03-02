@@ -134,6 +134,7 @@ let project = {
             'bower_components/fotorama/fotorama.js',
             'bower_components/parallax.js/parallax.min.js',
             'bower_components/maphilight/jquery.maphilight.js',
+            'bower_components/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js',
             // Скрипты шаблона
             'src/assets/global/**/*.js',
             'src/assets/grid/**/*.js',

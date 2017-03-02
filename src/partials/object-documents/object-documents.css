@@ -1,7 +1,12 @@
 .object-documents {
     width: calc((100% - var(--gridGutter))/12*4);
+    margin-bottom: 140px;
     @media screen and (--tablet) {
-       width: 100%;
+        width: 100%;
+        padding-top: 0;
+    }
+    @media screen and (--mobile) {
+        margin-bottom: 60px;
     }
 }
 
@@ -11,7 +16,11 @@
     font-weight: 300;
     font-size: 48px;
     @media screen and (--tablet) {
-       margin-bottom: 80px;
+        margin-bottom: 80px;
+    }
+    @media screen and (--mobile) {
+        font-size: 30px;
+        margin-bottom: 2rem;
     }
 }
 
@@ -21,6 +30,9 @@
     padding: 0 20px;
     width: 100%;
     background-color: #ffffff;
+    @media screen and (--mobile) {
+        padding: 0;
+    }
 }
 
 .object-documents__item {
@@ -40,7 +52,11 @@
     line-height: 1.29;
     min-height: 32px;
     @media screen and (--tablet) {
-       width: calc(100% / 3);
+        width: calc(100% / 3);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        margin: 12px 0;
     }
     &--icon {
         &--1 {

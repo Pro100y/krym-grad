@@ -107,24 +107,27 @@
                         ЗЕНИТ
                         <figcaption class="object-menu__name-description">жилищный комплекс</figcaption>
                     </figure>
-                    <nav class="object-menu__nav">
-                        <a href="#object-text" class="object-menu__nav-item">
-                            <span class="object-menu__nav-item-text">О проекте</span>
-                        </a>
-                        <a href="#object-map" class="object-menu__nav-item">
-                            <span class="object-menu__nav-item-text">Расположение</span>
-                        </a>
-                        <a href="#object-text" class="object-menu__nav-item">
-                            <span class="object-menu__nav-item-text">инфраструктура</span>
-                        </a>
-                        <a href="#object-gallery" class="object-menu__nav-item">
-                            <span class="object-menu__nav-item-text">ХОД строительства</span>
-                        </a>
-                        <a href="#object-documents" class="object-menu__nav-item">
-                            <span class="object-menu__nav-item-text">документация</span>
-                        </a>
-                    </nav>
-                    <a href="/pages/4.1.object-house.html" class="object-menu__link-to-filter">Выбрать квартиру</a>
+                    <button type="button" class="object-menu__mobile-button"></button>
+                    <div class="object-menu__mobile-content">
+                        <nav class="object-menu__nav">
+                            <a href="#object-text" class="object-menu__nav-item">
+                                <span class="object-menu__nav-item-text">О проекте</span>
+                            </a>
+                            <a href="#object-map" class="object-menu__nav-item">
+                                <span class="object-menu__nav-item-text">Расположение</span>
+                            </a>
+                            <a href="#object-text" class="object-menu__nav-item">
+                                <span class="object-menu__nav-item-text">инфраструктура</span>
+                            </a>
+                            <a href="#object-gallery" class="object-menu__nav-item">
+                                <span class="object-menu__nav-item-text">ХОД строительства</span>
+                            </a>
+                            <a href="#object-documents" class="object-menu__nav-item">
+                                <span class="object-menu__nav-item-text">документация</span>
+                            </a>
+                        </nav>
+                        <a href="/pages/4.1.object-house.html" class="object-menu__link-to-filter">Выбрать квартиру</a>
+                    </div>
                     <footer class="object-menu__footer">
                         <a href="tel:#" class="object-menu__phone">+7 (000) 000-00-00</a>
                         <time class="object-menu__worktime">09:00-19:00, ПН-СБ</time>
@@ -134,28 +137,6 @@
                 </section>
                 <!-- /object-menu  -->
                 <!-- apartment -->
-                <template id="choose-table">
-    <section class="choose-table">
-        <table class="choose-table__content">
-            <thead>
-                <tr>
-                    <th>№ квартиры</th>
-                    <th>площадь, м2</th>
-                    <th>Балкон, м2</th>
-                    <th>цена, руб</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>[[ num ]]</td>
-                    <td>[[ area ]]</td>
-                    <td>[[ balcony ]]</td>
-                    <td class="choose-table__cost">[[ cost ]]</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</template>
                 <section class="apartment">
                     <figure class="choose-breadcrumbs">
                         <button type="button" class="choose-breadcrumbs__back"></button>
@@ -164,7 +145,27 @@
                             <span class="choose-breadcrumbs__motivation">Выберите квартиру</span>
                         </figcaption>
                     </figure>
-                    <choose-table v-bind:num="131" v-bind:area="22" v-bind:balcony="15.9" v-bind:cost="'45424223'.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')"></choose-table>
+                    <section class="choose-table">
+                        <table class="choose-table__content">
+                            <thead>
+                                <tr>
+                                    <th>№ квартиры</th>
+                                    <th>площадь, м2</th>
+                                    <th>Балкон, м2</th>
+                                    <th>цена, руб</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>[[ num ]]</td>
+                                    <td>[[ area ]]</td>
+                                    <td>[[ balcony ]]</td>
+                                    <td>[[ cost ]]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="/pages/4.4.object-apartment.html" class="choose-table__readmore">подробнее о квартире</a>
+                    </section>
                     <div class="apartment__image-wrap">
                         <img alt="Квартира" class="apartment__image" src="/assets/images/apartment-1.jpg" />
                         <figure class="apartment__buttons-wrap">

@@ -11,6 +11,10 @@
         width: calc(100%/12*9);
         padding-right: 176px;
     }
+    @media screen and (--mobile) {
+        width: 100%;
+        padding: 230px 10px 60px;
+    }
 }
 
 .object-promo__title {
@@ -28,6 +32,9 @@
         height: 5px;
         background-color: #ffffff;
         content: '';
+    }
+    @media screen and (--mobile) {
+        font-size: 24px;
     }
 }
 
@@ -58,6 +65,9 @@
         right: 18px;
         bottom: auto;
     }
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .object-promo__product-link {
@@ -85,5 +95,8 @@
     @media screen and (--tablet) {
         right: 18px;
         bottom: 65px;
+    }
+    @media screen and (--mobile) {
+        display: none;
     }
 }
