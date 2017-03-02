@@ -2832,6 +2832,17 @@ fieldset {
     width: 75%;
   }
     }
+@media screen and (max-width: 980px) {
+
+  .apartment {
+    width: 100%;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+    }
 
 .apartment__image-wrap {
     position: relative;
@@ -2859,6 +2870,17 @@ fieldset {
   }
     }
 
+@media screen and (max-width: 980px) {
+
+  .apartment__image-wrap {
+    background-size: 70px 67px, 64px 64px;
+    background-position: left calc(100% - 20px), right calc(100% - 20px);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 110px;
+  }
+    }
+
 .apartment__image {
     max-width: 100%;
     max-height: 100%;
@@ -2869,9 +2891,20 @@ fieldset {
 
 .apartment__buttons-wrap {
     position: absolute;
-    top: 116px;
-    left: 0;
+    top: 332px;
+    left: 0
 }
+
+@media screen and (max-width: 980px) {
+
+  .apartment__buttons-wrap {
+    position: relative;
+    width: 100%;
+    top: 0;
+    -webkit-box-ordinal-group: 5;
+            order: 4;
+  }
+    }
 
 .apartment__button {
     display: block;
@@ -2889,15 +2922,55 @@ fieldset {
     line-height: 1.33
 }
 
+@media screen and (max-width: 980px) {
+
+  .apartment__button {
+    padding: 20px 10px;
+    height: 60px;
+    font-size: 14px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+    }
+
 .apartment__button--booking {
   background-image: url(../images/apartment-b-1.svg);
   background-color: #fc3c2d;
+}
+
+@media screen and (max-width: 980px) {
+
+  .apartment__button--booking {
+    background-image: none;
+  }
 }
 
 .apartment__button--download {
   background-image: url(../images/apartment-b-2.svg);
   background-color: #0062cd;
 }
+
+@media screen and (max-width: 980px) {
+
+  .apartment__button--download {
+    background-image: none;
+  }
+}
+
+.apartment__button-mobile-text {
+    display: none
+}
+
+@media screen and (max-width: 980px) {
+
+  .apartment__button-mobile-text {
+    display: inline;
+  }
+    }
 .breadcrumbs {
     display: -webkit-box;
     display: flex;
@@ -3180,6 +3253,7 @@ fieldset {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    margin-bottom: 50px;
   }
     }
 
@@ -3240,7 +3314,6 @@ fieldset {
     background-color: #fff;
     -webkit-box-ordinal-group: 4;
             order: 3;
-    margin-bottom: 50px;
   }
     }
 
@@ -3377,6 +3450,10 @@ fieldset {
 
   .choose-table__readmore {
     display: block;
+  }
+
+  .apartment .choose-table__readmore {
+    display: none;
   }
     }
 .commercial-object-content {
@@ -4695,89 +4772,6 @@ fieldset {
     width: calc((100% - 20px)/12*7);
     padding-right: 80px;
 }
-.new {
-    width: 100%;
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px;
-}
-
-.new__date {
-    font-family: GothamProMedium;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.85;
-    color: #242525;
-    margin-bottom: 6px;
-    display: block;
-    width: 100%;
-}
-
-.new__category {
-    font-family: GothamProBold;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.71;
-    color: #0062cd;
-    margin-bottom: 11px;
-    width: 100%;
-}
-
-.new__title {
-    font-size: 48px;
-    line-height: 1.17;
-    color: #242525;
-    margin-bottom: 46px;
-    width: 100%;
-    font-weight: 300;
-}
-
-.new__subtitle {
-    font-size: 26px;
-    line-height: 1.38;
-    color: #000000;
-    padding-bottom: 30px;
-    border-bottom: 3px solid #777;
-}
-
-.new__content-wrap {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-            flex-direction: row-reverse;
-}
-
-.new__image {
-    width: calc((100% - 20px)/12*5)
-}
-
-@media screen and (max-width: 1640px) {
-
-  .new__image {
-    width: calc((100% - 20px)/12*6);
-  }
-    }
-
-.new__content {
-    width: calc((100% - 20px)/12*7)
-}
-
-@media screen and (max-width: 1640px) {
-
-  .new__content {
-    width: calc((100% - 20px)/12*6);
-  }
-    }
-.new__text {
-    width: 100%;
-}
 .news {
     width: calc((100% - 20px)/12*9)
 }
@@ -4989,6 +4983,89 @@ fieldset {
     font-size: 36px;
   }
     }
+.new {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.new__date {
+    font-family: GothamProMedium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.85;
+    color: #242525;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+}
+
+.new__category {
+    font-family: GothamProBold;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    color: #0062cd;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.new__title {
+    font-size: 48px;
+    line-height: 1.17;
+    color: #242525;
+    margin-bottom: 46px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.new__subtitle {
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #777;
+}
+
+.new__content-wrap {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+}
+
+.new__image {
+    width: calc((100% - 20px)/12*5)
+}
+
+@media screen and (max-width: 1640px) {
+
+  .new__image {
+    width: calc((100% - 20px)/12*6);
+  }
+    }
+
+.new__content {
+    width: calc((100% - 20px)/12*7)
+}
+
+@media screen and (max-width: 1640px) {
+
+  .new__content {
+    width: calc((100% - 20px)/12*6);
+  }
+    }
+.new__text {
+    width: 100%;
+}
 .news-carousel {
     position: relative;
     display: -webkit-box;
@@ -6381,8 +6458,14 @@ fieldset {
   }
     }
 .realty {
-    width: 100%;
+    width: 100%
 }
+@media screen and (max-width: 980px) {
+
+  .realty {
+    margin-bottom: 2rem;
+  }
+    }
 
 .realty__item {
     display: -webkit-box;

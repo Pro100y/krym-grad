@@ -9,6 +9,12 @@
     @media screen and (--tablet) {
         width: calc((100%)/12*9);
     }
+    @media screen and (--mobile) {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
 }
 
 .apartment__image-wrap {
@@ -27,6 +33,13 @@
         padding-left: 187px;
         background-position: 30px calc(100% - 40px), calc(100% - 30px) calc(100% - 40px);
     }
+    @media screen and (--mobile) {
+        background-size: 70px 67px, 64px 64px;
+        background-position: left calc(100% - 20px), right calc(100% - 20px);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 110px;
+    }
 }
 
 .apartment__image {
@@ -39,8 +52,14 @@
 
 .apartment__buttons-wrap {
     position: absolute;
-    top: 116px;
+    top: 332px;
     left: 0;
+    @media screen and (--mobile) {
+        position: relative;
+        width: 100%;
+        top: 0;
+        order: 4;
+    }
 }
 
 .apartment__button {
@@ -57,12 +76,33 @@
     font-size: 12px;
     font-family: GothamProBold;
     line-height: 1.33;
+    @media screen and (--mobile) {
+        padding: 20px 10px;
+        height: 60px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &--booking {
         background-image: url(../images/apartment-b-1.svg);
         background-color: #fc3c2d;
+        @media screen and (--mobile) {
+            background-image: none;
+        }
     }
     &--download {
         background-image: url(../images/apartment-b-2.svg);
         background-color: #0062cd;
+        @media screen and (--mobile) {
+            background-image: none;
+        }
+    }
+}
+
+.apartment__button-mobile-text {
+    display: none;
+    @media screen and (--mobile) {
+        display: inline;
     }
 }

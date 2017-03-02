@@ -1,5 +1,8 @@
 .realty {
     width: 100%;
+    @media screen and (--mobile) {
+        margin-bottom: 2rem;
+    }
 }
 
 .realty__item {
