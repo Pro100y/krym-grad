@@ -1,20 +1,28 @@
 .action {
     width: 100%;
 }
+
 .action__title {
     margin-bottom: 14px;
     padding-top: 30px;
     font-size: 48px;
     line-height: 54px;
 }
+
 .action__image-wrap {
     position: relative;
     margin-bottom: 40px;
     width: 100%;
+    min-height: 180px;
+    @media screen and (--mobile) {
+        margin-bottom: 1rem;
+    }
 }
+
 .action__image {
     width: 100%;
 }
+
 .action__image-description {
     position: absolute;
     top: 20px;
@@ -36,6 +44,7 @@
     font-size: 11px;
     line-height: 16px;
 }
+
 .action__content-wrap {
     width: 100%;
 }

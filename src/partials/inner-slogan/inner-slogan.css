@@ -1,5 +1,5 @@
 .inner-slogan {
-    width: calc(var(--gridSize8));
+    width: calc(calc((100%/12)*8));
     font-size: 26px;
     line-height: 1.38;
     color: #000000;

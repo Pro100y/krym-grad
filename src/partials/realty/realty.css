@@ -25,7 +25,7 @@
     width: 260px;
     background-color: #0062cd;
     @media screen and (--tablet) {
-        width: var(--gridSize4);
+        width: calc((100%/12)*4);
     }
     @media screen and (--mobile) {
         width: 100%;
@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     @media screen and (--tablet) {
-        width: var(--gridSize3);
+        width: calc((100%/12)*3);
     }
     @media screen and (--mobile) {
         width: 100%;
@@ -80,7 +80,7 @@
     border-right: solid 1px #979797;
     border-bottom: solid 1px #979797;
     @media screen and (--tablet) {
-        width: var(--gridSize5);
+        width: calc((100%/12)*5);
     }
     @media screen and (--mobile) {
         width: 100%;

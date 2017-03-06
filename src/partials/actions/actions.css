@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
-    width: var(--gridSize3);
+    width: calc((100%/12)*3);
     margin-bottom: 84px;
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter)*2)/3);

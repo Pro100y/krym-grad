@@ -4,7 +4,7 @@
     }
     position: relative;
     padding: 30px 60px;
-    width: calc(var(--gridSize7) - var(--gridGutter));
+    width: calc(calc((100%/12)*7) - var(--gridGutter));
     margin-bottom: 100px;
     @media screen and (--tablet) {
         width: 100%;

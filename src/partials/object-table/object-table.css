@@ -1,6 +1,6 @@
 .object-table {
     margin-bottom: 57px;
-    width: var(--gridSize3);
+    width: calc((100%/12)*3);
     color: #000000;
     font-size: 13px;
     line-height: 1.23;

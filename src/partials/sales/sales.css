@@ -1,6 +1,6 @@
 .sales {
     display: flex;
-    width: var(--gridSize3);
+    width: calc((100%/12)*3);
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;

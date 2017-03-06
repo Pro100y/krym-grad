@@ -1,6 +1,6 @@
 .commercial-object-content {
-    width: calc((100% - var(--gridGutter))/12*5);
     margin-bottom: 40px;
+    width: calc((100% - var(--gridGutter))/12*5);
     @media screen and (--tablet) {
         margin-bottom: 0;
         width: 100%;
@@ -10,11 +10,21 @@
 .commercial-object-content__table {
     min-height: 180px;
     width: 100%;
-    border-collapse: collapse;
     border: solid 1px #979797;
+    border-collapse: collapse;
+    @media screen and (--mobile) {
+        display: block;
+    }
     & thead {
+        @media screen and (--mobile) {
+            display: block;
+        }
         & tr {
             background-color: #0f0f10;
+            @media screen and (--mobile) {
+                display: flex;
+                width: 100%;
+            }
         }
         & th {
             padding: 22px;
@@ -27,9 +37,23 @@
             @media screen and (--tablet) {
                 padding: 22px 1rem;
             }
+            @media screen and (--mobile) {
+                display: block;
+                width: 50%;
+            }
         }
     }
     & tbody {
+        @media screen and (--mobile) {
+            display: block;
+        }
+        & tr {
+            @media screen and (--mobile) {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
         & td {
             padding: 2rem 22px 22px 22px;
             color: #252525;
@@ -37,6 +61,16 @@
             line-height: 1.38;
             @media screen and (--tablet) {
                 padding: 2rem 1rem 22px 1rem;
+            }
+            @media screen and (--mobile) {
+                display: block;
+                flex-grow: 1;
+                width: 50%;
+            }
+            &:last-child {
+                @media screen and (--mobile) {
+                    padding-top: 0;
+                }
             }
         }
     }
@@ -65,16 +99,16 @@
 }
 
 .commercial-object-content__order {
-    font-family: GothamProBold;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
     padding: 20px 2rem;
+    width: 100%;
     border-radius: 4px;
     background-color: #0062cd;
-    width: 100%;
+    color: #ffffff;
+    text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: GothamProBold;
 }
 
 .commercial-object-content__text-wrap {

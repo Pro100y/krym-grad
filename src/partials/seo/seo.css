@@ -1,10 +1,10 @@
 .seo {
     display: flex;
-    padding: 125px var(--gridSize1) 75px;
+    padding: 125px calc((100%/12)*1) 75px;
     width: 100%;
     border-bottom: 10px solid #3f3f3f;
     @media screen and (--tablet) {
-        padding: 125px 0 75px var(--gridSize1);
+        padding: 125px 0 75px calc((100%/12)*1);
     }
     @media screen and (--mobile) {
        display: none;

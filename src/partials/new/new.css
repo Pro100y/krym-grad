@@ -33,6 +33,9 @@
     margin-bottom: 46px;
     width: 100%;
     font-weight: 300;
+    @media screen and (--mobile) {
+        font-size: 28px;
+    }
 }
 
 .new__subtitle {
@@ -41,6 +44,11 @@
     color: #000000;
     padding-bottom: 30px;
     border-bottom: 3px solid #777;
+    @media screen and (--mobile) {
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 .new__content-wrap {
@@ -56,12 +64,24 @@
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*6);
     }
+    @media screen and (--mobile) {
+        display: none;
+    }
+    &--mobile {
+        display: none;
+        @media screen and (--mobile) {
+            display: block;
+        }
+    }
 }
 
 .new__content {
     width: calc((100% - var(--gridGutter))/12*7);
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*6);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
     }
 }
 .new__text {

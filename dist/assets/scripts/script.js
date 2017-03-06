@@ -4285,12 +4285,12 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    var $fotoramaDiv = $('.commercial-object-gallery').fotorama({
+    var commercialObjectGallery= $('.commercial-object-gallery').fotorama({
         nav: 'thumbs',
         thumbwidth: 136,
         thumbheight: 80,
         width: '100%',
-        height: '530px',
+        // height: '530px',
         margin: 10,
         thumbmargin: 10,
         navposition: 'bottom',
@@ -4300,7 +4300,8 @@ document.addEventListener('DOMContentLoaded', function () {
         thumbborderwidth: 5,
         allowfullscreen: false,
         shadows: false,
-        arrows: "always"
+        arrows: "always",
+        ratio: 940/530
     });
 
 });
@@ -4405,8 +4406,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
-        dynamicHeight: false, // if true the height will dynamic and animated.
+        //dynamicHeight: true, // if true the height will dynamic and animated.
         useAnimations: true, // disables animations.
+        fixedHeight: false,
 
         easing: 'ease', // http://julian.com/research/velocity/#easing
         speed: 1000, // animation speed
@@ -4727,8 +4729,9 @@ if (document.getElementsByClassName('reviews').length) {
 
                     startSlide: 1, // starting slide on pageload
                     arrows: true, // keyboard arrow navigation
-                    dynamicHeight: true, // if true the height will dynamic and animated.
+                    //dynamicHeight: true, // if true the height will dynamic and animated.
                     useAnimations: true, // disables animations.
+                    fixedHeight: true,
 
                     easing: 'ease', // http://julian.com/research/velocity/#easing
                     speed: 1000, // animation speed

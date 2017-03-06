@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         startSlide: 1, // starting slide on pageload
         arrows: true, // keyboard arrow navigation
-        dynamicHeight: false, // if true the height will dynamic and animated.
+        //dynamicHeight: true, // if true the height will dynamic and animated.
         useAnimations: true, // disables animations.
+        fixedHeight: false,
 
         easing: 'ease', // http://julian.com/research/velocity/#easing
         speed: 1000, // animation speed

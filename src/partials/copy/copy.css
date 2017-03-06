@@ -1,7 +1,7 @@
 .copy {
-    width: calc(var(--gridSize2) - var(--gridGutter));
+    width: calc(calc((100%/12)*2) - var(--gridGutter));
     @media screen and (--tablet) {
-        width: calc(var(--gridSize3));
+        width: calc(calc((100%/12)*3));
     }
     @media screen and (--mobile) {
        width: 100%;

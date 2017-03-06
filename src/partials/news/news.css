@@ -3,14 +3,19 @@
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*8);
     }
+    @media screen and (--mobile) {
+        width: 100%;
+    }
 }
 
 .news__nav {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 22px;
+    flex-wrap: nowrap;
+    padding-bottom: 22px;
     width: 100%;
     list-style: none;
+    white-space: nowrap;
+    overflow-y: auto;
 }
 
 .news__nav-item {
@@ -57,15 +62,23 @@
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*6);
     }
+    @media screen and (--mobile) {
+        width: 100%;
+    }
 }
 
 .news__item-image {
+    @nest [data-layout=main] & {
+        @media screen and (--mobile) {
+            display: none;
+        }
+    }
     width: 100%;
     height: 180px;
     object-position: center;
     object-fit: cover;
     @media screen and (--mobile) {
-        display: none;
+        height: 100px;
     }
 }
 
@@ -113,24 +126,27 @@
     flex-wrap: wrap;
     margin-bottom: var(--gridGutter);
     padding: 12px 12px 70px;
+    min-height: 260px;
     width: 100%;
     width: calc((100% - var(--gridGutter)*2)/12*4);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    min-height: 260px;
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*6);
+    }
+    @media screen and (--mobile) {
+        width: 100%;
     }
 }
 
 .news__action-name {
-    text-transform: uppercase;
     display: block;
     align-self: flex-start;
     width: 100%;
     color: #9c765a;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
     font-family: GothamProBold;
@@ -145,14 +161,17 @@
     align-self: flex-end;
     width: 100%;
     color: #0062cd;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
     font-family: GothamProBold;
-    text-transform: uppercase;
     line-height: 1.5em;
 }
 
 .news__action-cost {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
     display: block;
     align-self: flex-end;
     color: #0062cd;
@@ -160,9 +179,6 @@
     font-variant: small-caps;
     font-size: 50px;
     font-family: GothamProBold;
-    position: absolute;
-    left: 12px;
-    bottom: 12px;
     @media screen and (--mobile) {
         font-size: 36px;
     }

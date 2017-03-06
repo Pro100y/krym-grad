@@ -1,8 +1,8 @@
 .footer-social {
-    width: var(--gridSize1);
-    margin-right: var(--gridSize1);
+    width: calc((100%/12)*1);
+    margin-right: calc((100%/12)*1);
     @media screen and (--tablet) {
-        width: var(--gridSize2);
+        width: calc((100%/12)*2);
         margin-right: 0;
     }
     @media screen and (--mobile) {

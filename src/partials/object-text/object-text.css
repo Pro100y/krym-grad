@@ -1,7 +1,7 @@
 .object-text {
     margin-bottom: 57px;
     padding-right: var(--gridGutter);
-    width: var(--gridSize8);
+    width: calc((100%/12)*8);
     @media screen and (--mobile) {
         width: 100%;
         margin-bottom: 26px;

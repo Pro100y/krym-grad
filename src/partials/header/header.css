@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     padding-right: var(--gridGutter);
-    width: var(--gridSize4);
+    width: calc((100%/12)*4);
     @media screen and (--tablet) {
         flex-direction: column;
         flex-wrap: wrap;

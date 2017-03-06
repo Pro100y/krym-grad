@@ -2,7 +2,7 @@
     display: block;
     display: flex;
     justify-content: space-between;
-    width: calc(var(--gridSize6) - var(--gridGutter));
+    width: calc(calc((100%/12)*6) - var(--gridGutter));
     @media screen and (--tablet) {
         flex-wrap: wrap;
     }

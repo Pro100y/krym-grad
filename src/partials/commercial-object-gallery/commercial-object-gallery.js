@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    var $fotoramaDiv = $('.commercial-object-gallery').fotorama({
+    var commercialObjectGallery= $('.commercial-object-gallery').fotorama({
         nav: 'thumbs',
         thumbwidth: 136,
         thumbheight: 80,
         width: '100%',
-        height: '530px',
+        // height: '530px',
         margin: 10,
         thumbmargin: 10,
         navposition: 'bottom',
@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         thumbborderwidth: 5,
         allowfullscreen: false,
         shadows: false,
-        arrows: "always"
+        arrows: "always",
+        ratio: 940/530
     });
 
 });

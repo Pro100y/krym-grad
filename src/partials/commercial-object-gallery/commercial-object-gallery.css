@@ -8,6 +8,11 @@
     & .fotorama__thumb-border {
         border-color: #9c765a !important;
     }
+    & .fotorama__nav-wrap {
+        @media screen and (--mobile) {
+            display: none;
+        }
+    }
     & .fotorama__nav {
         margin-top: -100px;
         padding: 0 10px;
