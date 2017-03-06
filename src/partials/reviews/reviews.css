@@ -1,6 +1,9 @@
 .reviews {
     @nest [data-layout=about-company] & {
         margin: 0 auto 100px;
+        @media screen and (--mobile) {
+            margin-bottom: 40px;
+        }
     }
     position: relative;
     padding: 30px 60px;

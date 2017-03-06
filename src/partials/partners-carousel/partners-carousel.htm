@@ -1,4 +1,4 @@
-{% macro partnercCarouselItem(image) %}
+{% macro partnersCarouselItem(image) %}
 <div class="partners-carousel__item swiper-slide">
     <img
         alt   = ""
@@ -16,16 +16,17 @@
     <div class="partners-carousel__background">
         <div class="partners-carousel__wrapper">
             <div class="partners-carousel__items-wrap swiper-wrapper">
-                {{ partnercCarouselItem(1) }}
-                {{ partnercCarouselItem(2) }}
-                {{ partnercCarouselItem(3) }}
-                {{ partnercCarouselItem(4) }}
-                {{ partnercCarouselItem(5) }}
-                {{ partnercCarouselItem(6) }}
+                {{ partnersCarouselItem(1) }}
+                {{ partnersCarouselItem(2) }}
+                {{ partnersCarouselItem(3) }}
+                {{ partnersCarouselItem(4) }}
+                {{ partnersCarouselItem(5) }}
+                {{ partnersCarouselItem(6) }}
             </div>
         </div>
         <button type="button" class="partners-carousel__button partners-carousel__button--next"></button>
         <button type="button" class="partners-carousel__button partners-carousel__button--prev"></button>
+        <nav class="partners-carousel__pagination"></nav>
     </div>
 
 </section>

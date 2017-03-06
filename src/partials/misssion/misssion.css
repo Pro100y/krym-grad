@@ -1,6 +1,7 @@
 .mission {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background: linear-gradient(to top, #f5f5f5 0%, #f5f5f5 100%);
     background-repeat: no-repeat;
@@ -10,6 +11,11 @@
     @media screen and (--tablet) {
         background-size: 540px 74px;
     }
+    @media screen and (--mobile) {
+        background-size: 100% 74px;
+        background-position: left 47px;
+        margin-bottom: 30px;
+    }
 }
 
 .mission__title {
@@ -18,9 +24,18 @@
     font-size: 42px;
     line-height: 1.1;
     color: #252525;
+    @media screen and (--mobile) {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 42px;
+    }
 }
 
 .mission__text {
     width: calc((100% - var(--gridGutter))/12*7);
     padding-right: 80px;
+    @media screen and (--mobile) {
+        width: 100%;
+        padding-right: 0;
+    }
 }

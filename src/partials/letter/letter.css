@@ -4,6 +4,9 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 100px;
+    @media screen and (--mobile) {
+        margin-bottom: 50px;
+    }
 }
 
 .letter__image {
@@ -11,6 +14,10 @@
     height: 360px;
     object-position: center;
     object-fit: cover;
+    @media screen and (--mobile) {
+        width: 100%;
+        height: 240px;
+    }
 }
 
 .letter__caption {
@@ -18,6 +25,9 @@
     padding-left: 50px;
     @media screen and (--tablet) {
         padding-left: 0;
+    }
+    @media screen and (--mobile) {
+        width: 100%;
     }
 }
 
@@ -29,6 +39,12 @@
     background-position: right top;
     background-repeat: no-repeat;
     background-image: contain;
+    @media screen and (--mobile) {
+        padding-right: 0;
+        padding-bottom: 110px;
+        background-position: center bottom;
+        background-size: auto 110px;
+    }
 }
 
 .letter__name {

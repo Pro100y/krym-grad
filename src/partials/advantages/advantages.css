@@ -1,36 +1,41 @@
 .advantages {
-    width: 100%;
     margin-bottom: 100px;
+    width: 100%;
     @media screen and (--tablet) {
         margin-bottom: 40px;
     }
 }
 
 .advantages__title {
-    width: 100%;
-    text-align: center;
-    font-family: GothamProMedium;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #242525;
     margin-bottom: 50px;
+    width: 100%;
+    color: #242525;
+    text-align: center;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: GothamProMedium;
 }
 
 .advantages__items-wrap {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .advantages__item {
-    width: 25%;
     padding: 120px 22px 40px;
+    width: 25%;
     background-position: 22px 44px;
     background-repeat: no-repeat;
     @media screen and (--tablet) {
         width: 50%;
+    }
+    @media screen and (--mobile) {
+        width: 100%;
+        background-position: 15px 20px;
+        padding-top: 82px;
     }
     &--1 {
         background-color: #ffeea1;
@@ -38,37 +43,43 @@
         color: #000;
     }
     &--2 {
-        background-image: url(../images/advantages-2.svg);
         background-color: #0062cd;
+        background-image: url(../images/advantages-2.svg);
         color: #fff;
     }
     &--3 {
+        background-color: #f3f3f3;
         background-image: url(../images/advantages-3.svg);
         color: #000;
-        background-color: #f3f3f3;
         @media screen and (--tablet) {
             order: 4;
         }
+        @media screen and (--mobile) {
+            order: 3;
+        }
     }
     &--4 {
-        background-image: url(../images/advantages-4.svg);
         background-color: #0062cd;
+        background-image: url(../images/advantages-4.svg);
         color: #fff;
         @media screen and (--tablet) {
             order: 3;
+        }
+        @media screen and (--mobile) {
+            order: 4;
         }
     }
 }
 
 .advantages__item-title {
-    font-family: GothamProMedium;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.33;
-    letter-spacing: 2px;
+    display: block;
     margin-bottom: 40px;
     text-transform: uppercase;
-    display: block;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: GothamProMedium;
+    line-height: 1.33;
 }
 
 .advantages__item-caption {
