@@ -123,6 +123,11 @@
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 1.14;
+    &:hover {
+        background-color: #9c765a;
+        color: #fff;
+        background-image: url(../images/object-menu-6.svg);
+    }
     @media screen and (--mobile) {
         margin: 0 auto;
     }
@@ -158,6 +163,9 @@
     margin-bottom: 2rem;
     color: #9c765a;
     font-size: 13px;
+    &:hover {
+        color: #242525;
+    }
 }
 
 .object-menu__callback {
@@ -171,4 +179,7 @@
     font-weight: bold;
     font-size: 14px;
     font-family: GothamProBold;
+    &:hover {
+        background-color: #9c765a;
+    }
 }

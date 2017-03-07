@@ -2,6 +2,12 @@
     width: 100%;
     border: none;
     border-collapse: collapse;
+    @media screen and (--mobile) {
+        display: block;
+        overflow-x: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+        margin-bottom: 30px;
+    }
     & thead {
         border-bottom: 20px solid #fff;
     }
@@ -22,6 +28,9 @@
         padding: 15px 20px;
         color: #000000;
         font-size: 14px;
+        @media screen and (--mobile) {
+            white-space: nowrap;
+        }
     }
     & th {
         padding: 15px 20px;
@@ -31,5 +40,8 @@
         font-size: 14px;
         font-family: GothamProBold;
         line-height: 1.5;
+        @media screen and (--mobile) {
+            white-space: nowrap;
+        }
     }
 }

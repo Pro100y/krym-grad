@@ -37,6 +37,10 @@
     font-weight: bold;
     font-size: 10px;
     font-family: GothamProBold;
+    text-transform: uppercase;
+    &:hover {
+        color: #0062CD;
+    }
 }
 
 .acions__items-wrap {
@@ -94,6 +98,10 @@
     font-size: 22px;
     font-family: GothamProMedium;
     line-height: 1.27;
+    transition-duration: var(--transitionDuration);
+    @nest .acions__item:hover & {
+        color: #0062CD;
+    }
 }
 
 .acions__item-image {

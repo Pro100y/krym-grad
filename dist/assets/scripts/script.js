@@ -4310,16 +4310,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    /*
-    |--------------------------------------------------------------------------
-    | nstSlider
-    |--------------------------------------------------------------------------
-    |
-    | Плагин слейдера
-    |
-    */
-
-    //конфигурация плагина
+    //конфигурация плагина слейдера
     $('.filter-range__item-slider').nstSlider({
         "left_grip_selector": ".filter-range__item-slider-grip--left",
         "right_grip_selector": ".filter-range__item-slider-grip--right",
@@ -4694,7 +4685,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
 
    var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
@@ -4718,6 +4708,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
 
 if (document.getElementsByClassName('reviews').length) {
 
@@ -4762,6 +4753,7 @@ if (document.getElementsByClassName('reviews').length) {
     });
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
    var sertificatesSlideshow = new Swiper('.sertificates__slideshow', {
@@ -4780,7 +4772,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-
 
 
 //# sourceMappingURL=script.js.map

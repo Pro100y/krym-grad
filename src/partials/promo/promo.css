@@ -23,12 +23,12 @@
             padding-right: 300px;
         }
         @media screen and (--mobile) {
+            margin-bottom: 0;
+            margin-left: -10px;
             padding-right: 20px;
             padding-bottom: 0;
             min-height: auto;
-            margin-bottom: 0;
             width: calc(100% + 20px);
-            margin-left: -10px;
         }
     }
 }
@@ -96,6 +96,8 @@
     line-height: 55px;
     @media screen and (--mobile) {
         margin-bottom: 24px;
+    }
+    &:hover {
         background-color: rgba(251, 155, 42, 0.9);
         color: #fff;
     }
@@ -123,6 +125,9 @@
     line-height: 1.45;
     @media screen and (--mobile) {
         display: none;
+    }
+    &:hover {
+        background-color: #FDAB4B;
     }
 }
 

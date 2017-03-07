@@ -18,8 +18,13 @@
 <a
     href  = "/pages/7.1.action.html"
     class = "news__action"
-    style = "background-image: url(/assets/images/sales-{{ image }}.jpg)"
 >
+    <img
+        src   = "/assets/images/sales-{{ image }}.jpg"
+        alt   = ""
+        class = "news__action-image"
+        data-fix--ie--object-fit
+    >
     <strong class="news__action-name">акция</strong>
     <strong class="news__action-title">{{ title | safe}}</strong>
     <span class="news__action-cost">{{ cost | safe}}</span>

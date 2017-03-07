@@ -38,6 +38,9 @@
     font-weight: bold;
     font-family: GothamProBold;
     text-transform: uppercase;
+    &:hover {
+        background-color: #AF8A70;
+    }
     &::before {
         position: absolute;
         bottom: 0;

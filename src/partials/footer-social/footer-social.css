@@ -31,12 +31,21 @@
     display: block;
     &--vk {
         background-image: url(../images/footer-social-1.png);
+        &:hover {
+            background-image: url(../images/footer-social-5.png);
+        }
     }
     &--fb {
         background-image: url(../images/footer-social-2.png);
+        &:hover {
+            background-image: url(../images/footer-social-6.png);
+        }
     }
     &--in {
         background-image: url(../images/footer-social-3.png);
+        &:hover {
+            background-image: url(../images/footer-social-7.png);
+        }
     }
 }
 

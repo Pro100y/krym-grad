@@ -92,6 +92,9 @@
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.45;
+    &:hover {
+        background-color: #FDAB4B;
+    }
     @media screen and (--tablet) {
         right: 18px;
         bottom: 65px;

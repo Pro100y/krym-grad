@@ -58,6 +58,7 @@
     font-size: 18px;
     transition-duration: .5s;
     &:focus {
+        background-color: #4D9AEF;
         &::-webkit-input-placeholder {
             color: transparent;
         }
@@ -96,4 +97,9 @@
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 53px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #fff;
+        color: #252525;
+    }
 }

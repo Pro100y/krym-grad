@@ -1,30 +1,29 @@
 .sales {
     display: flex;
-    width: calc((100%/12)*3);
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+    width: calc((100%/12)*3);
     @media screen and (--tablet) {
-       width: 100%;
-       flex-direction: row;
-       flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
 
 .sales__item {
+    overflow: hidden;
+    position: relative;
     display: block;
+    display: flex;
+    flex-wrap: wrap;
     padding: 12px;
     width: 100%;
     height: calc((100% - 20px)/3);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-wrap: wrap;
     @media screen and (--tablet) {
-       height: 164px;
-       width: calc((100% - var(--gridGutter)*2)/3);
+        width: calc((100% - var(--gridGutter)*2)/3);
+        height: 164px;
     }
     @media screen and (--mobile) {
         width: 100%;
@@ -36,43 +35,62 @@
     }
 }
 
+.sales__item-image {
+    @nest .sales__item:hover & {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1000ms;
+    object-position: center;
+    object-fit: cover;
+}
+
 .sales__item-name {
+    position: relative;
+    display: block;
+    align-self: flex-start;
+    width: 100%;
     color: #9c765a;
     font-weight: bold;
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.64;
-    align-self: flex-start;
-    display: block;
-    width: 100%;
     @media screen and (--mobile) {
         display: none;
     }
 }
 
 .sales__item-title {
+    position: relative;
+    display: block;
+    align-self: flex-end;
+    margin-bottom: -2em;
+    width: 100%;
     color: #0062cd;
     font-weight: bold;
     font-size: 14px;
     font-family: GothamProBold;
-    align-self: flex-end;
-    display: block;
-    width: 100%;
-    margin-bottom: -2em;
     @media screen and (--mobile) {
         margin-bottom: 0;
     }
 }
 
 .sales__item-cost {
+    position: relative;
+    display: block;
+    align-self: flex-end;
+    width: 100%;
     color: #0062cd;
     font-weight: bold;
     font-variant: small-caps;
     font-size: 50px;
     font-family: GothamProBold;
-    align-self: flex-end;
-    display: block;
-    width: 100%;
     @media screen and (--mobile) {
         font-size: 36px;
     }

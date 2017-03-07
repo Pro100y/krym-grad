@@ -51,8 +51,10 @@
     padding: 5px;
     color: #eeeeee;
     font-size: 13px;
-    &--title {
+    &:hover {
         color: #ffffff;
+    }
+    &--title {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 500;

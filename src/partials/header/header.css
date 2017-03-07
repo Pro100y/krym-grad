@@ -85,10 +85,14 @@
 }
 
 .header__contacts-callback {
+    border-bottom: 1px dotted currentColor;
     color: #0062cd;
-    text-decoration: underline;
     text-transform: uppercase;
     font-size: 10px;
+    &:hover {
+        border-color: transparent;
+        color: #252525;
+    }
 }
 
 .header__contacts-worktime {
@@ -100,14 +104,18 @@
 
 .header__contacts-email {
     color: #252525;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
     font-family: GothamProMedium;
+    &:hover {
+        color: #0062CD;
+    }
 }
 
 .header__filter-button {
     flex-shrink: 0;
-    padding: 0 6px 0 42px;
+    padding: 2px 10px 0 42px;
     border: solid 1px #0062cd;
     border-radius: 4px;
     background-image: url(../images/header-2.svg);
@@ -118,9 +126,14 @@
     white-space: nowrap;
     font-size: 13px;
     font-family: GothamProBold;
-    line-height: 38px;
+    line-height: 36px;
     @media screen and (--mobile) {
         display: none;
+    }
+    &:hover {
+        background-color: #0062cd;
+        background-image: url(../images/header-5.svg);
+        color: #fff;
     }
 }
 

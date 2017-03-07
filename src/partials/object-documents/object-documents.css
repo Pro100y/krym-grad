@@ -51,6 +51,9 @@
     font-family: GothamProBold;
     line-height: 1.29;
     min-height: 32px;
+    &:hover {
+        color: #252525;
+    }
     @media screen and (--tablet) {
         width: calc(100% / 3);
     }

@@ -99,6 +99,9 @@
     text-transform: uppercase;
     padding: 1rem;
     display: none;
+    &:hover {
+        background-color: #3395FF;
+    }
     @media screen and (--mobile) {
         display: block;
         @nest .apartment & {

@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    /*
-    |--------------------------------------------------------------------------
-    | nstSlider
-    |--------------------------------------------------------------------------
-    |
-    | Плагин слейдера
-    |
-    */
-
-    //конфигурация плагина
+    //конфигурация плагина слейдера
     $('.filter-range__item-slider').nstSlider({
         "left_grip_selector": ".filter-range__item-slider-grip--left",
         "right_grip_selector": ".filter-range__item-slider-grip--right",

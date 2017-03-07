@@ -11,11 +11,11 @@
 .news__nav {
     display: flex;
     flex-wrap: nowrap;
+    overflow-y: auto;
     padding-bottom: 22px;
     width: 100%;
     list-style: none;
     white-space: nowrap;
-    overflow-y: auto;
 }
 
 .news__nav-item {
@@ -124,14 +124,12 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     margin-bottom: var(--gridGutter);
     padding: 12px 12px 70px;
     min-height: 260px;
     width: 100%;
     width: calc((100% - var(--gridGutter)*2)/12*4);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     @media screen and (--tablet) {
         width: calc((100% - var(--gridGutter))/12*6);
@@ -141,7 +139,24 @@
     }
 }
 
+.news__action-image {
+    @nest .news__action:hover & {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1000ms;
+    object-position: center;
+    object-fit: cover;
+}
+
 .news__action-name {
+    position: relative;
     display: block;
     align-self: flex-start;
     width: 100%;
@@ -157,6 +172,7 @@
 }
 
 .news__action-title {
+    position: relative;
     display: block;
     align-self: flex-end;
     width: 100%;

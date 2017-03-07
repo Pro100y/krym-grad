@@ -19,6 +19,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/choose-breadcrumbs-1.svg);
+    &:hover{
+        background-color: #3395FF;
+    }
     @media screen and (--mobile) {
         display: none;
     }

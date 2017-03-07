@@ -87,6 +87,9 @@
     &--booking {
         background-image: url(../images/apartment-b-1.svg);
         background-color: #fc3c2d;
+        &:hover {
+            background-color: #FF574A;
+        }
         @media screen and (--mobile) {
             background-image: none;
         }
@@ -94,6 +97,9 @@
     &--download {
         background-image: url(../images/apartment-b-2.svg);
         background-color: #0062cd;
+        &:hover {
+            background-color: #3395FF;
+        }
         @media screen and (--mobile) {
             background-image: none;
         }
