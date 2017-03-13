@@ -22,7 +22,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-end;
-        width: auto;
+        width: 160px;
     }
 }
 
