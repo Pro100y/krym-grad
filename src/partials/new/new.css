@@ -8,7 +8,7 @@
 .new__date {
     font-family: GothamProMedium;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 1.85;
     color: #242525;
     margin-bottom: 6px;
@@ -19,7 +19,7 @@
 .new__category {
     font-family: GothamProBold;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.71;
     color: #0062cd;
     margin-bottom: 11px;

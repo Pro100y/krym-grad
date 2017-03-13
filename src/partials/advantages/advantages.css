@@ -13,7 +13,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 18px;
     font-family: GothamProMedium;
 }
@@ -76,7 +76,7 @@
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 18px;
     font-family: GothamProMedium;
     line-height: 1.33;

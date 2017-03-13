@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Tell me the root folder path.
 // You can also try this one
 // $HOME = $_SERVER["DOCUMENT_ROOT"];
@@ -18,7 +18,7 @@ $WIN = 0;
 <title>UTF8 BOM FINDER and REMOVER</title>
 <style>
 body { font-size: 10px; font-family: Arial, Helvetica, sans-serif; background: #FFF; color: #000; }
-.FOUND { color: #F30; font-size: 14px; font-weight: bold; }
+.FOUND { color: #F30; font-size: 14px; font-weight: normal; }
 </style>
 </head>
 <body>
@@ -50,7 +50,7 @@ function RecursiveFolder($sHOME) {
 
           // Remove first three chars from the file
           $content = substr($content,3);
-          // Write to file 
+          // Write to file
           file_put_contents($sHOME . $win32 . $file, $content);
         }
       }
@@ -66,9 +66,9 @@ function RecursiveFolder($sHOME) {
 }
 
 // Searching for BOM in files
-function SearchBOM($string) { 
+function SearchBOM($string) {
     if(substr($string,0,3) == pack("CCC",0xef,0xbb,0xbf)) return true;
-    return false; 
+    return false;
 }
 ?>
 </body>

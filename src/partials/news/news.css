@@ -23,7 +23,7 @@
     border-bottom: 1px dashed currentColor;
     color: #0062cd;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 13px;
     font-family: GothamProBold;
     cursor: pointer;
@@ -101,7 +101,7 @@
 .news__item-category {
     color: #0062cd;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 10px;
     font-family: GothamProBold;
     line-height: 2.4;
@@ -114,7 +114,7 @@
     display: block;
     margin-bottom: 24px;
     color: #000000;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 20px;
     font-family: GothamProMedium;
     line-height: 1.2;
@@ -166,7 +166,7 @@
     width: 100%;
     color: #9c765a;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.64;
@@ -182,7 +182,7 @@
     width: 100%;
     color: #0062cd;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 1.5em;
@@ -195,7 +195,7 @@
     display: block;
     align-self: flex-end;
     color: #0062cd;
-    font-weight: bold;
+    font-weight: normal;
     font-variant: small-caps;
     font-size: 50px;
     font-family: GothamProBold;

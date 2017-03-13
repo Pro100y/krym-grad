@@ -56,7 +56,7 @@
     & th {
         font-family: GothamProBold;
         font-size: 12px;
-        font-weight: bold;
+        font-weight: normal;
         line-height: 1.33;
         text-align: left;
         color: #000000;
@@ -74,7 +74,7 @@
         padding: 5px 20px;
         font-family: GothamProBold;
         font-size: 36px;
-        font-weight: bold;
+        font-weight: normal;
         text-align: left;
         color: #000000;
         @media screen and (--mobile) {

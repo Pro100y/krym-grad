@@ -36,13 +36,13 @@
     display: block;
     font-family: GothamProMedium;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: normal;
     margin-bottom: 11px;
 }
 
 .choose-breadcrumbs__motivation {
     font-family: GothamProMedium;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: normal;
     display: block;
 }

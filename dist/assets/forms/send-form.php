@@ -13,10 +13,10 @@
 		$msg = '';
 
 		$msg.= '<h1 style="border-bottom: 20px solid #F0F2F5;color:#ffffff;padding:10px 20px;background-color:#ff6200;border-radius: 5px 5px 0 0;margin-bottom: 20px;margin-top: 0;">'. $subj .'</h1>';
-		$msg.= '<p style="color: #434a54;padding: 0 20px 20px 20px;margin: 0;"><strong style="color: #434a54;font-weight: 700;">Дата</strong>: '. date('m.d.Y H:i:s') .'</p>';
+		$msg.= '<p style="color: #434a54;padding: 0 20px 20px 20px;margin: 0;"><strong style="color: #434a54;font-weight: normal;">Дата</strong>: '. date('m.d.Y H:i:s') .'</p>';
 
 		foreach ($data as $item) {
-			$msg.= '<p style="color: #434a54;padding: 0 20px 0 20px;margin: 0;"><strong style="color: #434a54;font-weight: 700;">' . $item['label'] . ': </strong>' . $item['value'] . '</p>';
+			$msg.= '<p style="color: #434a54;padding: 0 20px 0 20px;margin: 0;"><strong style="color: #434a54;font-weight: normal;">' . $item['label'] . ': </strong>' . $item['value'] . '</p>';
 		}
 
 		$msg = '

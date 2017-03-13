@@ -65,7 +65,7 @@
                 padding: 0 70px 0 12px;
                 height: auto;
                 color: var(--dataFormFieldColor);
-                font-weight: 700;
+                font-weight: normal;
                 font-size: 14px;
                 line-height: var(--dataFormFieldHeight);
             }

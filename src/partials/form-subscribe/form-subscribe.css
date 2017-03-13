@@ -33,7 +33,7 @@
     margin-bottom: 24px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
     font-family: GothamProBold;
     line-height: 1.2;
@@ -93,7 +93,7 @@
     border-radius: 4px;
     color: #ffffff;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 53px;

@@ -26,7 +26,7 @@
     margin-right: 22px;
     color: #242525;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 22px;
     font-family: GothamProBold;
 }
@@ -63,7 +63,7 @@
 .news-carousel__archive {
     margin-left: auto;
     color: #9b9b9b;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 10px;
     font-family: GothamProBold;
     text-transform: uppercase;
@@ -75,7 +75,7 @@
 .news-carousel__items-wrap {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     transition-timing-function: ease !important;
     @media screen and (--mobile) {
         display: none;
@@ -132,7 +132,7 @@
     display: none;
     color: #0062cd;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 10px;
     font-family: GothamProBold;
     line-height: 2.4;
@@ -148,7 +148,7 @@
     display: block;
     margin-bottom: 24px;
     color: #000000;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 20px;
     font-family: GothamProMedium;
     line-height: 1.2;

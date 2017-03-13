@@ -40,7 +40,7 @@
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 18px;
     font-family: GothamProMedium;
     line-height: 1.33;
@@ -52,7 +52,7 @@
     width: 100%;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProMedium;
     line-height: 1.71;
@@ -96,7 +96,7 @@
             color: #ffffff;
             text-align: left;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: normal;
             font-size: 12px;
             font-family: GothamProMedium;
             @media screen and (--tablet) {
@@ -133,7 +133,7 @@
     margin-bottom: 12px;
     color: #252525;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 34px;
     font-family: GothamProMedium;
     @media screen and (--mobile) {

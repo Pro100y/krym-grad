@@ -100,7 +100,7 @@
         border-bottom-color: transparent;
     }
     border-bottom: 1px dotted;
-    font-weight: bold;
+    font-weight: normal;
     font-family: GothamProBold;
     line-height: inherit;
     transition-duration: inherit;
@@ -119,7 +119,7 @@
     background-repeat: no-repeat;
     color: #9c765a;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
     line-height: 1.14;
@@ -145,7 +145,7 @@
     display: block;
     margin-bottom: 9px;
     color: #242525;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     font-family: GothamProBold;
 }
@@ -176,7 +176,7 @@
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
     &:hover {

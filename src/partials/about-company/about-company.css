@@ -22,7 +22,7 @@
 .about-company__title {
     font-family: GothamProBold;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.36;
     color: #252525;
     margin-bottom: 17px;
@@ -30,7 +30,6 @@
 }
 
 .about-company__text {
-    font-family: GothamPro;
     font-size: 14px;
     line-height: 1.5;
     color: #000000;
@@ -40,7 +39,7 @@
 .about-company__readmore {
     font-family: GothamProBold;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: normal;
     color: #0062cd;
     text-transform: uppercase;
 }

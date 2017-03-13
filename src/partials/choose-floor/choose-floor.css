@@ -48,7 +48,7 @@
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-family: GothamProBold;
     position: relative;
     &--floor {

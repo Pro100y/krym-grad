@@ -43,7 +43,7 @@
     margin-right: 2em;
     border-bottom: 1px dashed transparent;
     color: #252525;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     font-family: GothamProBold;
     cursor: pointer;
@@ -79,7 +79,7 @@
     margin-right: 2em;
     border-bottom: 1px dashed transparent;
     color: #252525;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
     cursor: pointer;
