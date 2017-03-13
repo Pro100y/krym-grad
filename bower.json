@@ -46,7 +46,8 @@
     "fotorama": "^4.6.4",
     "parallax.js": "^1.4.2",
     "maphilight": "kemayo/maphilight#^1.3.1",
-    "jQuery-rwdImageMaps": "stowball/jQuery-rwdImageMaps"
+    "jQuery-rwdImageMaps": "stowball/jQuery-rwdImageMaps",
+    "qtip2": "qTip2/qTip2#^3.0.3"
   },
   "devDependencies": {}
 }

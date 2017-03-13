@@ -1,3 +1,4 @@
+
 /*
 |--------------------------------------------------------------------------
 | VARIABLES (var())
@@ -8,16 +9,17 @@
 */
 
 :root {
-    --colorPlaceholder:   #5a5147;
-    --colorPrimary:       #0062cd;
+    --colorPlaceholder: #5a5147;
+    --colorPrimary: #0062cd;
     --colorTextSelection: #f9f9f9;
-    --colorText:          #000;
-    --colorOverlay:       rgba(255, 255, 255, 0.8);
-    --fontFamily:         GothamProRegular, Arial, sans-serif;
-    --shadowOutset:       0 2px 5px 0 rgba(0, 0, 0, .26), 0 2px 10px 0 rgba(0, 0, 0, .16);
-    --transformScale:     scale(1.1);
+    --colorText: #000;
+    --colorOverlay: rgba(255, 255, 255, 0.8);
+    --fontFamily: GothamProRegular, Arial, sans-serif;
+    --shadowOutset: 0 2px 5px 0 rgba(0, 0, 0, .26), 0 2px 10px 0 rgba(0, 0, 0, .16);
+    --transformScale: scale(1.1);
     --transitionDuration: .3s;
 }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,7 @@
     @custom-media --tablet (max-width: 1640px);
     @custom-media --mobile (max-width: 980px);
 }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +55,7 @@
         margin: 0 auto;
     }
 }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -287,4 +291,19 @@ fieldset {
 
 [data-ripple] .legitRipple-ripple {
     background: rgba(221, 221, 221, .4) !important;
+}
+
+
+/* qtip */
+
+.qtip-default,
+.qtip-content {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    overflow: visible;
+}
+
+.qtip-tip {
+    display: none !important;
 }

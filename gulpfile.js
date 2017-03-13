@@ -84,6 +84,7 @@ let project = {
             'bower_components/nstSlider/dist/jquery.nstSlider.min.css',
             'bower_components/jquery-selectric/public/selectric.css',
             'bower_components/fotorama/fotorama.css',
+            'bower_components/qtip2/dist/jquery.qtip.min.css',
 
             // Стили шаблона
             'src/assets/global/**/*.css',
@@ -135,6 +136,7 @@ let project = {
             'bower_components/parallax.js/parallax.min.js',
             'bower_components/maphilight/jquery.maphilight.js',
             'bower_components/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js',
+            'bower_components/qtip2/dist/jquery.qtip.min.js',
             // Скрипты шаблона
             'src/assets/global/**/*.js',
             'src/assets/grid/**/*.js',

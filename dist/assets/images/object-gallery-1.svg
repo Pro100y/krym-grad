@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="5.1.-Коммерческий-объект" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Коммерческая-недвижимость-[Desktop-1600]" transform="translate(-210.000000, -602.000000)" fill="#FFFFFF">
-            <polygon id="Shape" points="220.803306 602.781687 211.192399 612.392595 210.485292 613.099701 211.192399 613.806808 220.803306 623.417715 222.21752 622.003502 212.606612 612.392595 212.606612 613.806808 222.21752 604.195901"></polygon>
-        </g>
-    </g>
-</svg>
+<svg width="13" height="22" viewBox="0 0 13 22" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M10.803.782l-9.61 9.61-.708.708.707.707 9.611 9.61 1.415-1.413-9.611-9.611v1.414l9.61-9.611z" fill="#FFF" fill-rule="evenodd"/></svg>
