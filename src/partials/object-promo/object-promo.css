@@ -14,6 +14,7 @@
     @media screen and (--mobile) {
         width: 100%;
         padding: 230px 10px 60px;
+        margin-bottom: 25px;
     }
 }
 

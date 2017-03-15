@@ -10,10 +10,10 @@
         width: calc((100%)/12*9);
     }
     @media screen and (--mobile) {
-        width: 100%;
-        padding: 0;
         flex-direction: column;
         margin-bottom: 50px;
+        padding: 0;
+        width: 100%;
     }
 }
 
@@ -25,15 +25,14 @@
     justify-content: center;
     padding: 20px;
     width: 100%;
-    background-image: url(../images/choose-room-view.svg), url(../images/choose-room-compas.svg);
+    background-image: url(../images/choose-room-view@2x.png), url(../images/choose-room-compas@2x.png);
     background-position: 50px calc(100% - 50px), calc(100% - 50px) calc(100% - 50px);
-    background-size: 140px 133px, 128px 128px;
     background-repeat: no-repeat, no-repeat;
     @media screen and (--mobile) {
-        background-size: 70px 67px, 64px 64px;
-        background-position: left calc(100% - 20px), right calc(100% - 20px);
-        padding-left: 0;
         padding-right: 0;
+        padding-left: 0;
+        background-image: url(../images/choose-room-view.png), url(../images/choose-room-compas.png);
+        background-position: left calc(100% - 20px), right calc(100% - 20px);
     }
 }
 

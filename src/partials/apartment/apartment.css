@@ -10,10 +10,10 @@
         width: calc((100%)/12*9);
     }
     @media screen and (--mobile) {
-        width: 100%;
-        padding: 0;
         flex-direction: column;
         margin-bottom: 50px;
+        padding: 0;
+        width: 100%;
     }
 }
 
@@ -25,20 +25,19 @@
     justify-content: center;
     padding: 20px;
     width: 100%;
-    background-image: url(../images/apartment-view.svg), url(../images/apartment-compas.svg);
+    background-image: url(../images/apartment-view@2x.png), url(../images/apartment-compas@2x.png);
     background-position: 50px calc(100% - 50px), calc(100% - 50px) calc(100% - 50px);
-    background-size: 140px 133px, 128px 128px;
     background-repeat: no-repeat, no-repeat;
     @media screen and (--tablet) {
         padding-left: 187px;
         background-position: 30px calc(100% - 40px), calc(100% - 30px) calc(100% - 40px);
     }
     @media screen and (--mobile) {
-        background-size: 70px 67px, 64px 64px;
-        background-position: left calc(100% - 20px), right calc(100% - 20px);
-        padding-left: 0;
         padding-right: 0;
         padding-bottom: 110px;
+        padding-left: 0;
+        background-image: url(../images/apartment-view.png), url(../images/apartment-compas.png);
+        background-position: left calc(100% - 20px), right calc(100% - 20px);
     }
 }
 
@@ -56,9 +55,9 @@
     left: 0;
     @media screen and (--mobile) {
         position: relative;
-        width: 100%;
         top: 0;
         order: 4;
+        width: 100%;
     }
 }
 
@@ -77,31 +76,31 @@
     font-family: GothamProBold;
     line-height: 1.33;
     @media screen and (--mobile) {
-        padding: 20px 10px;
-        height: 60px;
-        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 20px 10px;
+        height: 60px;
+        font-size: 14px;
     }
     &--booking {
-        background-image: url(../images/apartment-b-1.svg);
         background-color: #fc3c2d;
+        background-image: url(../images/apartment-b-1.svg);
+        @media screen and (--mobile) {
+            background-image: none;
+        }
         &:hover {
             background-color: #FF574A;
         }
-        @media screen and (--mobile) {
-            background-image: none;
-        }
     }
     &--download {
-        background-image: url(../images/apartment-b-2.svg);
         background-color: #0062cd;
-        &:hover {
-            background-color: #3395FF;
-        }
+        background-image: url(../images/apartment-b-2.svg);
         @media screen and (--mobile) {
             background-image: none;
+        }
+        &:hover {
+            background-color: #3395FF;
         }
     }
 }
@@ -110,5 +109,6 @@
     display: none;
     @media screen and (--mobile) {
         display: inline;
+        font-family: inherit;
     }
 }

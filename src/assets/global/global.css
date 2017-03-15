@@ -282,6 +282,12 @@ fieldset {
     box-shadow: var(--shadowOutset);
 }
 
+#lightcase-case[data-lc-type=image] #lightcase-content,
+#lightcase-case[data-lc-type=video] #lightcase-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
 
 /* legitripple */
 

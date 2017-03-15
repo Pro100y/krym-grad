@@ -5,6 +5,7 @@
     @media screen and (--mobile) {
         width: 100vw;
         transform: translateX(calc(-50% + 150px));
+        margin-bottom: 40px;
     }
 }
 
@@ -45,6 +46,7 @@
 .sertificates__item-image {
     max-width: 100%;
     max-height: 100%;
+    cursor: pointer;
 }
 
 .sertificates__item-caption {

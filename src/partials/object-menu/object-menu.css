@@ -70,7 +70,6 @@
     padding: 1rem 0 2rem;
     width: 100%;
     @media screen and (--mobile) {
-        display: none;
         background-color: #fff;
     }
 }

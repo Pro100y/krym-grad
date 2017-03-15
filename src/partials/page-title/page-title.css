@@ -3,6 +3,7 @@
     color: #242525;
     padding: 20px 0 40px;
     position: relative;
+    font-family: GothamProLight;
     @media screen and (--mobile) {
         font-size: 28px;
     }

@@ -1,7 +1,13 @@
 {% macro sertifacatesItem(images, caption, slide) %}
 <figure class="sertificates__item{% if slide %} swiper-slide{% endif %}">
     <div class="sertificates__item-image-wrap">
-        <img src="/assets/images/sertificates-{{ images }}.png" alt="" class="sertificates__item-image">
+        <img
+            src         = "/assets/images/sertificates-{{ images }}.png"
+            href         = "/assets/images/sertificates-{{ images }}.png"
+            alt         = ""
+            class       = "sertificates__item-image"
+            data-rel    = "lightcase:sertificates"
+        >
     </div>
     <figcaption class="sertificates__item-caption">{{ caption }}</figcaption>
 </figure>

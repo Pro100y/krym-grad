@@ -5,6 +5,9 @@
         margin-bottom: 80px;
         width: 100%;
     }
+    @media screen and (--mobile) {
+        margin-bottom: 40px;
+    }
     & .fotorama__thumb-border {
         border-color: #fb9b2a !important;
     }

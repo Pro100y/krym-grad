@@ -3,18 +3,6 @@
 
  :root {
     --gridGutter: 20px;
-    --gridSize1: calc((100%/12)*1);
-    --gridSize2: calc((100%/12)*2);
-    --gridSize3: calc((100%/12)*3);
-    --gridSize4: calc((100%/12)*4);
-    --gridSize5: calc((100%/12)*5);
-    --gridSize6: calc((100%/12)*6);
-    --gridSize7: calc((100%/12)*7);
-    --gridSize8: calc((100%/12)*8);
-    --gridSize9: calc((100%/12)*9);
-    --gridSize10: calc((100%/12)*10);
-    --gridSize11: calc((100%/12)*11);
-    --gridSize12: 100%;
 }
 
 .grid {

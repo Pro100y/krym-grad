@@ -1,17 +1,17 @@
 .copy {
     width: calc(calc((100%/12)*2) - var(--gridGutter));
     @media screen and (--tablet) {
-        width: calc(calc((100%/12)*3));
+        width: calc(calc((100%/12 - var(--gridGutter)/4)*4));
     }
     @media screen and (--mobile) {
-       width: 100%;
+        width: 100%;
     }
 }
 
 .copy__logo {
     display: block;
     margin-bottom: 30px;
-    width: 173px;
+    width: 170px;
     height: 33px;
     background-image: url(../images/copy-1.png);
     background-position: left center;
@@ -26,7 +26,7 @@
     font-size: 20px;
     margin-bottom: 8px;
     @media screen and (--mobile) {
-       display: none;
+        display: none;
     }
 }
 
@@ -37,7 +37,7 @@
     text-transform: uppercase;
     font-size: 10px;
     @media screen and (--mobile) {
-       display: none;
+        display: none;
     }
 }
 
@@ -47,6 +47,6 @@
     font-size: 12px;
     line-height: 2.0;
     @media screen and (--mobile) {
-       display: none;
+        display: none;
     }
 }

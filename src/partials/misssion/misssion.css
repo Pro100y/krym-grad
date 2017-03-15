@@ -10,6 +10,7 @@
     margin-bottom: 100px;
     @media screen and (--tablet) {
         background-size: 540px 74px;
+        background-position: 0 42%;
     }
     @media screen and (--mobile) {
         background-size: 100% 74px;
@@ -24,6 +25,7 @@
     font-size: 42px;
     line-height: 1.1;
     color: #252525;
+    font-family: GothamProLight;
     @media screen and (--mobile) {
         width: 100%;
         padding-left: 0;

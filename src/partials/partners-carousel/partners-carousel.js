@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-   var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
+    var partnersCarousel = new Swiper('.partners-carousel__wrapper', {
         slidesPerView: 4,
         spaceBetween: 0,
         nextButton: '.partners-carousel__button--next',

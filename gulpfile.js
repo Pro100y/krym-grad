@@ -137,6 +137,7 @@ let project = {
             'bower_components/maphilight/jquery.maphilight.js',
             'bower_components/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js',
             'bower_components/qtip2/dist/jquery.qtip.min.js',
+            'bower_components/zooming/build/zooming.min.js',
             // Скрипты шаблона
             'src/assets/global/**/*.js',
             'src/assets/grid/**/*.js',

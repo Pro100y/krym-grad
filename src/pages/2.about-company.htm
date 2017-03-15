@@ -3,6 +3,8 @@
 {% set page  = "about-company" %}
 {% set title = "О компании" %}
 
+{% from "partials/inner-slogan/inner-slogan.htm" import innerSlogan %}
+
 {# == #}
 
 {% block header %}{% include "partials/header/header.htm" %}{% endblock %}
@@ -15,7 +17,7 @@
 
 {% block sidebar_menu %}{% include "partials/sidebar-menu/sidebar-menu.htm" %}{% endblock %}
 
-{% block inner_slogan %}{% include "partials/inner-slogan/inner-slogan.htm" %}{% endblock %}
+{% block inner_slogan %}{{ innerSlogan('“Крымград” — динамично развивающаяся девелоперская компания полного цикла, которая является одним из лидеров рынка недвижимости Крыма.') }}{% endblock %}
 
 {% block letter %}{% include "partials/letter/letter.htm" %}{% endblock %}
 

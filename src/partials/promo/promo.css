@@ -3,13 +3,14 @@
     margin-bottom: 20px;
     padding: 100px 25px 62px;
     width: calc(calc((100%/12)*9) - var(--gridGutter));
-    background-image: url(../images/promo-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
     text-transform: uppercase;
     @media screen and (--tablet) {
+        padding-top: 70px;
+        padding-bottom: 42px;
         width: 100%;
     }
     @media screen and (--mobile) {
@@ -23,7 +24,7 @@
             padding-right: 300px;
         }
         @media screen and (--mobile) {
-            margin-bottom: 0;
+            margin-bottom: 30px;
             margin-left: -10px;
             padding-right: 20px;
             padding-bottom: 0;
@@ -38,6 +39,10 @@
     margin-bottom: 52px;
     font-size: 18px;
     font-family: GothamProBold;
+    @media screen and (--tablet) {
+        margin-bottom: 70px;
+        font-size: 16px;
+    }
     @media screen and (--mobile) {
         margin-bottom: 1rem;
         font-size: 16px;
@@ -48,6 +53,10 @@
     display: block;
     font-size: 72px;
     font-family: GothamProBold;
+    @media screen and (--tablet) {
+        margin-bottom: 16px;
+        font-size: 56px;
+    }
     @media screen and (--mobile) {
         margin-bottom: 10px;
         font-size: 36px;
@@ -59,6 +68,9 @@
     margin-bottom: 52px;
     font-size: 18px;
     font-family: GothamProBold;
+    @media screen and (--tablet) {
+        margin-bottom: 74px;
+    }
     @media screen and (--mobile) {
         margin-bottom: 2rem;
         font-size: 12px;
@@ -79,6 +91,9 @@
     margin-bottom: 1em;
     font-size: 48px;
     font-family: GothamProBold;
+    @media screen and (--tablet) {
+        margin-bottom: 36px;
+    }
     @media screen and (--mobile) {
         font-size: 30px;
     }

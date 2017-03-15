@@ -17,7 +17,7 @@
     width: 20%;
     list-style: none;
     @media screen and (--tablet) {
-        width: calc(100% / 3 - 1rem);
+        width: calc((100% - var(--gridGutter)*2)/3);
     }
     @media screen and (--mobile) {
         display: none;
@@ -60,6 +60,7 @@
         font-weight: normal;
         font-size: 12px;
         font-family: GothamProMedium;
+        line-height: 1.5;
         @media screen and (--mobile) {
             padding: 10px 5px;
         }
@@ -68,6 +69,7 @@
         display: none;
         @media screen and (--tablet) {
             display: block;
+            margin-top: 1em;
         }
     }
 }

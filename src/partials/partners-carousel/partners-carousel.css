@@ -70,6 +70,7 @@
 .partners-carousel__wrapper {
     overflow: hidden;
     width: 100%;
+    border-radius: 10px;
 }
 
 .partners-carousel__items-wrap {}

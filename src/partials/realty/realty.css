@@ -83,8 +83,9 @@
         width: calc((100%/12)*5);
     }
     @media screen and (--mobile) {
+        min-height: auto;
         width: 100%;
-        border-top: solid 1px #979797;
+        border-top: none;
         border-left: solid 1px #979797;
     }
     & thead {
@@ -118,6 +119,9 @@
             @media screen and (--tablet) {
                 padding: 2rem 1rem 22px 1rem;
             }
+            @media screen and (--mobile) {
+                padding: 10px;
+            }
             &:first-child {
                 width: 520px;
                 @media screen and (--tablet) {
@@ -137,8 +141,8 @@
     font-size: 34px;
     font-family: GothamProMedium;
     @media screen and (--mobile) {
-       margin-bottom: 8px;
-       font-size: 22px;
+        margin-bottom: 8px;
+        font-size: 22px;
     }
 }
 

@@ -1,8 +1,8 @@
 .object-map {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
     width: 100%;
     @media screen and (--mobile) {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
     & .ymaps-image-with-content {
         top: -51px !important;

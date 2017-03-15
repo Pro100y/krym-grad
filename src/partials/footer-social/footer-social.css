@@ -1,9 +1,9 @@
 .footer-social {
-    width: calc((100%/12)*1);
     margin-right: calc((100%/12)*1);
+    width: calc((100%/12)*1);
     @media screen and (--tablet) {
-        width: calc((100%/12)*2);
         margin-right: 0;
+        width: calc((100%/12)*2);
     }
     @media screen and (--mobile) {
         width: 100%;
@@ -11,24 +11,28 @@
 }
 
 .footer-social__buttons-wrap {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 43px;
+    width: 100%;
     @media screen and (--mobile) {
-        width: 50%;
+        justify-content: flex-start;
         margin-bottom: 34px;
+        width: 50%;
     }
 }
 
 .footer-social__button {
+    display: block;
     width: 29px;
     height: 29px;
     border-radius: 50%;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    display: block;
+    &:not(:last-child) {
+        margin-right: var(--gridGutter);
+    }
     &--vk {
         background-image: url(../images/footer-social-1.png);
         &:hover {
@@ -51,11 +55,11 @@
 
 .footer-social__phone {
     display: block;
+    display: none;
+    margin-bottom: 8px;
     width: max-content;
     color: #ffffff;
     font-size: 20px;
-    margin-bottom: 8px;
-    display: none;
     @media screen and (--mobile) {
         display: block;
     }
@@ -63,39 +67,39 @@
 
 .footer-social__address {
     display: block;
+    display: none;
     margin-bottom: 27px;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 10px;
-    display: none;
     @media screen and (--mobile) {
         display: block;
     }
 }
 
 .footer-social__developer {
+    display: block;
     width: 100px;
     height: 24px;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: contain;
     background-image: url(../images/footer-social-4.png);
-    display: block;
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
     @media screen and (--tablet) {
         margin-left: auto;
     }
     @media screen and (--mobile) {
-        margin-left: 0;
         margin-bottom: 43px;
+        margin-left: 0;
     }
 }
 
 .footer-social__rights {
     display: block;
+    display: none;
     color: #7b7b7b;
     font-size: 12px;
     line-height: 2.0;
-    display: none;
     @media screen and (--mobile) {
         display: block;
     }

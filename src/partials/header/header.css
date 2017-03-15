@@ -22,14 +22,15 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-end;
-        width: 160px;
+        width: 170px;
+        padding-right: 0;
     }
 }
 
 .header__logo-image {
     display: block;
     margin-right: 51px;
-    width: 160px;
+    width: 170px;
     height: 33px;
     background-image: url(../images/header-1.png);
     background-position: left center;
@@ -75,6 +76,7 @@
     margin-bottom: 6px;
     color: #252525;
     font-size: 18px;
+    font-family: GothamProMedium;
 }
 
 .header__contacts-address {

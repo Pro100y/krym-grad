@@ -1,26 +1,26 @@
 .sidebar-menu {
+    margin-bottom: 94px;
+    padding: 20px;
     width: calc(calc((100%/12)*3) - var(--gridGutter));
     background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), inset 0 5px 0 0 #9c765a;
-    padding: 20px;
-    margin-bottom: 94px;
     @media screen and (--tablet) {
-       width: calc((100% - var(--gridGutter))/12*3);
+        width: calc((100% - var(--gridGutter))/12*4);
     }
     @media screen and (--mobile) {
-        width: 100%;
         margin-bottom: 2rem;
+        width: 100%;
     }
 }
 
 .sidebar-menu__item {
     display: block;
-    font-family: GothamProMedium;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 2.77;
+    padding: 11px 0;
     color: #0062cd;
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: GothamProMedium;
     &--active,
     &:hover {
         color: #252525;

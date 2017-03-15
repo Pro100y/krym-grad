@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
         freeMode: true,
         freeModeSticky: true,
-        speed: 1000,
+        speed: 700,
         loop: false,
         autoplay: 3000,
         autoHeight: false,

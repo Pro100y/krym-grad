@@ -18,7 +18,7 @@
         }
     }
     margin-bottom: 100px;
-    padding: 25px 64px 25px 25px;
+    padding: 25px;
     width: calc((100% - var(--gridGutter)*2)/12*3);
     background-color: rgba(0, 98, 205, .9);
     @media screen and (--tablet) {

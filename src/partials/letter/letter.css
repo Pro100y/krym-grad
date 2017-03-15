@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 58px;
     @media screen and (--mobile) {
         margin-bottom: 50px;
     }
@@ -11,9 +11,9 @@
 
 .letter__image {
     width: calc((100% - var(--gridGutter))/12*4);
-    height: 360px;
     object-position: center;
     object-fit: cover;
+    height: 100%;
     @media screen and (--mobile) {
         width: 100%;
         height: 240px;
@@ -29,16 +29,21 @@
     @media screen and (--mobile) {
         width: 100%;
     }
+    &>p {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
 
 .letter__caption-footer {
     display: inline-block;
     margin-top: 1em;
-    padding-right: 270px;
+    padding-right: 230px;
     min-height: 110px;
     background-position: right top;
     background-repeat: no-repeat;
-    background-image: contain;
+    background-size: contain;
     @media screen and (--mobile) {
         padding-right: 0;
         padding-bottom: 110px;

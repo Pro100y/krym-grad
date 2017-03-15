@@ -1,6 +1,7 @@
+{% macro innerSlogan(text) %}
 <!-- inner-slogan -->
 <figure class="inner-slogan">
-    Наши партнеры - залог нашего успеха!
-    <br>Мы поддерживаем взаимовыгодные отношения с нашими партнерами, деловыми ассоциациями и общественными организациями.
+    {{ text | safe}}
 </figure>
 <!-- /inner-slogan  -->
+{% endmacro %}
