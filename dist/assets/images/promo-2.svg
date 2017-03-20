@@ -1,1 +1,23 @@
-<svg width="48" height="41" viewBox="0 0 48 41" xmlns="http://www.w3.org/2000/svg"><title>Group 6</title><g stroke-width="2" stroke="#FFF" fill="none" fill-rule="evenodd"><path d="M1 35.023C1 32.446 3 30 6 30V1.001C3 1 1 3.423 1 6v29.022z" stroke-linejoin="round"/><path d="M6 7h41v33H6.022C3.249 40 1 37.704 1 35" stroke-linejoin="round"/><path d="M24 20v8H13V13h11v4m0-4h16v10h-4"/><path d="M32 23h4v11H20v-6m9-5h-5"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="41px" viewBox="0 0 48 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1.-Главная-страница" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-[Desktop-1600]" transform="translate(-1188.000000, -369.000000)" stroke-width="2" stroke="#FFFFFF">
+            <g id="Group-9" transform="translate(200.000000, 149.000000)">
+                <g id="Group-6" transform="translate(989.000000, 221.000000)">
+                    <g id="Page-1">
+                        <path d="M0,34.0225 C0,31.4465 2,29.0005 5,29.0005 L5,19.8037439 L5,0.0005 C2,0.0005 0,2.4235 0,5.0005 L0,34.0225 Z" id="Stroke-1" stroke-linejoin="round"></path>
+                        <path d="M5,6 L46,6 L46,39 L5.022,39 C2.249,39 0,36.704 0,34" id="Stroke-3" stroke-linejoin="round"></path>
+                        <polyline id="Stroke-5" points="23 19 23 27 12 27 12 12 23 12 23 16"></polyline>
+                        <polyline id="Stroke-7" points="23 12 39 12 39 22 35 22"></polyline>
+                        <polyline id="Stroke-9" points="31 22 35 22 35 33 19 33 19 27"></polyline>
+                        <path d="M28,22 L23,22" id="Stroke-11"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

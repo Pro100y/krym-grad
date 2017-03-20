@@ -39,7 +39,8 @@
     }
     @media screen and (--mobile) {
         padding: 0 10px;
-        width: 320px;
+        width: 100%;
+        max-width: 480px;
     }
     &--type {
         &--main {

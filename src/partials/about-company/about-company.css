@@ -8,10 +8,11 @@
     padding-top: 34px;
     margin-bottom: 100px;
     @media screen and (--tablet) {
-       width: calc(100% - 390px);
-       background-position: left top;
-       padding-left: 90px;
-       padding-right: 0;
+        width: calc(100% - 390px);
+        background-position: left top;
+        padding-left: 90px;
+        padding-right: 0;
+        transform: translateY(-34px);
     }
     @media screen and (--mobile) {
         width: 100%;
@@ -19,6 +20,7 @@
         padding-right: 0;
         padding-top: 24px;
         margin-bottom: 40px;
+        transform: translateY(0);
     }
 }
 

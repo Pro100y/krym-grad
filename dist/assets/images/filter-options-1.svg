@@ -1,1 +1,12 @@
-<svg width="10" height="7" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg"><title>icon</title><path d="M3.5 6.5L3 7 0 4l1-1 2.5 2.5L9 0l1 1-6 6-.5-.5z" fill="#FFF" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="9.-Подобрать-квартиру" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Подобрать-квартиру-[Desktop-960]" transform="translate(-253.000000, -643.000000)" fill="#FFFFFF">
+            <polygon id="icon" points="256.5 649.5 256 650 253 647 254 646 256.5 648.5 262 643 263 644 257 650 256.5 649.5"></polygon>
+        </g>
+    </g>
+</svg>

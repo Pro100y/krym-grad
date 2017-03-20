@@ -7,6 +7,11 @@
 
 .filter-options__item {
     width: 100%;
+    @media screen and (--mobile) {
+        display: flex;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #D9D9D9;
+    }
     &:not(:last-child) {
         margin-bottom: 24px;
     }
@@ -15,24 +20,20 @@
             margin-bottom: 24px;
         }
     }
-    @media screen and (--mobile) {
-        display: flex;
-        border-bottom: 1px solid #D9D9D9;
-        padding-bottom: 7px;
-    }
 }
 
 .filter-options__item-title {
     display: block;
     margin-bottom: 10px;
     color: #000000;
+    text-transform: uppercase;
     font-weight: normal;
     font-size: 12px;
     font-family: GothamProMedium;
     @media screen and (--mobile) {
-        width: 50%;
-        padding: 8px 1rem 8px 0;
         margin-bottom: 0;
+        padding: 8px 1rem 8px 0;
+        width: 50%;
     }
 }
 
