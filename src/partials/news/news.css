@@ -37,6 +37,7 @@
 
 .news__tabs-wrap {
     width: 100%;
+    overflow: hidden;
 }
 
 .news__tab {

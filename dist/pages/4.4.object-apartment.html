@@ -164,13 +164,16 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <span class="choose-table__code">код <span class="choose-table__code-num">[[ code ]]</span></span>
                         <a href="/pages/4.4.object-apartment.html" class="choose-table__readmore">подробнее о квартире</a>
                     </section>
                     <div class="apartment__image-wrap">
                         <img alt="Квартира" class="apartment__image" src="/assets/images/apartment-1.jpg" />
                     </div>
                     <figure class="apartment__buttons-wrap">
-                        <a href="#" class="apartment__button apartment__button--booking">забронировать<span class="apartment__button-mobile-text">&nbsp;квартиру</span></a>
+                        <a href="#" class="apartment__button apartment__button--booking" data-remodal-target="lightbox--apartment-order">забронировать
+            <span class="apartment__button-mobile-text">&nbsp;квартиру</span>
+        </a>
                         <a href="#" class="apartment__button apartment__button--download">скачать PDF</a>
                     </figure>
                 </section>
@@ -280,6 +283,35 @@
                     <small class="footer-social__rights">© 2017 КрымГрад. Все права защищены</small>
                 </section>
                 <!-- /footer-social  -->
+                <figure class="lightbox lightbox--apartment-order remodal" data-remodal-id="lightbox--apartment-order">
+                    <button class="lightbox__close-btn" data-remodal-action="close" data-ripple></button>
+                    <form class="apartment-order" data-form>
+                        <header class="apartment-order__header">
+                            <p class="apartment-order__title">Забронировать квартиру</p>
+                            <p class="apartment-order__subtitle">ЖК Зенит: Квартира №134</p>
+                            <span class="apartment-order__code">Код 100051</span>
+                        </header>
+                        <div class="apartment-order__content">
+                            <p class="apartment-order__paragraph">Оставьте ваши контактные данные, и наши менеджеры свяжутся с вами.</p>
+                            <div class="apartment-order__fields-wrap">
+                                <div class="apartment-order__col">
+                                    <label for="" class="apartment-order__label">ФИО:</label>
+                                    <input type="text" class="apartment-order__field" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="apartment-order__col">
+                                    <label for="" class="apartment-order__label">Телефон<span class="apartment-order__label-star">*</span></label>
+                                    <input type="text" class="apartment-order__field" placeholder="+7 (495) 000-00-00" data-form-phone-field required>
+                                    <p class="apartment-order__status" data-form-status>Введите номер телефона</p>
+                                </div>
+                            </div>
+                            <button data-form-btn class="apartment-order__button">Отправить</button>
+                        </div>
+                        <div class="apartment-order__success">
+                            Ваша заявка принята!
+                            <br>Наши менеджеры свяжутся с вами в ближайшее время.
+                        </div>
+                    </form>
+                </figure>
             </div>
         </div>
     </div>

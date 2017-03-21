@@ -3,6 +3,8 @@
 {% set page  = "object-apartment" %}
 {% set title = "Квартира" %}
 
+{% from "partials/lightbox/lightbox.htm" import lightbox %}
+
 {# == #}
 
 {% block header %}{% include "partials/header/header.htm" %}{% endblock %}
@@ -17,4 +19,9 @@
 
 {% block footer_menu %}{% include "partials/footer-menu/footer-menu.htm" %}{% endblock %}
 
-{% block footer_social %}{% include "partials/footer-social/footer-social.htm" %}{% endblock %}
+{% block footer_social %}
+
+    {% include "partials/footer-social/footer-social.htm" %}
+    {{ lightbox('apartment-order') }}
+
+{% endblock %}

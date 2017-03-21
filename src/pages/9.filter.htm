@@ -17,7 +17,13 @@
 
 {% block filter_range %}{% include "partials/filter-range/filter-range.htm" %}{% endblock %}
 
-{% block filter_table %}{% include "partials/filter-table/filter-table.htm" %}{% endblock %}
+{% block filter_table %}
+
+    {% include "partials/filter-table/filter-table.htm" %}
+
+    {% include "partials/pagination/pagination.htm" %}
+
+{% endblock %}
 
 {% block copy %}{% include "partials/copy/copy.htm" %}{% endblock %}
 

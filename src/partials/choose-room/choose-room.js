@@ -8,15 +8,17 @@ if (document.getElementsByClassName('choose-room').length) {
             num: '',
             area: '',
             balcony: '',
-            cost: ''
+            cost: '',
+            code: '',
         },
         methods: {
             //пробрасывание параметров квартиры в таблицу
-            changeInfo: function (num, area, balcony, cost) {
+            changeInfo: function (num, area, balcony, cost, code) {
                 this.num = num;
                 this.area = area;
                 this.balcony = balcony;
                 this.cost = cost.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+                this.code = code;
             }
         },
         created: function () {

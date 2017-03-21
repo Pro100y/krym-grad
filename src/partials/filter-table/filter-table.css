@@ -1,4 +1,5 @@
 .filter-table {
+    margin-bottom: 20px;
     width: 100%;
     border: none;
     border-collapse: collapse;
@@ -27,9 +28,10 @@
         transition-duration: var(--transitionDuration);
     }
     & td {
-        padding: 15px 20px;
+        padding: 22px 20px 22px;
         color: #000000;
         font-size: 14px;
+        vertical-align: center;
         @media screen and (--tablet) {
             padding: 15px;
         }
@@ -51,5 +53,20 @@
         @media screen and (--mobile) {
             white-space: nowrap;
         }
+    }
+}
+
+.filter-table__item-name {
+    position: relative;
+    &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: 'код ' attr(data-code);
+        text-align: left;
+        white-space: nowrap;
+        font-size: 10px;
+        line-height: 1.8;
+        transform: translateY(100%);
     }
 }

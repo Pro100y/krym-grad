@@ -1,0 +1,23 @@
+.lightbox {
+    position: relative;
+    padding: 0;
+    max-width: 940px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    @media screen and (--mobile) {
+        max-width: 480px;
+    }
+}
+
+.lightbox__close-btn {
+    position: fixed;
+    top: 6px;
+    right: 6px;
+    width: 24px !important;
+    height: 24px !important;
+    background-image: url(../images/lightbox-close.svg);
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: var(--transitionDuration);
+}

@@ -1,0 +1,16 @@
+{% macro lightbox(includePartial) %}
+<figure
+    class           = "lightbox lightbox--{{ includePartial }} remodal"
+    data-remodal-id = "lightbox--{{ includePartial }}"
+>
+
+    <button
+        class               = "lightbox__close-btn"
+        data-remodal-action = "close"
+        data-ripple
+    ></button>
+
+        {% include "partials/" ~ includePartial ~ "/" ~ includePartial ~ ".htm" %}
+
+</figure>
+{% endmacro %}
