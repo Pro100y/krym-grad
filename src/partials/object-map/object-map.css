@@ -4,7 +4,7 @@
     @media screen and (--mobile) {
         margin-bottom: 40px;
     }
-    & .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-svg-icon"] {
         top: -51px !important;
         left: -28px !important;
         width: 59px !important;
@@ -13,22 +13,22 @@
         background-size: contain !important;
         background-repeat: no-repeat;
     }
-    & .ymaps-point-overlay:nth-child(1) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(1)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-1.png) !important;
     }
-    & .ymaps-point-overlay:nth-child(2) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(2)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-2.png) !important;
     }
-    & .ymaps-point-overlay:nth-child(3) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(3)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-3.png) !important;
     }
-    & .ymaps-point-overlay:nth-child(4) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(4)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-4.png) !important;
     }
-    & .ymaps-point-overlay:nth-child(5) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(5)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-5.png) !important;
     }
-    & .ymaps-point-overlay:nth-child(6) .ymaps-image-with-content {
+    & [class*="ymaps-2"][class*="-placemark-overlay"]:nth-child(6)>[class*="ymaps-2"][class*="-svg-icon"] {
         background-image: url(../images/object-map-6.png) !important;
     }
 }
@@ -39,8 +39,8 @@
     color: #242525;
     font-size: 48px;
     @media screen and (--mobile) {
-        font-size: 30px;
         margin-bottom: 2rem;
+        font-size: 30px;
     }
 }
 
@@ -48,7 +48,10 @@
     width: 100%;
     height: 400px;
     @media screen and (--mobile) {
-        width: calc(100% + 20px);
         margin-left: -10px;
+        width: calc(100% + 20px);
+    }
+    & [class*="ymaps-2"][class*="-ground-pane"] {
+        filter: grayscale(100%);
     }
 }

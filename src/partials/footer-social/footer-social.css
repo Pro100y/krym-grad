@@ -12,9 +12,12 @@
 
 .footer-social__buttons-wrap {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom: 43px;
     width: 100%;
+    @media screen and (--tablet) {
+        justify-content: flex-end;
+    }
     @media screen and (--mobile) {
         justify-content: flex-start;
         margin-bottom: 34px;

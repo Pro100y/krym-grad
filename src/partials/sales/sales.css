@@ -22,13 +22,13 @@
     height: calc((100% - 20px)/3);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     @media screen and (--tablet) {
+        flex-grow: 0;
         width: calc((100% - var(--gridGutter)*2)/3);
         height: 164px;
-        flex-grow: 0;
     }
     @media screen and (--mobile) {
         width: 100%;
-        height: 164px;
+        height: 106px;
         background-position: center top;
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -61,11 +61,11 @@
     align-self: flex-start;
     width: 100%;
     color: #9c765a;
+    text-transform: uppercase;
     font-weight: normal;
     font-size: 11px;
     font-family: GothamProBold;
     line-height: 1.64;
-    text-transform: uppercase;
     @media screen and (--mobile) {
         display: none;
     }
@@ -78,9 +78,14 @@
     margin-bottom: -2em;
     width: 100%;
     color: #0062cd;
+    text-transform: uppercase;
     font-weight: normal;
     font-size: 14px;
     font-family: GothamProBold;
+    @media screen and (--tablet) {
+        margin-bottom: -1em;
+        font-family: GothamProMedium;
+    }
     @media screen and (--mobile) {
         margin-bottom: 0;
     }

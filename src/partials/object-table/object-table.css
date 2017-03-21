@@ -1,25 +1,38 @@
 .object-table {
     margin-bottom: 57px;
     width: calc((100%/12)*3);
-    color: #000000;
-    font-size: 13px;
-    line-height: 1.23;
     @media screen and (--tablet) {
-       width: calc((100% - var(--gridGutter))/12*4)
+        width: calc((100% - var(--gridGutter))/12*4);
     }
     @media screen and (--mobile) {
         display: none;
+    }
+}
+
+.object-table__table {
+    border: none;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.23;
+    min-width: 300px;
+    @media screen and (--tablet) {
+        width: 100%;
     }
     & tbody {}
     & tr {
         border-bottom: 1px solid #fff;
         background-color: #fafafa;
+        font-weight: 400;
     }
     & th {
         padding: 10px;
         text-align: left;
+        font-weight: 400;
     }
     & td {
         padding: 10px;
+        font-weight: 400;
     }
 }
