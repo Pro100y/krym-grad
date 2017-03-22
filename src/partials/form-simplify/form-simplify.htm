@@ -1,0 +1,38 @@
+<form
+    action              = ""
+    class               = "form-simplify"
+    title               = "Заказ обратного звонка"
+    data-form-recipient = ""
+    data-form
+>
+
+    <label for="" class="form-simplify__label form-simplify__label--hidden">Ваш номер телефона:</label>
+
+    <div class="form-simplify__container">
+
+        <div class="form-simplify__content-wrap">
+
+            <button type="button" class="form-simplify__question">перезвоните мне</button>
+
+            <div class="form-simplify__fieldset">
+                <input
+                    class       = "form-simplify__field"
+                    placeholder = "+7 (___) ___-__-__"
+                    type        = "text"
+                    name        = "PHONE_NUMBER"
+                    required
+                    data-form-phone-field
+                >
+                <button
+                    class = "form-simplify__send"
+                    data-form-btn
+                ></button>
+            </div>
+
+            <p class="form-simplify__success">Мы скоро перезвоним!</p>
+
+        </div>
+
+    </div>
+
+</form>

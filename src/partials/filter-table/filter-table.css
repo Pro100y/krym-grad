@@ -28,10 +28,10 @@
         transition-duration: var(--transitionDuration);
     }
     & td {
-        padding: 22px 20px 22px;
+        padding: 15px 20px 28px;
         color: #000000;
+        vertical-align: middle;
         font-size: 14px;
-        vertical-align: center;
         @media screen and (--tablet) {
             padding: 15px;
         }

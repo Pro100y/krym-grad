@@ -1,0 +1,107 @@
+:root {
+    --formSimplifyHeight: 36px;
+}
+
+.form-simplify {
+    position: relative;
+}
+
+.form-simplify__label {
+    padding-left: 1rem;
+    display: block;
+    margin-bottom: 7px;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: 1;
+    transition-duration: var(--transitionDuration);
+    &--hidden {
+        margin-bottom: -11px;
+        opacity: 0;
+    }
+}
+
+.form-simplify__container {
+    padding-left: 1rem;
+    overflow-y: hidden;
+    width: auto;
+    height: var(--formSimplifyHeight);
+}
+
+.form-simplify__content-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: calc(var(--formSimplifyHeight)*3);
+    transition-duration: var(--transitionDuration);
+}
+
+.form-simplify__question {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px dotted currentColor;
+    color: #0062cd;
+    text-transform: uppercase;
+    font-size: 10px;
+    &:hover {
+        border-color: transparent;
+        color: #252525;
+    }
+}
+
+.form-simplify__fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-simplify__field {
+    padding: 0 1em !important;
+    height: var(--formSimplifyHeight) !important;
+    border: solid 1px #dfdfdf;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    width: calc(100% - 34px);
+    &::-webkit-input-placeholder {
+        color: #333;
+    }
+    &::-moz-placeholder {
+        color: #333;
+    }
+    &:-moz-placeholder {
+        color: #333;
+    }
+    &:-ms-input-placeholder {
+        color: #333;
+    }
+    &[data-form-field-invalid] {
+        border-color: #FFA4A4;
+    }
+}
+
+.form-simplify__send {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url(../images/form-simplify-send.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-size: 0;
+}
+
+.form-simplify__success {
+    padding: 0 0 0 44px;
+    font-size: 14px;
+    background-image: url(../images/form-simplify-success.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+    line-height: var(--formSimplifyHeight);
+}
